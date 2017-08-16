@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dot.004" format="1">
+  <advance width="500"/>
+  <outline>
+    <component base="chart.dot" yOffset="320"/>
+  </outline>
+</glyph>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="line.up.seven" format="1">
+  <advance width="500"/>
+  <outline>
+    <contour>
+      <point x="250" y="-43" type="line"/>
+      <point x="750" y="518" type="line"/>
+      <point x="750" y="604" type="line"/>
+      <point x="250" y="43" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>1.0</real>
+        <real>1.0</real>
+        <real>0.0</real>
+        <real>1.0</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

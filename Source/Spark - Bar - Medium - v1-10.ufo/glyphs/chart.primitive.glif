@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="chart.primitive" format="1">
+  <advance width="500"/>
+  <outline>
+    <contour>
+      <point x="15" y="0" type="line"/>
+      <point x="485" y="0" type="line"/>
+      <point x="485" y="7" type="line"/>
+      <point x="15" y="7" type="line"/>
+    </contour>
+  </outline>
+</glyph>
