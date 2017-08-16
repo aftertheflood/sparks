@@ -16,8 +16,8 @@ sub zero' braceright' by chart.000;
 
 The method is a bit brute-force in nature. There is very possibly a better way to do this.
 
-Because the replacements are all hard coded, each file can only take input of 0–100[^1] and the scale is always 0–100. There is no logic and Spark is relatively dumb as technology goes.
+Because the replacements are all hard coded, each file can only take input of 0–100[1] and the scale is always 0–100. There is no logic and Spark is relatively dumb as technology goes.
 
-[^1]: The dotline version only goes from 0–9 because it isn't just replacing a single unit, but reading the next number on to determine what line to draw from any given point. There is no theoretic reason why this could not be extended to 100, or 1000, or beyond. However at the current moment we don't know how to script the generation of the many glyphs needed to do this so they all need to be drawn by hand.
+[1]: The dotline version only goes from 0–9 because it isn't just replacing a single unit, but reading the next number on to determine what line to draw from any given point. There is no theoretic reason why this could not be extended to 100, or 1000, or beyond. However at the current moment we don't know how to script the generation of the many glyphs needed to do this so they all need to be drawn by hand.
 
 See also: http://stateofwebtype.com/
