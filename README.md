@@ -16,6 +16,6 @@ sub zero' braceright' by chart.000;
 
 The method is a bit brute-force in nature. There is very possibly a better way to do this and the close reader will note that there are ways to break the operation described above. For this reason you need to enter the text for the sparkline in a fairly precise format (e.g., don't put spaces after the comma).
 
-Because the replacements are all hard coded, each file has a fixed scale of input it can take (0–100 for the dot and bar versions, 0–9 for the dot-line version[1]). There is no logic and Spark is relatively dumb as technology goes.
+Because the replacements are all hard coded, each file has a fixed scale of input it can take (0–100 for the dot and bar versions, 0–9 for the dot-line version[1]). There is no logic. Spark is relatively dumb as technology goes, but it works.
 
 [1]: The dotline version only goes from 0–9 because it isn't just replacing a single unit, but reading the next number on to determine what line to draw from any given point. There is no theoretic reason why this could not be extended to 100, or 1000, or beyond. However at the current moment we don't know how to script the generation of the many glyphs needed to do this so they all need to be drawn by hand.
