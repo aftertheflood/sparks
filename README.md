@@ -4,6 +4,7 @@ Version 1.0
 Last updated: 29 August 2017
 
 
+
 ## About the project
 
 Spark is a typeface for creating sparklines in text. It uses OpenType's *contextual alternates* and requires no Javascript, though it does require a modern-ish browser that can make use of OpenType features in text. At the moment it is compatible with Microsoft Word (2011 and later), Adobe Creative Cloud applications, Chrome 33+, Safari 6+, Firefox 4+, and Internet Explorer 10+. (See: http://stateofwebtype.com/ for a fuller listing of browser compatibility.)
@@ -27,9 +28,11 @@ Because the replacements are all hard coded, each file has a fixed scale of inpu
 Spark is relatively dumb as technology goes, but it works.
 
 
+
 ## Version history
 
 1.0 -- Initial version
+
 
 
 ## License
