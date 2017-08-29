@@ -21,13 +21,5 @@ Because the replacements are all hard coded, each file has a fixed scale of inpu
 Spark is relatively dumb as technology goes, but it works.
 
 
-
-### Version history
-
-1.0 -- Initial version
-
-
-
 ### License
-
 Spark is free to use and modify. We'd love for you to contribute or fork the project.
