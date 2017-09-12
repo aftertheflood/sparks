@@ -29,8 +29,10 @@ The method is a bit brute-force in nature. There is very possibly a better way t
 
 Because the replacements are all hard coded, each file has a fixed scale of input it can take. The dot and bar versions go from 0–100. The dot-line version only goes from 0–9 because it isn't just replacing a single unit, but reading the next number on to determine what line to draw from any given point. There is no theoretical reason why this could not be extended to 100, or 1000, or beyond. However, while we can script the creation of the rules, at the current moment we don't know how to script the generation of the many, many glyphs needed to do this, so they all need to be (sort of) drawn by hand. This is made extra difficult because each angle of line needs to be optically adjusted so it *looks* like it is the same thickness as all the others – for a vertical and horizontal line to appear to be the same thickness the vertical line need to be thicker than horizontal line because your eyeballs are aligned horizontally, not vertically. Optics!
 
-Spark is relatively dumb as technology goes, but it works.
+Spark is relatively dumb as technology goes, but it works. See it working on our [website](http://aftertheflood.co/projects/atf-spark).
 
+### About us
+[After the flood](http://aftertheflood.co/) is a design company based in London. We make new digital products and we believe data is the building material of the modern, 21st-century business. Using lean concepts, we collaborate with internal teams to harness their data and create products that users love. Organisations such as the NHS, Google, Nikkei and UEFA choose us to complement their domain knowledge with our experience in data products across many sectors, from equity finance to sports entertainment.
 
 ### License
 Spark is free to use and modify. We'd love for you to contribute or fork the project.
