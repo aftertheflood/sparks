@@ -31,6 +31,9 @@ Because the replacements are all hard coded, each file has a fixed scale of inpu
 
 Spark is relatively dumb as technology goes, but it works. See it working on our [website](http://aftertheflood.co/projects/atf-spark).
 
+### Using AtF Spark in MS Word
+If you are using MS Word you need to enable the "Use Contextual Alternates" feature for it to be able to draw the sparklines. You can do that simply by heading to "Format > Font > Advanced" and enabling it.
+
 ### About us
 [After the flood](http://aftertheflood.co/) is a design company based in London. We make new digital products and we believe data is the building material of the modern, 21st-century business. Using lean concepts, we collaborate with internal teams to harness their data and create products that users love. Organisations such as the NHS, Google, Nikkei and UEFA choose us to complement their domain knowledge with our experience in data products across many sectors, from equity finance to sports entertainment.
 
