@@ -38,4 +38,4 @@ If you are using MS Word you need to enable the "Use Contextual Alternates" feat
 [After the flood](http://aftertheflood.co/) is a design company based in London. We make new digital products and we believe data is the building material of the modern, 21st-century business. Using lean concepts, we collaborate with internal teams to harness their data and create products that users love. Organisations such as the NHS, Google, Nikkei and UEFA choose us to complement their domain knowledge with our experience in data products across many sectors, from equity finance to sports entertainment.
 
 ### License
-Spark is free to use and modify. We'd love for you to contribute or fork the project.
+AtF Spark is ditributed under the [MIT License](https://github.com/aftertheflood/spark/blob/master/LICENSE).
