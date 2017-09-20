@@ -34,6 +34,10 @@ Spark is relatively dumb as technology goes, but it works. See it working on our
 ### Using AtF Spark in MS Word
 If you are using MS Word you need to enable the "Use Contextual Alternates" feature for it to be able to draw the sparklines. You can do that simply by heading to "Format > Font > Advanced" and enabling it.
 
+### Using AtF Spark in Adobe Illustrator
+Turn on contextual alternates from the OpenType panel menu (Window > Type > OpenType). Here's a [screenshot](https://user-images.githubusercontent.com/771600/30393566-7ebc3a96-98b8-11e7-9b18-34cf6b1550c4.png).
+
+
 ### About us
 [After the flood](http://aftertheflood.co/) is a design company based in London. We make new digital products and we believe data is the building material of the modern, 21st-century business. Using lean concepts, we collaborate with internal teams to harness their data and create products that users love. Organisations such as the NHS, Google, Nikkei and UEFA choose us to complement their domain knowledge with our experience in data products across many sectors, from equity finance to sports entertainment.
 
