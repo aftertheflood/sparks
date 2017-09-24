@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'sparkdot';
+    src: url('Spark - Dot - Medium.otf') format('otf'),
+         url('spark-dot-medium-webfont.woff2') format('woff2'),
+         url('spark-dot-medium-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
