@@ -42,4 +42,6 @@ Turn on contextual alternates from the OpenType panel menu (Window > Type > Open
 [After the flood](http://aftertheflood.co/) is a design company based in London. We make new digital products and we believe data is the building material of the modern, 21st-century business. Using lean concepts, we collaborate with internal teams to harness their data and create products that users love. Organisations such as the NHS, Google, Nikkei and UEFA choose us to complement their domain knowledge with our experience in data products across many sectors, from equity finance to sports entertainment.
 
 ### License
-AtF Spark is ditributed under the [MIT License](https://github.com/aftertheflood/spark/blob/master/LICENSE).
+AtF Spark has been distributed under the [SIL Open Font License](https://github.com/aftertheflood/spark/blob/master/LICENSE).
+
+
