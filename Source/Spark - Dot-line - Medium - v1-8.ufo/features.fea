@@ -4,7 +4,7 @@ languagesystem latn dflt;
 feature calt { #Contextual alternates
 
   ignore sub zero' comma space;
-  sub braceleft' zero' comma' zero' by line.000.000;
+  sub braceleft' zero' comma' zero by line.000.000;
   sub braceleft' zero' comma' one by line.000.001;
   sub braceleft' zero' comma' two by line.000.002;
   sub braceleft' zero' comma' three by line.000.003;
