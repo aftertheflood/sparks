@@ -2,6 +2,41 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>com.fontfont.colorfont.auto_layer_include_baseglyph</key>
+	<false/>
+	<key>com.fontfont.colorfont.auto_layer_regex</key>
+	<string>\.alt[0-9]{3}$</string>
+	<key>com.fontfont.colorfont.bitmap_sizes</key>
+	<array>
+		<integer>20</integer>
+		<integer>32</integer>
+		<integer>40</integer>
+		<integer>72</integer>
+		<integer>96</integer>
+		<integer>128</integer>
+		<integer>256</integer>
+		<integer>512</integer>
+		<integer>1024</integer>
+	</array>
+	<key>com.fontfont.colorfont.color</key>
+	<string>#000000</string>
+	<key>com.fontfont.colorfont.colorbg</key>
+	<string>#ffffff</string>
+	<key>com.fontfont.colorfont.colorpalette</key>
+	<array>
+		<dict>
+		</dict>
+	</array>
+	<key>com.fontfont.colorfont.prefer_placed_images</key>
+	<false/>
+	<key>com.fontfont.colorfont.write_cbdt</key>
+	<false/>
+	<key>com.fontfont.colorfont.write_colr</key>
+	<true/>
+	<key>com.fontfont.colorfont.write_sbix</key>
+	<false/>
+	<key>com.fontfont.colorfont.write_svg</key>
+	<true/>
 	<key>com.typemytype.robofont.background.layerStrokeColor</key>
 	<array>
 		<real>0.0</real>
@@ -22,7 +57,7 @@
 	<key>com.typemytype.robofont.compileSettings.generateFormat</key>
 	<integer>0</integer>
 	<key>com.typemytype.robofont.compileSettings.path</key>
-	<string>/Users/atf-noah/Dropbox/Work/Clients/After the Flood/Spark font/Output/Spark - Dot-line - Medium - v1-7.otf</string>
+	<string>/Users/mikegallagher/Dropbox/Work/Clients/After the Flood/Spark font/Output/Delivery/Atf Spark - v1-1/Spark - Dot-line - Medium - v1-8.otf</string>
 	<key>com.typemytype.robofont.compileSettings.releaseMode</key>
 	<integer>1</integer>
 	<key>com.typemytype.robofont.foreground.layerStrokeColor</key>
