@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="eacute" format="1">
+	<unicode hex="00E9"/>
+	<advance width="388"/>
+	<outline>
+		<component base="e"/>
+		<component base="acute" xOffset="106"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.mark</key>
+			<array>
+				<real>0.629</real>
+				<real>0.919</real>
+				<real>0.613</real>
+				<integer>1</integer>
+			</array>
+		</dict>
+	</lib>
+</glyph>

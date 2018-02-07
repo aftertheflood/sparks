@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>ascender</key>
+		<integer>707</integer>
+		<key>capHeight</key>
+		<integer>707</integer>
+		<key>copyright</key>
+		<string>Copyright (c) 2017 Sparks Project Authors</string>
+		<key>descender</key>
+		<integer>-250</integer>
+		<key>familyName</key>
+		<string>Sparks</string>
+		<key>openTypeHeadFlags</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+		</array>
+		<key>openTypeHheaLineGap</key>
+		<integer>0</integer>
+		<key>openTypeNameDesigner</key>
+		<string>After the flood</string>
+		<key>openTypeNameDesignerURL</key>
+		<string>aftertheflood.co</string>
+		<key>openTypeNameLicense</key>
+		<string>This Font Software is licensed under the SIL Open Font License v1.1. This license is available with a FAQ at http://scripts.sil.org/OFL</string>
+		<key>openTypeNameLicenseURL</key>
+		<string>http://scripts.sil.org/OFL</string>
+		<key>openTypeNamePreferredFamilyName</key>
+		<string>Sparks</string>
+		<key>openTypeNamePreferredSubfamilyName</key>
+		<string>Bar Wide</string>
+		<key>openTypeOS2CodePageRanges</key>
+		<array>
+			<integer>0</integer>
+		</array>
+		<key>openTypeOS2Panose</key>
+		<array>
+			<integer>2</integer>
+			<integer>11</integer>
+			<integer>6</integer>
+			<integer>4</integer>
+			<integer>3</integer>
+			<integer>2</integer>
+			<integer>6</integer>
+			<integer>2</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+		</array>
+		<key>openTypeOS2UnicodeRanges</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>37</integer>
+		</array>
+		<key>postscriptBlueValues</key>
+		<array>
+			<integer>-10</integer>
+			<integer>0</integer>
+			<integer>500</integer>
+			<integer>510</integer>
+		</array>
+		<key>postscriptFamilyBlues</key>
+		<array>
+		</array>
+		<key>postscriptFamilyOtherBlues</key>
+		<array>
+		</array>
+		<key>postscriptFontName</key>
+		<string>Sparks-Bar-Wide</string>
+		<key>postscriptFullName</key>
+		<string>Sparks Bar Wide</string>
+		<key>postscriptOtherBlues</key>
+		<array>
+		</array>
+		<key>postscriptStemSnapH</key>
+		<array>
+		</array>
+		<key>postscriptStemSnapV</key>
+		<array>
+		</array>
+		<key>postscriptWeightName</key>
+		<string>Bar Wide</string>
+		<key>styleMapFamilyName</key>
+		<string>Sparks Bar Wide</string>
+		<key>styleName</key>
+		<string>Bar Wide</string>
+		<key>unitsPerEm</key>
+		<integer>1000</integer>
+		<key>versionMajor</key>
+		<integer>2</integer>
+		<key>versionMinor</key>
+		<integer>0</integer>
+		<key>xHeight</key>
+		<integer>500</integer>
+	</dict>
+</plist>

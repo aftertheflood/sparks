@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="eight" format="1">
+	<unicode hex="0038"/>
+	<advance width="450"/>
+	<outline>
+		<contour>
+			<point x="418" y="141" type="curve" smooth="yes"/>
+			<point x="418" y="194"/>
+			<point x="381" y="237"/>
+			<point x="335" y="254" type="curve"/>
+			<point x="335" y="256" type="line"/>
+			<point x="371" y="276"/>
+			<point x="400" y="316"/>
+			<point x="400" y="364" type="curve" smooth="yes"/>
+			<point x="400" y="452"/>
+			<point x="331" y="510"/>
+			<point x="226" y="510" type="curve" smooth="yes"/>
+			<point x="121" y="510"/>
+			<point x="50" y="456"/>
+			<point x="50" y="368" type="curve" smooth="yes"/>
+			<point x="50" y="319"/>
+			<point x="80" y="277"/>
+			<point x="117" y="256" type="curve"/>
+			<point x="117" y="254" type="line"/>
+			<point x="70" y="236"/>
+			<point x="32" y="194"/>
+			<point x="32" y="139" type="curve" smooth="yes"/>
+			<point x="32" y="40"/>
+			<point x="113" y="-10"/>
+			<point x="227" y="-10" type="curve" smooth="yes"/>
+			<point x="341" y="-10"/>
+			<point x="418" y="42"/>
+		</contour>
+		<contour>
+			<point x="226" y="282" type="curve" smooth="yes"/>
+			<point x="171" y="282"/>
+			<point x="133" y="311"/>
+			<point x="133" y="360" type="curve"/>
+			<point x="133" y="409"/>
+			<point x="169" y="440"/>
+			<point x="224" y="440" type="curve" smooth="yes"/>
+			<point x="279" y="440"/>
+			<point x="317" y="411"/>
+			<point x="317" y="362" type="curve" smooth="yes"/>
+			<point x="317" y="313"/>
+			<point x="281" y="282"/>
+		</contour>
+		<contour>
+			<point x="224" y="223" type="curve" smooth="yes"/>
+			<point x="290" y="223"/>
+			<point x="331" y="193"/>
+			<point x="331" y="142" type="curve" smooth="yes"/>
+			<point x="331" y="91"/>
+			<point x="292" y="59"/>
+			<point x="226" y="59" type="curve" smooth="yes"/>
+			<point x="160" y="59"/>
+			<point x="119" y="89"/>
+			<point x="119" y="140" type="curve"/>
+			<point x="119" y="191"/>
+			<point x="158" y="223"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2018-01-15 13:06:08 +0000</string>
+			<key>com.typemytype.robofont.guides</key>
+			<array>
+				<dict>
+					<key>angle</key>
+					<integer>90</integer>
+					<key>isGlobal</key>
+					<false/>
+					<key>magnetic</key>
+					<integer>5</integer>
+					<key>x</key>
+					<integer>220</integer>
+					<key>y</key>
+					<integer>382</integer>
+				</dict>
+			</array>
+		</dict>
+	</lib>
+</glyph>

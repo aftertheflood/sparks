@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ucircumflex" format="1">
+	<unicode hex="00FB"/>
+	<advance width="494"/>
+	<outline>
+		<component base="u"/>
+		<component base="circumflex" xOffset="39"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.mark</key>
+			<array>
+				<real>0.6285388509</real>
+				<real>0.9191939843</real>
+				<real>0.613197896</real>
+				<integer>1</integer>
+			</array>
+		</dict>
+	</lib>
+</glyph>

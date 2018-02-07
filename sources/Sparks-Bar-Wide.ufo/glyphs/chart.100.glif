@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="chart.100" format="1">
+	<advance width="500"/>
+	<outline>
+		<component base="chart.primitive" yScale="101"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.guides</key>
+			<array>
+				<dict>
+					<key>angle</key>
+					<integer>0</integer>
+					<key>isGlobal</key>
+					<false/>
+					<key>magnetic</key>
+					<integer>5</integer>
+					<key>name</key>
+					<key>x</key>
+					<integer>51</integer>
+					<key>y</key>
+					<integer>707</integer>
+				</dict>
+			</array>
+		</dict>
+	</lib>
+</glyph>

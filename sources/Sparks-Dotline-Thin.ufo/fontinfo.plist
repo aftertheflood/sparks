@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>ascender</key>
+		<integer>700</integer>
+		<key>capHeight</key>
+		<integer>700</integer>
+		<key>copyright</key>
+		<string>Copyright (c) 2017 Sparks Project Authors</string>
+		<key>descender</key>
+		<integer>-250</integer>
+		<key>familyName</key>
+		<string>Sparks</string>
+		<key>openTypeHeadCreated</key>
+		<string>2018/01/25 13:06:08</string>
+		<key>openTypeHheaLineGap</key>
+		<integer>0</integer>
+		<key>openTypeNameDesigner</key>
+		<string>After the flood</string>
+		<key>openTypeNameDesignerURL</key>
+		<string>aftertheflood.co</string>
+		<key>openTypeNameLicense</key>
+		<string>This Font Software is licensed under the SIL Open Font License v1.1. This license is available with a FAQ at http://scripts.sil.org/OFL</string>
+		<key>openTypeNameLicenseURL</key>
+		<string>http://scripts.sil.org/OFL</string>
+		<key>openTypeNamePreferredFamilyName</key>
+		<string>Sparks</string>
+		<key>openTypeNamePreferredSubfamilyName</key>
+		<string>Dot-line Thin</string>
+		<key>openTypeOS2CodePageRanges</key>
+		<array>
+			<integer>0</integer>
+		</array>
+		<key>openTypeOS2UnicodeRanges</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+		</array>
+		<key>openTypeOS2WeightClass</key>
+		<integer>400</integer>
+		<key>openTypeOS2WidthClass</key>
+		<integer>5</integer>
+		<key>postscriptBlueValues</key>
+		<array>
+		</array>
+		<key>postscriptFamilyBlues</key>
+		<array>
+		</array>
+		<key>postscriptFamilyOtherBlues</key>
+		<array>
+		</array>
+		<key>postscriptFontName</key>
+		<string>Sparks-Dotline-Thin</string>
+		<key>postscriptFullName</key>
+		<string>Sparks Dot-line Thin</string>
+		<key>postscriptOtherBlues</key>
+		<array>
+		</array>
+		<key>postscriptStemSnapH</key>
+		<array>
+		</array>
+		<key>postscriptStemSnapV</key>
+		<array>
+		</array>
+		<key>styleMapFamilyName</key>
+		<string>Sparks Dot-line Thin</string>
+		<key>styleMapStyleName</key>
+		<string>regular</string>
+		<key>styleName</key>
+		<string>Dot-line Thin</string>
+		<key>unitsPerEm</key>
+		<integer>1000</integer>
+		<key>versionMajor</key>
+		<integer>2</integer>
+		<key>versionMinor</key>
+		<integer>0</integer>
+		<key>xHeight</key>
+		<integer>500</integer>
+	</dict>
+</plist>

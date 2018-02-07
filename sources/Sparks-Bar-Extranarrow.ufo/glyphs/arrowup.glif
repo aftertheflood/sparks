@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arrowup" format="1">
+	<unicode hex="2191"/>
+	<advance width="528"/>
+	<outline>
+		<component base="arrowleft" xScale="0" xyScale="-1" yxScale="1" yScale="0" xOffset="14" yOffset="707"/>
+	</outline>
+</glyph>

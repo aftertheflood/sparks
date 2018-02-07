@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="backslash" format="1">
+	<unicode hex="005C"/>
+	<advance width="436"/>
+	<outline>
+		<component base="slash" xScale="-1" xOffset="436"/>
+	</outline>
+</glyph>

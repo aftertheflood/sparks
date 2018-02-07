@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="arrowNW" format="1">
-  <advance width="555.6753236814714"/>
-  <unicode hex="2196"/>
-  <outline>
-    <component base="arrowleft" xScale="0.7071067811865476" xyScale="-0.7071067811865475" yxScale="0.7071067811865475" yScale="0.7071067811865476" xOffset="-140" yOffset="330"/>
-  </outline>
-</glyph>

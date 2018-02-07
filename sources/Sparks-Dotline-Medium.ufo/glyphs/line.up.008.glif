@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="line.up.008" format="1">
+  <advance width="350"/>
+  <outline>
+    <contour>
+      <point x="85" y="-23" type="line"/>
+      <point x="435" y="33" type="line"/>
+      <point x="435" y="79" type="line"/>
+      <point x="85" y="23" type="line"/>
+    </contour>
+    <component base="chart.dot"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2018-01-15 13:06:08 +0000</string>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.1235</real>
+        <real>1.0</real>
+        <real>0.8939</real>
+        <real>1.0</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,726 @@
+@punctuation.lower = [ underscore period comma ellipsis ];
+@punctuation.upper = [ quotesingle quotedbl quoteright quoteleft quotedblright quotedblleft asterisk ];
+@round.left = [ C Ccedilla G O Ograve Oacute Ocircumflex Otilde Odieresis Q Oslash OE c ccedilla g o ograve oacute ocircumflex otilde odieresis q oslash oe ];
+@round.right = [ D G O Ograve Oacute Ocircumflex Otilde Odieresis Q Eth Oslash d g o ograve oacute ocircumflex otilde odieresis q eth oslash ];
+@slant.up.left = [ A Agrave Aacute Acircumflex Atilde Adieresis Aring AE a agrave aacute acircumflex atilde adieresis aring ae ];
+@slant.up.right = [ T V W Y Yacute t v w y yacute ydieresis ];
+@slant.down.left = [ T V W Y Yacute t v w y yacute ydieresis ];
+@slant.down.right = [ A Agrave Aacute Acircumflex Atilde Adieresis Aring L a agrave aacute acircumflex atilde adieresis aring l ];
+@numerals = [ zero one two three four five six seven eight nine ];
+@theChart = [
+  chart.000 chart.001 chart.002 chart.003 chart.004 chart.005 chart.006 chart.007 chart.008 chart.009
+  chart.010 chart.011 chart.012 chart.013 chart.014 chart.015 chart.016 chart.017 chart.018 chart.019
+  chart.020 chart.021 chart.022 chart.023 chart.024 chart.025 chart.026 chart.027 chart.028 chart.029
+  chart.030 chart.031 chart.032 chart.033 chart.034 chart.035 chart.036 chart.037 chart.038 chart.039
+  chart.040 chart.041 chart.042 chart.043 chart.044 chart.045 chart.046 chart.047 chart.048 chart.049
+  chart.050 chart.051 chart.052 chart.053 chart.054 chart.055 chart.056 chart.057 chart.058 chart.059
+  chart.060 chart.061 chart.062 chart.063 chart.064 chart.065 chart.066 chart.067 chart.068 chart.069
+  chart.070 chart.071 chart.072 chart.073 chart.074 chart.075 chart.076 chart.077 chart.078 chart.079
+  chart.080 chart.081 chart.082 chart.083 chart.084 chart.085 chart.086 chart.087 chart.088 chart.089
+  chart.090 chart.091 chart.092 chart.093 chart.094 chart.095 chart.096 chart.097 chart.098 chart.099
+  chart.100
+];
+
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+feature calt { #Contextual alternates
+
+  lookup chartSwap {
+      
+    # 0
+
+    ignore sub zero' comma space;
+    sub braceleft' zero' braceright' by chart.000;
+    sub braceleft' zero' comma' by chart.000;
+    sub zero' comma' by chart.000;
+    sub zero' braceright' by chart.000;
+
+    ignore sub one' comma space;
+    sub braceleft' one' braceright' by chart.001;
+    sub braceleft' one' comma' by chart.001;
+    sub one' comma' by chart.001;
+    sub one' braceright' by chart.001;
+
+    ignore sub two' comma space;
+    sub braceleft' two' braceright' by chart.002;
+    sub braceleft' two' comma' by chart.002;
+    sub two' comma' by chart.002;
+    sub two' braceright' by chart.002;
+
+    ignore sub three' comma space;
+    sub braceleft' three' braceright' by chart.003;
+    sub braceleft' three' comma' by chart.003;
+    sub three' comma' by chart.003;
+    sub three' braceright' by chart.003;
+
+    ignore sub four' comma space;
+    sub braceleft' four' braceright' by chart.004;
+    sub braceleft' four' comma' by chart.004;
+    sub four' comma' by chart.004;
+    sub four' braceright' by chart.004;
+
+    ignore sub five' comma space;
+    sub braceleft' five' braceright' by chart.005;
+    sub braceleft' five' comma' by chart.005;
+    sub five' comma' by chart.005;
+    sub five' braceright' by chart.005;
+
+    ignore sub six' comma space;
+    sub braceleft' six' braceright' by chart.006;
+    sub braceleft' six' comma' by chart.006;
+    sub six' comma' by chart.006;
+    sub six' braceright' by chart.006;
+
+    ignore sub seven' comma space;
+    sub braceleft' seven' braceright' by chart.007;
+    sub braceleft' seven' comma' by chart.007;
+    sub seven' comma' by chart.007;
+    sub seven' braceright' by chart.007;
+
+    ignore sub eight' comma space;
+    sub braceleft' eight' braceright' by chart.008;
+    sub braceleft' eight' comma' by chart.008;
+    sub eight' comma' by chart.008;
+    sub eight' braceright' by chart.008;
+
+    ignore sub nine' comma space;
+    sub braceleft' nine' braceright' by chart.009;
+    sub braceleft' nine' comma' by chart.009;
+    sub nine' comma' by chart.009;
+    sub nine' braceright' by chart.009;
+
+    # 10
+
+    ignore sub one' zero' comma space;
+    sub braceleft' one' zero' braceright' by chart.010;
+    sub braceleft' one' zero' comma' by chart.010;
+    sub one' zero' comma' by chart.010;
+    sub one' zero' braceright' by chart.010;
+
+    ignore sub one' one' comma space;
+    sub braceleft' one' one' braceright' by chart.011;
+    sub braceleft' one' one' comma' by chart.011;
+    sub one' one' comma' by chart.011;
+    sub one' one' braceright' by chart.011;
+
+    ignore sub one' two' comma space;
+    sub braceleft' one' two' braceright' by chart.012;
+    sub braceleft' one' two' comma' by chart.012;
+    sub one' two' comma' by chart.012;
+    sub one' two' braceright' by chart.012;
+
+    ignore sub one' three' comma space;
+    sub braceleft' one' three' braceright' by chart.013;
+    sub braceleft' one' three' comma' by chart.013;
+    sub one' three' comma' by chart.013;
+    sub one' three' braceright' by chart.013;
+
+    ignore sub one' four' comma space;
+    sub braceleft' one' four' braceright' by chart.014;
+    sub braceleft' one' four' comma' by chart.014;
+    sub one' four' comma' by chart.014;
+    sub one' four' braceright' by chart.014;
+
+    ignore sub one' five' comma space;
+    sub braceleft' one' five' braceright' by chart.015;
+    sub braceleft' one' five' comma' by chart.015;
+    sub one' five' comma' by chart.015;
+    sub one' five' braceright' by chart.015;
+
+    ignore sub one' six' comma space;
+    sub braceleft' one' six' braceright' by chart.016;
+    sub braceleft' one' six' comma' by chart.016;
+    sub one' six' comma' by chart.016;
+    sub one' six' braceright' by chart.016;
+
+    ignore sub one' seven' comma space;
+    sub braceleft' one' seven' braceright' by chart.017;
+    sub braceleft' one' seven' comma' by chart.017;
+    sub one' seven' comma' by chart.017;
+    sub one' seven' braceright' by chart.017;
+
+    ignore sub one' eight' comma space;
+    sub braceleft' one' eight' braceright' by chart.018;
+    sub braceleft' one' eight' comma' by chart.018;
+    sub one' eight' comma' by chart.018;
+    sub one' eight' braceright' by chart.018;
+
+    ignore sub one' nine' comma space;
+    sub braceleft' one' nine' braceright' by chart.019;
+    sub braceleft' one' nine' comma' by chart.019;
+    sub one' nine' comma' by chart.019;
+    sub one' nine' braceright' by chart.019;
+
+    # 20
+
+    ignore sub two' zero' comma space;
+    sub braceleft' two' zero' braceright' by chart.020;
+    sub braceleft' two' zero' comma' by chart.020;
+    sub two' zero' comma' by chart.020;
+    sub two' zero' braceright' by chart.020;
+
+    ignore sub two' one' comma space;
+    sub braceleft' two' one' braceright' by chart.021;
+    sub braceleft' two' one' comma' by chart.021;
+    sub two' one' comma' by chart.021;
+    sub two' one' braceright' by chart.021;
+
+    ignore sub two' two' comma space;
+    sub braceleft' two' two' braceright' by chart.022;
+    sub braceleft' two' two' comma' by chart.022;
+    sub two' two' comma' by chart.022;
+    sub two' two' braceright' by chart.022;
+
+    ignore sub two' three' comma space;
+    sub braceleft' two' three' braceright' by chart.023;
+    sub braceleft' two' three' comma' by chart.023;
+    sub two' three' comma' by chart.023;
+    sub two' three' braceright' by chart.023;
+
+    ignore sub two' four' comma space;
+    sub braceleft' two' four' braceright' by chart.024;
+    sub braceleft' two' four' comma' by chart.024;
+    sub two' four' comma' by chart.024;
+    sub two' four' braceright' by chart.024;
+
+    ignore sub two' five' comma space;
+    sub braceleft' two' five' braceright' by chart.025;
+    sub braceleft' two' five' comma' by chart.025;
+    sub two' five' comma' by chart.025;
+    sub two' five' braceright' by chart.025;
+
+    ignore sub two' six' comma space;
+    sub braceleft' two' six' braceright' by chart.026;
+    sub braceleft' two' six' comma' by chart.026;
+    sub two' six' comma' by chart.026;
+    sub two' six' braceright' by chart.026;
+
+    ignore sub two' seven' comma space;
+    sub braceleft' two' seven' braceright' by chart.027;
+    sub braceleft' two' seven' comma' by chart.027;
+    sub two' seven' comma' by chart.027;
+    sub two' seven' braceright' by chart.027;
+
+    ignore sub two' eight' comma space;
+    sub braceleft' two' eight' braceright' by chart.028;
+    sub braceleft' two' eight' comma' by chart.028;
+    sub two' eight' comma' by chart.028;
+    sub two' eight' braceright' by chart.028;
+
+    ignore sub two' nine' comma space;
+    sub braceleft' two' nine' braceright' by chart.029;
+    sub braceleft' two' nine' comma' by chart.029;
+    sub two' nine' comma' by chart.029;
+    sub two' nine' braceright' by chart.029;
+
+    # 30
+
+    ignore sub three' zero' comma space;
+    sub braceleft' three' zero' braceright' by chart.030;
+    sub braceleft' three' zero' comma' by chart.030;
+    sub three' zero' comma' by chart.030;
+    sub three' zero' braceright' by chart.030;
+
+    ignore sub three' one' comma space;
+    sub braceleft' three' one' braceright' by chart.031;
+    sub braceleft' three' one' comma' by chart.031;
+    sub three' one' comma' by chart.031;
+    sub three' one' braceright' by chart.031;
+
+    ignore sub three' two' comma space;
+    sub braceleft' three' two' braceright' by chart.032;
+    sub braceleft' three' two' comma' by chart.032;
+    sub three' two' comma' by chart.032;
+    sub three' two' braceright' by chart.032;
+
+    ignore sub three' three' comma space;
+    sub braceleft' three' three' braceright' by chart.033;
+    sub braceleft' three' three' comma' by chart.033;
+    sub three' three' comma' by chart.033;
+    sub three' three' braceright' by chart.033;
+
+    ignore sub three' four' comma space;
+    sub braceleft' three' four' braceright' by chart.034;
+    sub braceleft' three' four' comma' by chart.034;
+    sub three' four' comma' by chart.034;
+    sub three' four' braceright' by chart.034;
+
+    ignore sub three' five' comma space;
+    sub braceleft' three' five' braceright' by chart.035;
+    sub braceleft' three' five' comma' by chart.035;
+    sub three' five' comma' by chart.035;
+    sub three' five' braceright' by chart.035;
+
+    ignore sub three' six' comma space;
+    sub braceleft' three' six' braceright' by chart.036;
+    sub braceleft' three' six' comma' by chart.036;
+    sub three' six' comma' by chart.036;
+    sub three' six' braceright' by chart.036;
+
+    ignore sub three' seven' comma space;
+    sub braceleft' three' seven' braceright' by chart.037;
+    sub braceleft' three' seven' comma' by chart.037;
+    sub three' seven' comma' by chart.037;
+    sub three' seven' braceright' by chart.037;
+
+    ignore sub three' eight' comma space;
+    sub braceleft' three' eight' braceright' by chart.038;
+    sub braceleft' three' eight' comma' by chart.038;
+    sub three' eight' comma' by chart.038;
+    sub three' eight' braceright' by chart.038;
+
+    ignore sub three' nine' comma space;
+    sub braceleft' three' nine' braceright' by chart.039;
+    sub braceleft' three' nine' comma' by chart.039;
+    sub three' nine' comma' by chart.039;
+    sub three' nine' braceright' by chart.039;
+
+    # 40
+
+    ignore sub four' zero' comma space;
+    sub braceleft' four' zero' braceright' by chart.040;
+    sub braceleft' four' zero' comma' by chart.040;
+    sub four' zero' comma' by chart.040;
+    sub four' zero' braceright' by chart.040;
+
+    ignore sub four' one' comma space;
+    sub braceleft' four' one' braceright' by chart.041;
+    sub braceleft' four' one' comma' by chart.041;
+    sub four' one' comma' by chart.041;
+    sub four' one' braceright' by chart.041;
+
+    ignore sub four' two' comma space;
+    sub braceleft' four' two' braceright' by chart.042;
+    sub braceleft' four' two' comma' by chart.042;
+    sub four' two' comma' by chart.042;
+    sub four' two' braceright' by chart.042;
+
+    ignore sub four' three' comma space;
+    sub braceleft' four' three' braceright' by chart.043;
+    sub braceleft' four' three' comma' by chart.043;
+    sub four' three' comma' by chart.043;
+    sub four' three' braceright' by chart.043;
+
+    ignore sub four' four' comma space;
+    sub braceleft' four' four' braceright' by chart.044;
+    sub braceleft' four' four' comma' by chart.044;
+    sub four' four' comma' by chart.044;
+    sub four' four' braceright' by chart.044;
+
+    ignore sub four' five' comma space;
+    sub braceleft' four' five' braceright' by chart.045;
+    sub braceleft' four' five' comma' by chart.045;
+    sub four' five' comma' by chart.045;
+    sub four' five' braceright' by chart.045;
+
+    ignore sub four' six' comma space;
+    sub braceleft' four' six' braceright' by chart.046;
+    sub braceleft' four' six' comma' by chart.046;
+    sub four' six' comma' by chart.046;
+    sub four' six' braceright' by chart.046;
+
+    ignore sub four' seven' comma space;
+    sub braceleft' four' seven' braceright' by chart.047;
+    sub braceleft' four' seven' comma' by chart.047;
+    sub four' seven' comma' by chart.047;
+    sub four' seven' braceright' by chart.047;
+
+    ignore sub four' eight' comma space;
+    sub braceleft' four' eight' braceright' by chart.048;
+    sub braceleft' four' eight' comma' by chart.048;
+    sub four' eight' comma' by chart.048;
+    sub four' eight' braceright' by chart.048;
+
+    ignore sub four' nine' comma space;
+    sub braceleft' four' nine' braceright' by chart.049;
+    sub braceleft' four' nine' comma' by chart.049;
+    sub four' nine' comma' by chart.049;
+    sub four' nine' braceright' by chart.049;
+
+    # 50
+
+    ignore sub five' zero' comma space;
+    sub braceleft' five' zero' braceright' by chart.050;
+    sub braceleft' five' zero' comma' by chart.050;
+    sub five' zero' comma' by chart.050;
+    sub five' zero' braceright' by chart.050;
+
+    ignore sub five' one' comma space;
+    sub braceleft' five' one' braceright' by chart.051;
+    sub braceleft' five' one' comma' by chart.051;
+    sub five' one' comma' by chart.051;
+    sub five' one' braceright' by chart.051;
+
+    ignore sub five' two' comma space;
+    sub braceleft' five' two' braceright' by chart.052;
+    sub braceleft' five' two' comma' by chart.052;
+    sub five' two' comma' by chart.052;
+    sub five' two' braceright' by chart.052;
+
+    ignore sub five' three' comma space;
+    sub braceleft' five' three' braceright' by chart.053;
+    sub braceleft' five' three' comma' by chart.053;
+    sub five' three' comma' by chart.053;
+    sub five' three' braceright' by chart.053;
+
+    ignore sub five' four' comma space;
+    sub braceleft' five' four' braceright' by chart.054;
+    sub braceleft' five' four' comma' by chart.054;
+    sub five' four' comma' by chart.054;
+    sub five' four' braceright' by chart.054;
+
+    ignore sub five' five' comma space;
+    sub braceleft' five' five' braceright' by chart.055;
+    sub braceleft' five' five' comma' by chart.055;
+    sub five' five' comma' by chart.055;
+    sub five' five' braceright' by chart.055;
+
+    ignore sub five' six' comma space;
+    sub braceleft' five' six' braceright' by chart.056;
+    sub braceleft' five' six' comma' by chart.056;
+    sub five' six' comma' by chart.056;
+    sub five' six' braceright' by chart.056;
+
+    ignore sub five' seven' comma space;
+    sub braceleft' five' seven' braceright' by chart.057;
+    sub braceleft' five' seven' comma' by chart.057;
+    sub five' seven' comma' by chart.057;
+    sub five' seven' braceright' by chart.057;
+
+    ignore sub five' eight' comma space;
+    sub braceleft' five' eight' braceright' by chart.058;
+    sub braceleft' five' eight' comma' by chart.058;
+    sub five' eight' comma' by chart.058;
+    sub five' eight' braceright' by chart.058;
+
+    ignore sub five' nine' comma space;
+    sub braceleft' five' nine' braceright' by chart.059;
+    sub braceleft' five' nine' comma' by chart.059;
+    sub five' nine' comma' by chart.059;
+    sub five' nine' braceright' by chart.059;
+
+    # 60
+
+    ignore sub six' zero' comma space;
+    sub braceleft' six' zero' braceright' by chart.060;
+    sub braceleft' six' zero' comma' by chart.060;
+    sub six' zero' comma' by chart.060;
+    sub six' zero' braceright' by chart.060;
+
+    ignore sub six' one' comma space;
+    sub braceleft' six' one' braceright' by chart.061;
+    sub braceleft' six' one' comma' by chart.061;
+    sub six' one' comma' by chart.061;
+    sub six' one' braceright' by chart.061;
+
+    ignore sub six' two' comma space;
+    sub braceleft' six' two' braceright' by chart.062;
+    sub braceleft' six' two' comma' by chart.062;
+    sub six' two' comma' by chart.062;
+    sub six' two' braceright' by chart.062;
+
+    ignore sub six' three' comma space;
+    sub braceleft' six' three' braceright' by chart.063;
+    sub braceleft' six' three' comma' by chart.063;
+    sub six' three' comma' by chart.063;
+    sub six' three' braceright' by chart.063;
+
+    ignore sub six' four' comma space;
+    sub braceleft' six' four' braceright' by chart.064;
+    sub braceleft' six' four' comma' by chart.064;
+    sub six' four' comma' by chart.064;
+    sub six' four' braceright' by chart.064;
+
+    ignore sub six' five' comma space;
+    sub braceleft' six' five' braceright' by chart.065;
+    sub braceleft' six' five' comma' by chart.065;
+    sub six' five' comma' by chart.065;
+    sub six' five' braceright' by chart.065;
+
+    ignore sub six' six' comma space;
+    sub braceleft' six' six' braceright' by chart.066;
+    sub braceleft' six' six' comma' by chart.066;
+    sub six' six' comma' by chart.066;
+    sub six' six' braceright' by chart.066;
+
+    ignore sub six' seven' comma space;
+    sub braceleft' six' seven' braceright' by chart.067;
+    sub braceleft' six' seven' comma' by chart.067;
+    sub six' seven' comma' by chart.067;
+    sub six' seven' braceright' by chart.067;
+
+    ignore sub six' eight' comma space;
+    sub braceleft' six' eight' braceright' by chart.068;
+    sub braceleft' six' eight' comma' by chart.068;
+    sub six' eight' comma' by chart.068;
+    sub six' eight' braceright' by chart.068;
+
+    ignore sub six' nine' comma space;
+    sub braceleft' six' nine' braceright' by chart.069;
+    sub braceleft' six' nine' comma' by chart.069;
+    sub six' nine' comma' by chart.069;
+    sub six' nine' braceright' by chart.069;
+
+    # 70
+
+    ignore sub seven' zero' comma space;
+    sub braceleft' seven' zero' braceright' by chart.070;
+    sub braceleft' seven' zero' comma' by chart.070;
+    sub seven' zero' comma' by chart.070;
+    sub seven' zero' braceright' by chart.070;
+
+    ignore sub seven' one' comma space;
+    sub braceleft' seven' one' braceright' by chart.071;
+    sub braceleft' seven' one' comma' by chart.071;
+    sub seven' one' comma' by chart.071;
+    sub seven' one' braceright' by chart.071;
+
+    ignore sub seven' two' comma space;
+    sub braceleft' seven' two' braceright' by chart.072;
+    sub braceleft' seven' two' comma' by chart.072;
+    sub seven' two' comma' by chart.072;
+    sub seven' two' braceright' by chart.072;
+
+    ignore sub seven' three' comma space;
+    sub braceleft' seven' three' braceright' by chart.073;
+    sub braceleft' seven' three' comma' by chart.073;
+    sub seven' three' comma' by chart.073;
+    sub seven' three' braceright' by chart.073;
+
+    ignore sub seven' four' comma space;
+    sub braceleft' seven' four' braceright' by chart.074;
+    sub braceleft' seven' four' comma' by chart.074;
+    sub seven' four' comma' by chart.074;
+    sub seven' four' braceright' by chart.074;
+
+    ignore sub seven' five' comma space;
+    sub braceleft' seven' five' braceright' by chart.075;
+    sub braceleft' seven' five' comma' by chart.075;
+    sub seven' five' comma' by chart.075;
+    sub seven' five' braceright' by chart.075;
+
+    ignore sub seven' six' comma space;
+    sub braceleft' seven' six' braceright' by chart.076;
+    sub braceleft' seven' six' comma' by chart.076;
+    sub seven' six' comma' by chart.076;
+    sub seven' six' braceright' by chart.076;
+
+    ignore sub seven' seven' comma space;
+    sub braceleft' seven' seven' braceright' by chart.077;
+    sub braceleft' seven' seven' comma' by chart.077;
+    sub seven' seven' comma' by chart.077;
+    sub seven' seven' braceright' by chart.077;
+
+    ignore sub seven' eight' comma space;
+    sub braceleft' seven' eight' braceright' by chart.078;
+    sub braceleft' seven' eight' comma' by chart.078;
+    sub seven' eight' comma' by chart.078;
+    sub seven' eight' braceright' by chart.078;
+
+    ignore sub seven' nine' comma space;
+    sub braceleft' seven' nine' braceright' by chart.079;
+    sub braceleft' seven' nine' comma' by chart.079;
+    sub seven' nine' comma' by chart.079;
+    sub seven' nine' braceright' by chart.079;
+
+    # 80
+
+    ignore sub eight' zero' comma space;
+    sub braceleft' eight' zero' braceright' by chart.080;
+    sub braceleft' eight' zero' comma' by chart.080;
+    sub eight' zero' comma' by chart.080;
+    sub eight' zero' braceright' by chart.080;
+
+    ignore sub eight' one' comma space;
+    sub braceleft' eight' one' braceright' by chart.081;
+    sub braceleft' eight' one' comma' by chart.081;
+    sub eight' one' comma' by chart.081;
+    sub eight' one' braceright' by chart.081;
+
+    ignore sub eight' two' comma space;
+    sub braceleft' eight' two' braceright' by chart.082;
+    sub braceleft' eight' two' comma' by chart.082;
+    sub eight' two' comma' by chart.082;
+    sub eight' two' braceright' by chart.082;
+
+    ignore sub eight' three' comma space;
+    sub braceleft' eight' three' braceright' by chart.083;
+    sub braceleft' eight' three' comma' by chart.083;
+    sub eight' three' comma' by chart.083;
+    sub eight' three' braceright' by chart.083;
+
+    ignore sub eight' four' comma space;
+    sub braceleft' eight' four' braceright' by chart.084;
+    sub braceleft' eight' four' comma' by chart.084;
+    sub eight' four' comma' by chart.084;
+    sub eight' four' braceright' by chart.084;
+
+    ignore sub eight' five' comma space;
+    sub braceleft' eight' five' braceright' by chart.085;
+    sub braceleft' eight' five' comma' by chart.085;
+    sub eight' five' comma' by chart.085;
+    sub eight' five' braceright' by chart.085;
+
+    ignore sub eight' six' comma space;
+    sub braceleft' eight' six' braceright' by chart.086;
+    sub braceleft' eight' six' comma' by chart.086;
+    sub eight' six' comma' by chart.086;
+    sub eight' six' braceright' by chart.086;
+
+    ignore sub eight' seven' comma space;
+    sub braceleft' eight' seven' braceright' by chart.087;
+    sub braceleft' eight' seven' comma' by chart.087;
+    sub eight' seven' comma' by chart.087;
+    sub eight' seven' braceright' by chart.087;
+
+    ignore sub eight' eight' comma space;
+    sub braceleft' eight' eight' braceright' by chart.088;
+    sub braceleft' eight' eight' comma' by chart.088;
+    sub eight' eight' comma' by chart.088;
+    sub eight' eight' braceright' by chart.088;
+
+    ignore sub eight' nine' comma space;
+    sub braceleft' eight' nine' braceright' by chart.089;
+    sub braceleft' eight' nine' comma' by chart.089;
+    sub eight' nine' comma' by chart.089;
+    sub eight' nine' braceright' by chart.089;
+
+    # 90
+
+    ignore sub nine' zero' comma space;
+    sub braceleft' nine' zero' braceright' by chart.090;
+    sub braceleft' nine' zero' comma' by chart.090;
+    sub nine' zero' comma' by chart.090;
+    sub nine' zero' braceright' by chart.090;
+
+    ignore sub nine' one' comma space;
+    sub braceleft' nine' one' braceright' by chart.091;
+    sub braceleft' nine' one' comma' by chart.091;
+    sub nine' one' comma' by chart.091;
+    sub nine' one' braceright' by chart.091;
+
+    ignore sub nine' two' comma space;
+    sub braceleft' nine' two' braceright' by chart.092;
+    sub braceleft' nine' two' comma' by chart.092;
+    sub nine' two' comma' by chart.092;
+    sub nine' two' braceright' by chart.092;
+
+    ignore sub nine' three' comma space;
+    sub braceleft' nine' three' braceright' by chart.093;
+    sub braceleft' nine' three' comma' by chart.093;
+    sub nine' three' comma' by chart.093;
+    sub nine' three' braceright' by chart.093;
+
+    ignore sub nine' four' comma space;
+    sub braceleft' nine' four' braceright' by chart.094;
+    sub braceleft' nine' four' comma' by chart.094;
+    sub nine' four' comma' by chart.094;
+    sub nine' four' braceright' by chart.094;
+
+    ignore sub nine' five' comma space;
+    sub braceleft' nine' five' braceright' by chart.095;
+    sub braceleft' nine' five' comma' by chart.095;
+    sub nine' five' comma' by chart.095;
+    sub nine' five' braceright' by chart.095;
+
+    ignore sub nine' six' comma space;
+    sub braceleft' nine' six' braceright' by chart.096;
+    sub braceleft' nine' six' comma' by chart.096;
+    sub nine' six' comma' by chart.096;
+    sub nine' six' braceright' by chart.096;
+
+    ignore sub nine' seven' comma space;
+    sub braceleft' nine' seven' braceright' by chart.097;
+    sub braceleft' nine' seven' comma' by chart.097;
+    sub nine' seven' comma' by chart.097;
+    sub nine' seven' braceright' by chart.097;
+
+    ignore sub nine' eight' comma space;
+    sub braceleft' nine' eight' braceright' by chart.098;
+    sub braceleft' nine' eight' comma' by chart.098;
+    sub nine' eight' comma' by chart.098;
+    sub nine' eight' braceright' by chart.098;
+
+    ignore sub nine' nine' comma space;
+    sub braceleft' nine' nine' braceright' by chart.099;
+    sub braceleft' nine' nine' comma' by chart.099;
+    sub nine' nine' comma' by chart.099;
+    sub nine' nine' braceright' by chart.099;
+
+    # 100
+
+    ignore sub one' zero' zero' comma space;
+    sub braceleft' one' zero' zero' braceright' by chart.100;
+    sub braceleft' one' zero' zero' comma' by chart.100;
+    sub one' zero' zero' comma' by chart.100;
+    sub one' zero' zero' braceright' by chart.100;
+
+  } chartSwap; 
+
+  # Circled letters
+  lookup circledLetters {
+    sub braceleft' w' braceright' by circle.w;
+    sub braceleft' W' braceright' by circle.w;
+    sub braceleft' l' braceright' by circle.l;
+    sub braceleft' L' braceright' by circle.l;
+    sub braceleft' d' braceright' by circle.d;
+    sub braceleft' D' braceright' by circle.d;
+  } circledLetters;
+
+  # Circled arrows
+  lookup circledArrows {
+    sub braceleft' u' p' braceright' by circle.arrowup;
+    sub braceleft' d' o' w' n' braceright' by circle.arrowdown;
+  } circledArrows;
+
+} calt;
+
+feature kern {
+  lookup kernNormal {
+  	lookupflag IgnoreMarks;
+  	pos @punctuation.lower @slant.down.left -70;
+  	pos @punctuation.upper @round.left -10;
+  	pos @punctuation.upper @slant.up.left -50;
+  	pos @round.right @punctuation.upper -10;
+  	pos @round.right @slant.down.left -20;
+  	pos @round.right @slant.up.left -20;
+  	pos @slant.down.right @punctuation.upper -50;
+  	pos @slant.down.right @round.left -20;
+  	pos @slant.up.right @punctuation.lower -70;
+  	pos @slant.up.right @round.left -20;
+  	pos P @slant.up.left -35;
+  	pos p @slant.up.left -35;
+  } kernNormal;
+
+  lookup kernCharts {
+    lookupflag IgnoreMarks;
+    pos @numerals @theChart 100;
+    pos @theChart @numerals 100;
+  } kernCharts;
+} kern;
+
+feature aalt {
+feature calt;
+feature sups;
+feature frac;
+feature ordn;
+} aalt;
+
+feature sups {
+sub one by onesuperior;
+sub two by twosuperior;
+sub three by threesuperior;
+} sups;
+
+feature frac {
+sub one slash four by onequarter;
+sub one slash two by onehalf;
+sub three slash four by threequarters;
+} frac;
+
+feature ordn {
+sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+} ordn;
+

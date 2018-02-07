@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="chart.dot" format="1">
+	<advance width="170"/>
+	<outline>
+		<contour>
+			<point x="85" y="-50" type="curve" smooth="yes"/>
+			<point x="112" y="-50"/>
+			<point x="135" y="-27"/>
+			<point x="135" y="0" type="curve" smooth="yes"/>
+			<point x="135" y="27"/>
+			<point x="112" y="50"/>
+			<point x="85" y="50" type="curve" smooth="yes"/>
+			<point x="58" y="50"/>
+			<point x="35" y="27"/>
+			<point x="35" y="0" type="curve" smooth="yes"/>
+			<point x="35" y="-27"/>
+			<point x="58" y="-50"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2018-01-15 13:06:08 +0000</string>
+			<key>com.typemytype.robofont.mark</key>
+			<array>
+				<real>0.426</real>
+				<integer>1</integer>
+				<real>0.912</real>
+				<integer>1</integer>
+			</array>
+		</dict>
+	</lib>
+</glyph>

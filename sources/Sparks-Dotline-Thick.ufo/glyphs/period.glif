@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="period" format="1">
+	<unicode hex="002E"/>
+	<advance width="220"/>
+	<outline>
+		<contour>
+			<point x="55" y="115" type="line"/>
+			<point x="55" y="0" type="line"/>
+			<point x="165" y="0" type="line"/>
+			<point x="165" y="115" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2018-01-15 13:06:08 +0000</string>
+		</dict>
+	</lib>
+</glyph>

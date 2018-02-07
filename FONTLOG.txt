@@ -1,0 +1,40 @@
+FONTLOG for the Sparks fonts
+
+This file provides detailed information on the Sparks Font Software.
+This information should be distributed along with the Sparks fonts and any derivative works.
+
+Basic Font Information
+
+Sparks is a font family for creating sparklines charts in text via OpenType contextual substitutions.
+
+Sparks currently features three styles (bar, dot, and dot-line), each of which has five weights.
+
+To contribute to the project contact Mike Gallagher at mike@aftertheflood.co
+
+ChangeLog
+
+7 Febrary 2018 (Mike Gallagher) Sparks 2.000
+- Rationalise the weight system
+- Expand the capacity of the dot-line fonts (0–100)
+- Standardize the version numbering across all variants
+- Add all glyphs required by the Google Fonts character set
+- Add (limited) kerning 
+
+18 January 2018 (Mike Gallagher) Sparks 1.017
+- Fix a bug in the dot-line font for "{0,0...}"
+
+16 August 2017 (Mike Gallagher) Sparks v1.000
+- Initial release
+
+Acknowledgements
+
+If you make modifications be sure to add your name (N),
+email (E), web-address (if you have one) (W) and
+description (D). This list is in alphabetical order.
+
+N: Mike Gallagher
+E: mike@aftertheflood.co / mail@mikegallagher.org
+W: https://aftertheflood.co / http://mikegallagher.org
+D: Designer
+
+After the Flood is a design company based in London. We make new digital products and we believe data is the building material of the modern, 21st-century business.

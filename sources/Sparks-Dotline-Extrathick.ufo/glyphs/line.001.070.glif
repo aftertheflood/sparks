@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="line.001.070" format="1">
+	<advance width="350"/>
+	<outline>
+		<component base="line.up.069" yOffset="7"/>
+	</outline>
+</glyph>

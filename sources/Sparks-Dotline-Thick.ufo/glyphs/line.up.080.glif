@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="line.up.080" format="1">
+	<advance width="350"/>
+	<outline>
+		<contour>
+			<point x="121" y="0" type="line"/>
+			<point x="471" y="560" type="line"/>
+			<point x="399" y="560" type="line"/>
+			<point x="49" y="0" type="line"/>
+		</contour>
+		<component base="chart.dot"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2018-01-15 13:06:08 +0000</string>
+			<key>com.typemytype.robofont.guides</key>
+			<array>
+				<dict>
+					<key>angle</key>
+					<integer>0</integer>
+					<key>isGlobal</key>
+					<false/>
+					<key>magnetic</key>
+					<integer>5</integer>
+					<key>x</key>
+					<integer>454</integer>
+					<key>y</key>
+					<integer>560</integer>
+				</dict>
+			</array>
+			<key>com.typemytype.robofont.mark</key>
+			<array>
+				<real>0.123</real>
+				<integer>1</integer>
+				<real>0.894</real>
+				<integer>1</integer>
+			</array>
+		</dict>
+	</lib>
+</glyph>

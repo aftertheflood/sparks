@@ -1,0 +1,2348 @@
+@punctuation.lower = [ underscore period comma ellipsis ];
+
+@punctuation.upper = [ quotesingle quotedbl quoteright quoteleft quotedblright quotedblleft asterisk ];
+
+@round.left = [ C Ccedilla G O Ograve Oacute Ocircumflex Otilde Odieresis Q Oslash OE c ccedilla g o ograve oacute ocircumflex otilde odieresis q oslash oe ];
+
+@round.right = [ D G O Ograve Oacute Ocircumflex Otilde Odieresis Q Eth Oslash d g o ograve oacute ocircumflex otilde odieresis q eth oslash ];
+
+@slant.up.left = [ A Agrave Aacute Acircumflex Atilde Adieresis Aring AE a agrave aacute acircumflex atilde adieresis aring ae ];
+
+@slant.up.right = [ T V W Y Yacute t v w y yacute ydieresis ];
+
+@slant.down.left = [ T V W Y Yacute t v w y yacute ydieresis ];
+
+@slant.down.right = [ A Agrave Aacute Acircumflex Atilde Adieresis Aring L a agrave aacute acircumflex atilde adieresis aring l ];
+
+@numerals = [ zero one two three four five six seven eight nine ];
+
+@theDots = [ 
+  dot.000 dot.001 dot.002 dot.003 dot.004 dot.005 dot.006 dot.007 dot.008 dot.009
+  dot.010 dot.011 dot.012 dot.013 dot.014 dot.015 dot.016 dot.017 dot.018 dot.019
+  dot.020 dot.021 dot.022 dot.023 dot.024 dot.025 dot.026 dot.027 dot.028 dot.029
+  dot.030 dot.031 dot.032 dot.033 dot.034 dot.035 dot.036 dot.037 dot.038 dot.039
+  dot.040 dot.041 dot.042 dot.043 dot.044 dot.045 dot.046 dot.047 dot.048 dot.049
+  dot.050 dot.051 dot.052 dot.053 dot.054 dot.055 dot.056 dot.057 dot.058 dot.059
+  dot.060 dot.061 dot.062 dot.063 dot.064 dot.065 dot.066 dot.067 dot.068 dot.069
+  dot.070 dot.071 dot.072 dot.073 dot.074 dot.075 dot.076 dot.077 dot.078 dot.079
+  dot.080 dot.081 dot.082 dot.083 dot.084 dot.085 dot.086 dot.087 dot.088 dot.089
+  dot.090 dot.091 dot.092 dot.093 dot.094 dot.095 dot.096 dot.097 dot.098 dot.099
+  dot.100
+ ];
+
+@linesTo000 = [ 
+  line.000.000 line.001.000 line.002.000 line.003.000 line.004.000 line.005.000 line.006.000 line.007.000 line.008.000 line.009.000
+  line.010.000 line.011.000 line.012.000 line.013.000 line.014.000 line.015.000 line.016.000 line.017.000 line.018.000 line.019.000
+  line.020.000 line.021.000 line.022.000 line.023.000 line.024.000 line.025.000 line.026.000 line.027.000 line.028.000 line.029.000
+  line.030.000 line.031.000 line.032.000 line.033.000 line.034.000 line.035.000 line.036.000 line.037.000 line.038.000 line.039.000
+  line.040.000 line.041.000 line.042.000 line.043.000 line.044.000 line.045.000 line.046.000 line.047.000 line.048.000 line.049.000
+  line.050.000 line.051.000 line.052.000 line.053.000 line.054.000 line.055.000 line.056.000 line.057.000 line.058.000 line.059.000
+  line.060.000 line.061.000 line.062.000 line.063.000 line.064.000 line.065.000 line.066.000 line.067.000 line.068.000 line.069.000
+  line.070.000 line.071.000 line.072.000 line.073.000 line.074.000 line.075.000 line.076.000 line.077.000 line.078.000 line.079.000
+  line.080.000 line.081.000 line.082.000 line.083.000 line.084.000 line.085.000 line.086.000 line.087.000 line.088.000 line.089.000
+  line.090.000 line.091.000 line.092.000 line.093.000 line.094.000 line.095.000 line.096.000 line.097.000 line.098.000 line.099.000
+  line.100.000
+ ];
+
+@linesTo001 = [ 
+  line.000.001 line.001.001 line.002.001 line.003.001 line.004.001 line.005.001 line.006.001 line.007.001 line.008.001 line.009.001
+  line.010.001 line.011.001 line.012.001 line.013.001 line.014.001 line.015.001 line.016.001 line.017.001 line.018.001 line.019.001
+  line.020.001 line.021.001 line.022.001 line.023.001 line.024.001 line.025.001 line.026.001 line.027.001 line.028.001 line.029.001
+  line.030.001 line.031.001 line.032.001 line.033.001 line.034.001 line.035.001 line.036.001 line.037.001 line.038.001 line.039.001
+  line.040.001 line.041.001 line.042.001 line.043.001 line.044.001 line.045.001 line.046.001 line.047.001 line.048.001 line.049.001
+  line.050.001 line.051.001 line.052.001 line.053.001 line.054.001 line.055.001 line.056.001 line.057.001 line.058.001 line.059.001
+  line.060.001 line.061.001 line.062.001 line.063.001 line.064.001 line.065.001 line.066.001 line.067.001 line.068.001 line.069.001
+  line.070.001 line.071.001 line.072.001 line.073.001 line.074.001 line.075.001 line.076.001 line.077.001 line.078.001 line.079.001
+  line.080.001 line.081.001 line.082.001 line.083.001 line.084.001 line.085.001 line.086.001 line.087.001 line.088.001 line.089.001
+  line.090.001 line.091.001 line.092.001 line.093.001 line.094.001 line.095.001 line.096.001 line.097.001 line.098.001 line.099.001
+  line.100.001
+ ];
+
+@linesTo002 = [ 
+  line.000.002 line.001.002 line.002.002 line.003.002 line.004.002 line.005.002 line.006.002 line.007.002 line.008.002 line.009.002
+  line.010.002 line.011.002 line.012.002 line.013.002 line.014.002 line.015.002 line.016.002 line.017.002 line.018.002 line.019.002
+  line.020.002 line.021.002 line.022.002 line.023.002 line.024.002 line.025.002 line.026.002 line.027.002 line.028.002 line.029.002
+  line.030.002 line.031.002 line.032.002 line.033.002 line.034.002 line.035.002 line.036.002 line.037.002 line.038.002 line.039.002
+  line.040.002 line.041.002 line.042.002 line.043.002 line.044.002 line.045.002 line.046.002 line.047.002 line.048.002 line.049.002
+  line.050.002 line.051.002 line.052.002 line.053.002 line.054.002 line.055.002 line.056.002 line.057.002 line.058.002 line.059.002
+  line.060.002 line.061.002 line.062.002 line.063.002 line.064.002 line.065.002 line.066.002 line.067.002 line.068.002 line.069.002
+  line.070.002 line.071.002 line.072.002 line.073.002 line.074.002 line.075.002 line.076.002 line.077.002 line.078.002 line.079.002
+  line.080.002 line.081.002 line.082.002 line.083.002 line.084.002 line.085.002 line.086.002 line.087.002 line.088.002 line.089.002
+  line.090.002 line.091.002 line.092.002 line.093.002 line.094.002 line.095.002 line.096.002 line.097.002 line.098.002 line.099.002
+  line.100.002
+ ];
+
+@linesTo003 = [ 
+  line.000.003 line.001.003 line.002.003 line.003.003 line.004.003 line.005.003 line.006.003 line.007.003 line.008.003 line.009.003
+  line.010.003 line.011.003 line.012.003 line.013.003 line.014.003 line.015.003 line.016.003 line.017.003 line.018.003 line.019.003
+  line.020.003 line.021.003 line.022.003 line.023.003 line.024.003 line.025.003 line.026.003 line.027.003 line.028.003 line.029.003
+  line.030.003 line.031.003 line.032.003 line.033.003 line.034.003 line.035.003 line.036.003 line.037.003 line.038.003 line.039.003
+  line.040.003 line.041.003 line.042.003 line.043.003 line.044.003 line.045.003 line.046.003 line.047.003 line.048.003 line.049.003
+  line.050.003 line.051.003 line.052.003 line.053.003 line.054.003 line.055.003 line.056.003 line.057.003 line.058.003 line.059.003
+  line.060.003 line.061.003 line.062.003 line.063.003 line.064.003 line.065.003 line.066.003 line.067.003 line.068.003 line.069.003
+  line.070.003 line.071.003 line.072.003 line.073.003 line.074.003 line.075.003 line.076.003 line.077.003 line.078.003 line.079.003
+  line.080.003 line.081.003 line.082.003 line.083.003 line.084.003 line.085.003 line.086.003 line.087.003 line.088.003 line.089.003
+  line.090.003 line.091.003 line.092.003 line.093.003 line.094.003 line.095.003 line.096.003 line.097.003 line.098.003 line.099.003
+  line.100.003
+ ];
+
+@linesTo004 = [ 
+  line.000.004 line.001.004 line.002.004 line.003.004 line.004.004 line.005.004 line.006.004 line.007.004 line.008.004 line.009.004
+  line.010.004 line.011.004 line.012.004 line.013.004 line.014.004 line.015.004 line.016.004 line.017.004 line.018.004 line.019.004
+  line.020.004 line.021.004 line.022.004 line.023.004 line.024.004 line.025.004 line.026.004 line.027.004 line.028.004 line.029.004
+  line.030.004 line.031.004 line.032.004 line.033.004 line.034.004 line.035.004 line.036.004 line.037.004 line.038.004 line.039.004
+  line.040.004 line.041.004 line.042.004 line.043.004 line.044.004 line.045.004 line.046.004 line.047.004 line.048.004 line.049.004
+  line.050.004 line.051.004 line.052.004 line.053.004 line.054.004 line.055.004 line.056.004 line.057.004 line.058.004 line.059.004
+  line.060.004 line.061.004 line.062.004 line.063.004 line.064.004 line.065.004 line.066.004 line.067.004 line.068.004 line.069.004
+  line.070.004 line.071.004 line.072.004 line.073.004 line.074.004 line.075.004 line.076.004 line.077.004 line.078.004 line.079.004
+  line.080.004 line.081.004 line.082.004 line.083.004 line.084.004 line.085.004 line.086.004 line.087.004 line.088.004 line.089.004
+  line.090.004 line.091.004 line.092.004 line.093.004 line.094.004 line.095.004 line.096.004 line.097.004 line.098.004 line.099.004
+  line.100.004
+ ];
+
+@linesTo005 = [ 
+  line.000.005 line.001.005 line.002.005 line.003.005 line.004.005 line.005.005 line.006.005 line.007.005 line.008.005 line.009.005
+  line.010.005 line.011.005 line.012.005 line.013.005 line.014.005 line.015.005 line.016.005 line.017.005 line.018.005 line.019.005
+  line.020.005 line.021.005 line.022.005 line.023.005 line.024.005 line.025.005 line.026.005 line.027.005 line.028.005 line.029.005
+  line.030.005 line.031.005 line.032.005 line.033.005 line.034.005 line.035.005 line.036.005 line.037.005 line.038.005 line.039.005
+  line.040.005 line.041.005 line.042.005 line.043.005 line.044.005 line.045.005 line.046.005 line.047.005 line.048.005 line.049.005
+  line.050.005 line.051.005 line.052.005 line.053.005 line.054.005 line.055.005 line.056.005 line.057.005 line.058.005 line.059.005
+  line.060.005 line.061.005 line.062.005 line.063.005 line.064.005 line.065.005 line.066.005 line.067.005 line.068.005 line.069.005
+  line.070.005 line.071.005 line.072.005 line.073.005 line.074.005 line.075.005 line.076.005 line.077.005 line.078.005 line.079.005
+  line.080.005 line.081.005 line.082.005 line.083.005 line.084.005 line.085.005 line.086.005 line.087.005 line.088.005 line.089.005
+  line.090.005 line.091.005 line.092.005 line.093.005 line.094.005 line.095.005 line.096.005 line.097.005 line.098.005 line.099.005
+  line.100.005
+ ];
+
+@linesTo006 = [ 
+  line.000.006 line.001.006 line.002.006 line.003.006 line.004.006 line.005.006 line.006.006 line.007.006 line.008.006 line.009.006
+  line.010.006 line.011.006 line.012.006 line.013.006 line.014.006 line.015.006 line.016.006 line.017.006 line.018.006 line.019.006
+  line.020.006 line.021.006 line.022.006 line.023.006 line.024.006 line.025.006 line.026.006 line.027.006 line.028.006 line.029.006
+  line.030.006 line.031.006 line.032.006 line.033.006 line.034.006 line.035.006 line.036.006 line.037.006 line.038.006 line.039.006
+  line.040.006 line.041.006 line.042.006 line.043.006 line.044.006 line.045.006 line.046.006 line.047.006 line.048.006 line.049.006
+  line.050.006 line.051.006 line.052.006 line.053.006 line.054.006 line.055.006 line.056.006 line.057.006 line.058.006 line.059.006
+  line.060.006 line.061.006 line.062.006 line.063.006 line.064.006 line.065.006 line.066.006 line.067.006 line.068.006 line.069.006
+  line.070.006 line.071.006 line.072.006 line.073.006 line.074.006 line.075.006 line.076.006 line.077.006 line.078.006 line.079.006
+  line.080.006 line.081.006 line.082.006 line.083.006 line.084.006 line.085.006 line.086.006 line.087.006 line.088.006 line.089.006
+  line.090.006 line.091.006 line.092.006 line.093.006 line.094.006 line.095.006 line.096.006 line.097.006 line.098.006 line.099.006
+  line.100.006
+ ];
+
+@linesTo007 = [ 
+  line.000.007 line.001.007 line.002.007 line.003.007 line.004.007 line.005.007 line.006.007 line.007.007 line.008.007 line.009.007
+  line.010.007 line.011.007 line.012.007 line.013.007 line.014.007 line.015.007 line.016.007 line.017.007 line.018.007 line.019.007
+  line.020.007 line.021.007 line.022.007 line.023.007 line.024.007 line.025.007 line.026.007 line.027.007 line.028.007 line.029.007
+  line.030.007 line.031.007 line.032.007 line.033.007 line.034.007 line.035.007 line.036.007 line.037.007 line.038.007 line.039.007
+  line.040.007 line.041.007 line.042.007 line.043.007 line.044.007 line.045.007 line.046.007 line.047.007 line.048.007 line.049.007
+  line.050.007 line.051.007 line.052.007 line.053.007 line.054.007 line.055.007 line.056.007 line.057.007 line.058.007 line.059.007
+  line.060.007 line.061.007 line.062.007 line.063.007 line.064.007 line.065.007 line.066.007 line.067.007 line.068.007 line.069.007
+  line.070.007 line.071.007 line.072.007 line.073.007 line.074.007 line.075.007 line.076.007 line.077.007 line.078.007 line.079.007
+  line.080.007 line.081.007 line.082.007 line.083.007 line.084.007 line.085.007 line.086.007 line.087.007 line.088.007 line.089.007
+  line.090.007 line.091.007 line.092.007 line.093.007 line.094.007 line.095.007 line.096.007 line.097.007 line.098.007 line.099.007
+  line.100.007
+ ];
+
+@linesTo008 = [ 
+  line.000.008 line.001.008 line.002.008 line.003.008 line.004.008 line.005.008 line.006.008 line.007.008 line.008.008 line.009.008
+  line.010.008 line.011.008 line.012.008 line.013.008 line.014.008 line.015.008 line.016.008 line.017.008 line.018.008 line.019.008
+  line.020.008 line.021.008 line.022.008 line.023.008 line.024.008 line.025.008 line.026.008 line.027.008 line.028.008 line.029.008
+  line.030.008 line.031.008 line.032.008 line.033.008 line.034.008 line.035.008 line.036.008 line.037.008 line.038.008 line.039.008
+  line.040.008 line.041.008 line.042.008 line.043.008 line.044.008 line.045.008 line.046.008 line.047.008 line.048.008 line.049.008
+  line.050.008 line.051.008 line.052.008 line.053.008 line.054.008 line.055.008 line.056.008 line.057.008 line.058.008 line.059.008
+  line.060.008 line.061.008 line.062.008 line.063.008 line.064.008 line.065.008 line.066.008 line.067.008 line.068.008 line.069.008
+  line.070.008 line.071.008 line.072.008 line.073.008 line.074.008 line.075.008 line.076.008 line.077.008 line.078.008 line.079.008
+  line.080.008 line.081.008 line.082.008 line.083.008 line.084.008 line.085.008 line.086.008 line.087.008 line.088.008 line.089.008
+  line.090.008 line.091.008 line.092.008 line.093.008 line.094.008 line.095.008 line.096.008 line.097.008 line.098.008 line.099.008
+  line.100.008
+ ];
+
+@linesTo009 = [ 
+  line.000.009 line.001.009 line.002.009 line.003.009 line.004.009 line.005.009 line.006.009 line.007.009 line.008.009 line.009.009
+  line.010.009 line.011.009 line.012.009 line.013.009 line.014.009 line.015.009 line.016.009 line.017.009 line.018.009 line.019.009
+  line.020.009 line.021.009 line.022.009 line.023.009 line.024.009 line.025.009 line.026.009 line.027.009 line.028.009 line.029.009
+  line.030.009 line.031.009 line.032.009 line.033.009 line.034.009 line.035.009 line.036.009 line.037.009 line.038.009 line.039.009
+  line.040.009 line.041.009 line.042.009 line.043.009 line.044.009 line.045.009 line.046.009 line.047.009 line.048.009 line.049.009
+  line.050.009 line.051.009 line.052.009 line.053.009 line.054.009 line.055.009 line.056.009 line.057.009 line.058.009 line.059.009
+  line.060.009 line.061.009 line.062.009 line.063.009 line.064.009 line.065.009 line.066.009 line.067.009 line.068.009 line.069.009
+  line.070.009 line.071.009 line.072.009 line.073.009 line.074.009 line.075.009 line.076.009 line.077.009 line.078.009 line.079.009
+  line.080.009 line.081.009 line.082.009 line.083.009 line.084.009 line.085.009 line.086.009 line.087.009 line.088.009 line.089.009
+  line.090.009 line.091.009 line.092.009 line.093.009 line.094.009 line.095.009 line.096.009 line.097.009 line.098.009 line.099.009
+  line.100.009
+ ];
+
+@linesTo010 = [ 
+  line.000.010 line.001.010 line.002.010 line.003.010 line.004.010 line.005.010 line.006.010 line.007.010 line.008.010 line.009.010
+  line.010.010 line.011.010 line.012.010 line.013.010 line.014.010 line.015.010 line.016.010 line.017.010 line.018.010 line.019.010
+  line.020.010 line.021.010 line.022.010 line.023.010 line.024.010 line.025.010 line.026.010 line.027.010 line.028.010 line.029.010
+  line.030.010 line.031.010 line.032.010 line.033.010 line.034.010 line.035.010 line.036.010 line.037.010 line.038.010 line.039.010
+  line.040.010 line.041.010 line.042.010 line.043.010 line.044.010 line.045.010 line.046.010 line.047.010 line.048.010 line.049.010
+  line.050.010 line.051.010 line.052.010 line.053.010 line.054.010 line.055.010 line.056.010 line.057.010 line.058.010 line.059.010
+  line.060.010 line.061.010 line.062.010 line.063.010 line.064.010 line.065.010 line.066.010 line.067.010 line.068.010 line.069.010
+  line.070.010 line.071.010 line.072.010 line.073.010 line.074.010 line.075.010 line.076.010 line.077.010 line.078.010 line.079.010
+  line.080.010 line.081.010 line.082.010 line.083.010 line.084.010 line.085.010 line.086.010 line.087.010 line.088.010 line.089.010
+  line.090.010 line.091.010 line.092.010 line.093.010 line.094.010 line.095.010 line.096.010 line.097.010 line.098.010 line.099.010
+  line.100.010
+ ];
+
+@linesTo011 = [ 
+  line.000.011 line.001.011 line.002.011 line.003.011 line.004.011 line.005.011 line.006.011 line.007.011 line.008.011 line.009.011
+  line.010.011 line.011.011 line.012.011 line.013.011 line.014.011 line.015.011 line.016.011 line.017.011 line.018.011 line.019.011
+  line.020.011 line.021.011 line.022.011 line.023.011 line.024.011 line.025.011 line.026.011 line.027.011 line.028.011 line.029.011
+  line.030.011 line.031.011 line.032.011 line.033.011 line.034.011 line.035.011 line.036.011 line.037.011 line.038.011 line.039.011
+  line.040.011 line.041.011 line.042.011 line.043.011 line.044.011 line.045.011 line.046.011 line.047.011 line.048.011 line.049.011
+  line.050.011 line.051.011 line.052.011 line.053.011 line.054.011 line.055.011 line.056.011 line.057.011 line.058.011 line.059.011
+  line.060.011 line.061.011 line.062.011 line.063.011 line.064.011 line.065.011 line.066.011 line.067.011 line.068.011 line.069.011
+  line.070.011 line.071.011 line.072.011 line.073.011 line.074.011 line.075.011 line.076.011 line.077.011 line.078.011 line.079.011
+  line.080.011 line.081.011 line.082.011 line.083.011 line.084.011 line.085.011 line.086.011 line.087.011 line.088.011 line.089.011
+  line.090.011 line.091.011 line.092.011 line.093.011 line.094.011 line.095.011 line.096.011 line.097.011 line.098.011 line.099.011
+  line.100.011
+ ];
+
+@linesTo012 = [ 
+  line.000.012 line.001.012 line.002.012 line.003.012 line.004.012 line.005.012 line.006.012 line.007.012 line.008.012 line.009.012
+  line.010.012 line.011.012 line.012.012 line.013.012 line.014.012 line.015.012 line.016.012 line.017.012 line.018.012 line.019.012
+  line.020.012 line.021.012 line.022.012 line.023.012 line.024.012 line.025.012 line.026.012 line.027.012 line.028.012 line.029.012
+  line.030.012 line.031.012 line.032.012 line.033.012 line.034.012 line.035.012 line.036.012 line.037.012 line.038.012 line.039.012
+  line.040.012 line.041.012 line.042.012 line.043.012 line.044.012 line.045.012 line.046.012 line.047.012 line.048.012 line.049.012
+  line.050.012 line.051.012 line.052.012 line.053.012 line.054.012 line.055.012 line.056.012 line.057.012 line.058.012 line.059.012
+  line.060.012 line.061.012 line.062.012 line.063.012 line.064.012 line.065.012 line.066.012 line.067.012 line.068.012 line.069.012
+  line.070.012 line.071.012 line.072.012 line.073.012 line.074.012 line.075.012 line.076.012 line.077.012 line.078.012 line.079.012
+  line.080.012 line.081.012 line.082.012 line.083.012 line.084.012 line.085.012 line.086.012 line.087.012 line.088.012 line.089.012
+  line.090.012 line.091.012 line.092.012 line.093.012 line.094.012 line.095.012 line.096.012 line.097.012 line.098.012 line.099.012
+  line.100.012
+ ];
+
+@linesTo013 = [ 
+  line.000.013 line.001.013 line.002.013 line.003.013 line.004.013 line.005.013 line.006.013 line.007.013 line.008.013 line.009.013
+  line.010.013 line.011.013 line.012.013 line.013.013 line.014.013 line.015.013 line.016.013 line.017.013 line.018.013 line.019.013
+  line.020.013 line.021.013 line.022.013 line.023.013 line.024.013 line.025.013 line.026.013 line.027.013 line.028.013 line.029.013
+  line.030.013 line.031.013 line.032.013 line.033.013 line.034.013 line.035.013 line.036.013 line.037.013 line.038.013 line.039.013
+  line.040.013 line.041.013 line.042.013 line.043.013 line.044.013 line.045.013 line.046.013 line.047.013 line.048.013 line.049.013
+  line.050.013 line.051.013 line.052.013 line.053.013 line.054.013 line.055.013 line.056.013 line.057.013 line.058.013 line.059.013
+  line.060.013 line.061.013 line.062.013 line.063.013 line.064.013 line.065.013 line.066.013 line.067.013 line.068.013 line.069.013
+  line.070.013 line.071.013 line.072.013 line.073.013 line.074.013 line.075.013 line.076.013 line.077.013 line.078.013 line.079.013
+  line.080.013 line.081.013 line.082.013 line.083.013 line.084.013 line.085.013 line.086.013 line.087.013 line.088.013 line.089.013
+  line.090.013 line.091.013 line.092.013 line.093.013 line.094.013 line.095.013 line.096.013 line.097.013 line.098.013 line.099.013
+  line.100.013
+ ];
+
+@linesTo014 = [ 
+  line.000.014 line.001.014 line.002.014 line.003.014 line.004.014 line.005.014 line.006.014 line.007.014 line.008.014 line.009.014
+  line.010.014 line.011.014 line.012.014 line.013.014 line.014.014 line.015.014 line.016.014 line.017.014 line.018.014 line.019.014
+  line.020.014 line.021.014 line.022.014 line.023.014 line.024.014 line.025.014 line.026.014 line.027.014 line.028.014 line.029.014
+  line.030.014 line.031.014 line.032.014 line.033.014 line.034.014 line.035.014 line.036.014 line.037.014 line.038.014 line.039.014
+  line.040.014 line.041.014 line.042.014 line.043.014 line.044.014 line.045.014 line.046.014 line.047.014 line.048.014 line.049.014
+  line.050.014 line.051.014 line.052.014 line.053.014 line.054.014 line.055.014 line.056.014 line.057.014 line.058.014 line.059.014
+  line.060.014 line.061.014 line.062.014 line.063.014 line.064.014 line.065.014 line.066.014 line.067.014 line.068.014 line.069.014
+  line.070.014 line.071.014 line.072.014 line.073.014 line.074.014 line.075.014 line.076.014 line.077.014 line.078.014 line.079.014
+  line.080.014 line.081.014 line.082.014 line.083.014 line.084.014 line.085.014 line.086.014 line.087.014 line.088.014 line.089.014
+  line.090.014 line.091.014 line.092.014 line.093.014 line.094.014 line.095.014 line.096.014 line.097.014 line.098.014 line.099.014
+  line.100.014
+ ];
+
+@linesTo015 = [ 
+  line.000.015 line.001.015 line.002.015 line.003.015 line.004.015 line.005.015 line.006.015 line.007.015 line.008.015 line.009.015
+  line.010.015 line.011.015 line.012.015 line.013.015 line.014.015 line.015.015 line.016.015 line.017.015 line.018.015 line.019.015
+  line.020.015 line.021.015 line.022.015 line.023.015 line.024.015 line.025.015 line.026.015 line.027.015 line.028.015 line.029.015
+  line.030.015 line.031.015 line.032.015 line.033.015 line.034.015 line.035.015 line.036.015 line.037.015 line.038.015 line.039.015
+  line.040.015 line.041.015 line.042.015 line.043.015 line.044.015 line.045.015 line.046.015 line.047.015 line.048.015 line.049.015
+  line.050.015 line.051.015 line.052.015 line.053.015 line.054.015 line.055.015 line.056.015 line.057.015 line.058.015 line.059.015
+  line.060.015 line.061.015 line.062.015 line.063.015 line.064.015 line.065.015 line.066.015 line.067.015 line.068.015 line.069.015
+  line.070.015 line.071.015 line.072.015 line.073.015 line.074.015 line.075.015 line.076.015 line.077.015 line.078.015 line.079.015
+  line.080.015 line.081.015 line.082.015 line.083.015 line.084.015 line.085.015 line.086.015 line.087.015 line.088.015 line.089.015
+  line.090.015 line.091.015 line.092.015 line.093.015 line.094.015 line.095.015 line.096.015 line.097.015 line.098.015 line.099.015
+  line.100.015
+ ];
+
+@linesTo016 = [ 
+  line.000.016 line.001.016 line.002.016 line.003.016 line.004.016 line.005.016 line.006.016 line.007.016 line.008.016 line.009.016
+  line.010.016 line.011.016 line.012.016 line.013.016 line.014.016 line.015.016 line.016.016 line.017.016 line.018.016 line.019.016
+  line.020.016 line.021.016 line.022.016 line.023.016 line.024.016 line.025.016 line.026.016 line.027.016 line.028.016 line.029.016
+  line.030.016 line.031.016 line.032.016 line.033.016 line.034.016 line.035.016 line.036.016 line.037.016 line.038.016 line.039.016
+  line.040.016 line.041.016 line.042.016 line.043.016 line.044.016 line.045.016 line.046.016 line.047.016 line.048.016 line.049.016
+  line.050.016 line.051.016 line.052.016 line.053.016 line.054.016 line.055.016 line.056.016 line.057.016 line.058.016 line.059.016
+  line.060.016 line.061.016 line.062.016 line.063.016 line.064.016 line.065.016 line.066.016 line.067.016 line.068.016 line.069.016
+  line.070.016 line.071.016 line.072.016 line.073.016 line.074.016 line.075.016 line.076.016 line.077.016 line.078.016 line.079.016
+  line.080.016 line.081.016 line.082.016 line.083.016 line.084.016 line.085.016 line.086.016 line.087.016 line.088.016 line.089.016
+  line.090.016 line.091.016 line.092.016 line.093.016 line.094.016 line.095.016 line.096.016 line.097.016 line.098.016 line.099.016
+  line.100.016
+ ];
+
+@linesTo017 = [ 
+  line.000.017 line.001.017 line.002.017 line.003.017 line.004.017 line.005.017 line.006.017 line.007.017 line.008.017 line.009.017
+  line.010.017 line.011.017 line.012.017 line.013.017 line.014.017 line.015.017 line.016.017 line.017.017 line.018.017 line.019.017
+  line.020.017 line.021.017 line.022.017 line.023.017 line.024.017 line.025.017 line.026.017 line.027.017 line.028.017 line.029.017
+  line.030.017 line.031.017 line.032.017 line.033.017 line.034.017 line.035.017 line.036.017 line.037.017 line.038.017 line.039.017
+  line.040.017 line.041.017 line.042.017 line.043.017 line.044.017 line.045.017 line.046.017 line.047.017 line.048.017 line.049.017
+  line.050.017 line.051.017 line.052.017 line.053.017 line.054.017 line.055.017 line.056.017 line.057.017 line.058.017 line.059.017
+  line.060.017 line.061.017 line.062.017 line.063.017 line.064.017 line.065.017 line.066.017 line.067.017 line.068.017 line.069.017
+  line.070.017 line.071.017 line.072.017 line.073.017 line.074.017 line.075.017 line.076.017 line.077.017 line.078.017 line.079.017
+  line.080.017 line.081.017 line.082.017 line.083.017 line.084.017 line.085.017 line.086.017 line.087.017 line.088.017 line.089.017
+  line.090.017 line.091.017 line.092.017 line.093.017 line.094.017 line.095.017 line.096.017 line.097.017 line.098.017 line.099.017
+  line.100.017
+ ];
+
+@linesTo018 = [ 
+  line.000.018 line.001.018 line.002.018 line.003.018 line.004.018 line.005.018 line.006.018 line.007.018 line.008.018 line.009.018
+  line.010.018 line.011.018 line.012.018 line.013.018 line.014.018 line.015.018 line.016.018 line.017.018 line.018.018 line.019.018
+  line.020.018 line.021.018 line.022.018 line.023.018 line.024.018 line.025.018 line.026.018 line.027.018 line.028.018 line.029.018
+  line.030.018 line.031.018 line.032.018 line.033.018 line.034.018 line.035.018 line.036.018 line.037.018 line.038.018 line.039.018
+  line.040.018 line.041.018 line.042.018 line.043.018 line.044.018 line.045.018 line.046.018 line.047.018 line.048.018 line.049.018
+  line.050.018 line.051.018 line.052.018 line.053.018 line.054.018 line.055.018 line.056.018 line.057.018 line.058.018 line.059.018
+  line.060.018 line.061.018 line.062.018 line.063.018 line.064.018 line.065.018 line.066.018 line.067.018 line.068.018 line.069.018
+  line.070.018 line.071.018 line.072.018 line.073.018 line.074.018 line.075.018 line.076.018 line.077.018 line.078.018 line.079.018
+  line.080.018 line.081.018 line.082.018 line.083.018 line.084.018 line.085.018 line.086.018 line.087.018 line.088.018 line.089.018
+  line.090.018 line.091.018 line.092.018 line.093.018 line.094.018 line.095.018 line.096.018 line.097.018 line.098.018 line.099.018
+  line.100.018
+ ];
+
+@linesTo019 = [ 
+  line.000.019 line.001.019 line.002.019 line.003.019 line.004.019 line.005.019 line.006.019 line.007.019 line.008.019 line.009.019
+  line.010.019 line.011.019 line.012.019 line.013.019 line.014.019 line.015.019 line.016.019 line.017.019 line.018.019 line.019.019
+  line.020.019 line.021.019 line.022.019 line.023.019 line.024.019 line.025.019 line.026.019 line.027.019 line.028.019 line.029.019
+  line.030.019 line.031.019 line.032.019 line.033.019 line.034.019 line.035.019 line.036.019 line.037.019 line.038.019 line.039.019
+  line.040.019 line.041.019 line.042.019 line.043.019 line.044.019 line.045.019 line.046.019 line.047.019 line.048.019 line.049.019
+  line.050.019 line.051.019 line.052.019 line.053.019 line.054.019 line.055.019 line.056.019 line.057.019 line.058.019 line.059.019
+  line.060.019 line.061.019 line.062.019 line.063.019 line.064.019 line.065.019 line.066.019 line.067.019 line.068.019 line.069.019
+  line.070.019 line.071.019 line.072.019 line.073.019 line.074.019 line.075.019 line.076.019 line.077.019 line.078.019 line.079.019
+  line.080.019 line.081.019 line.082.019 line.083.019 line.084.019 line.085.019 line.086.019 line.087.019 line.088.019 line.089.019
+  line.090.019 line.091.019 line.092.019 line.093.019 line.094.019 line.095.019 line.096.019 line.097.019 line.098.019 line.099.019
+  line.100.019
+ ];
+
+@linesTo020 = [ 
+  line.000.020 line.001.020 line.002.020 line.003.020 line.004.020 line.005.020 line.006.020 line.007.020 line.008.020 line.009.020
+  line.010.020 line.011.020 line.012.020 line.013.020 line.014.020 line.015.020 line.016.020 line.017.020 line.018.020 line.019.020
+  line.020.020 line.021.020 line.022.020 line.023.020 line.024.020 line.025.020 line.026.020 line.027.020 line.028.020 line.029.020
+  line.030.020 line.031.020 line.032.020 line.033.020 line.034.020 line.035.020 line.036.020 line.037.020 line.038.020 line.039.020
+  line.040.020 line.041.020 line.042.020 line.043.020 line.044.020 line.045.020 line.046.020 line.047.020 line.048.020 line.049.020
+  line.050.020 line.051.020 line.052.020 line.053.020 line.054.020 line.055.020 line.056.020 line.057.020 line.058.020 line.059.020
+  line.060.020 line.061.020 line.062.020 line.063.020 line.064.020 line.065.020 line.066.020 line.067.020 line.068.020 line.069.020
+  line.070.020 line.071.020 line.072.020 line.073.020 line.074.020 line.075.020 line.076.020 line.077.020 line.078.020 line.079.020
+  line.080.020 line.081.020 line.082.020 line.083.020 line.084.020 line.085.020 line.086.020 line.087.020 line.088.020 line.089.020
+  line.090.020 line.091.020 line.092.020 line.093.020 line.094.020 line.095.020 line.096.020 line.097.020 line.098.020 line.099.020
+  line.100.020
+ ];
+
+@linesTo021 = [ 
+  line.000.021 line.001.021 line.002.021 line.003.021 line.004.021 line.005.021 line.006.021 line.007.021 line.008.021 line.009.021
+  line.010.021 line.011.021 line.012.021 line.013.021 line.014.021 line.015.021 line.016.021 line.017.021 line.018.021 line.019.021
+  line.020.021 line.021.021 line.022.021 line.023.021 line.024.021 line.025.021 line.026.021 line.027.021 line.028.021 line.029.021
+  line.030.021 line.031.021 line.032.021 line.033.021 line.034.021 line.035.021 line.036.021 line.037.021 line.038.021 line.039.021
+  line.040.021 line.041.021 line.042.021 line.043.021 line.044.021 line.045.021 line.046.021 line.047.021 line.048.021 line.049.021
+  line.050.021 line.051.021 line.052.021 line.053.021 line.054.021 line.055.021 line.056.021 line.057.021 line.058.021 line.059.021
+  line.060.021 line.061.021 line.062.021 line.063.021 line.064.021 line.065.021 line.066.021 line.067.021 line.068.021 line.069.021
+  line.070.021 line.071.021 line.072.021 line.073.021 line.074.021 line.075.021 line.076.021 line.077.021 line.078.021 line.079.021
+  line.080.021 line.081.021 line.082.021 line.083.021 line.084.021 line.085.021 line.086.021 line.087.021 line.088.021 line.089.021
+  line.090.021 line.091.021 line.092.021 line.093.021 line.094.021 line.095.021 line.096.021 line.097.021 line.098.021 line.099.021
+  line.100.021
+ ];
+
+@linesTo022 = [ 
+  line.000.022 line.001.022 line.002.022 line.003.022 line.004.022 line.005.022 line.006.022 line.007.022 line.008.022 line.009.022
+  line.010.022 line.011.022 line.012.022 line.013.022 line.014.022 line.015.022 line.016.022 line.017.022 line.018.022 line.019.022
+  line.020.022 line.021.022 line.022.022 line.023.022 line.024.022 line.025.022 line.026.022 line.027.022 line.028.022 line.029.022
+  line.030.022 line.031.022 line.032.022 line.033.022 line.034.022 line.035.022 line.036.022 line.037.022 line.038.022 line.039.022
+  line.040.022 line.041.022 line.042.022 line.043.022 line.044.022 line.045.022 line.046.022 line.047.022 line.048.022 line.049.022
+  line.050.022 line.051.022 line.052.022 line.053.022 line.054.022 line.055.022 line.056.022 line.057.022 line.058.022 line.059.022
+  line.060.022 line.061.022 line.062.022 line.063.022 line.064.022 line.065.022 line.066.022 line.067.022 line.068.022 line.069.022
+  line.070.022 line.071.022 line.072.022 line.073.022 line.074.022 line.075.022 line.076.022 line.077.022 line.078.022 line.079.022
+  line.080.022 line.081.022 line.082.022 line.083.022 line.084.022 line.085.022 line.086.022 line.087.022 line.088.022 line.089.022
+  line.090.022 line.091.022 line.092.022 line.093.022 line.094.022 line.095.022 line.096.022 line.097.022 line.098.022 line.099.022
+  line.100.022
+ ];
+
+@linesTo023 = [ 
+  line.000.023 line.001.023 line.002.023 line.003.023 line.004.023 line.005.023 line.006.023 line.007.023 line.008.023 line.009.023
+  line.010.023 line.011.023 line.012.023 line.013.023 line.014.023 line.015.023 line.016.023 line.017.023 line.018.023 line.019.023
+  line.020.023 line.021.023 line.022.023 line.023.023 line.024.023 line.025.023 line.026.023 line.027.023 line.028.023 line.029.023
+  line.030.023 line.031.023 line.032.023 line.033.023 line.034.023 line.035.023 line.036.023 line.037.023 line.038.023 line.039.023
+  line.040.023 line.041.023 line.042.023 line.043.023 line.044.023 line.045.023 line.046.023 line.047.023 line.048.023 line.049.023
+  line.050.023 line.051.023 line.052.023 line.053.023 line.054.023 line.055.023 line.056.023 line.057.023 line.058.023 line.059.023
+  line.060.023 line.061.023 line.062.023 line.063.023 line.064.023 line.065.023 line.066.023 line.067.023 line.068.023 line.069.023
+  line.070.023 line.071.023 line.072.023 line.073.023 line.074.023 line.075.023 line.076.023 line.077.023 line.078.023 line.079.023
+  line.080.023 line.081.023 line.082.023 line.083.023 line.084.023 line.085.023 line.086.023 line.087.023 line.088.023 line.089.023
+  line.090.023 line.091.023 line.092.023 line.093.023 line.094.023 line.095.023 line.096.023 line.097.023 line.098.023 line.099.023
+  line.100.023
+ ];
+
+@linesTo024 = [ 
+  line.000.024 line.001.024 line.002.024 line.003.024 line.004.024 line.005.024 line.006.024 line.007.024 line.008.024 line.009.024
+  line.010.024 line.011.024 line.012.024 line.013.024 line.014.024 line.015.024 line.016.024 line.017.024 line.018.024 line.019.024
+  line.020.024 line.021.024 line.022.024 line.023.024 line.024.024 line.025.024 line.026.024 line.027.024 line.028.024 line.029.024
+  line.030.024 line.031.024 line.032.024 line.033.024 line.034.024 line.035.024 line.036.024 line.037.024 line.038.024 line.039.024
+  line.040.024 line.041.024 line.042.024 line.043.024 line.044.024 line.045.024 line.046.024 line.047.024 line.048.024 line.049.024
+  line.050.024 line.051.024 line.052.024 line.053.024 line.054.024 line.055.024 line.056.024 line.057.024 line.058.024 line.059.024
+  line.060.024 line.061.024 line.062.024 line.063.024 line.064.024 line.065.024 line.066.024 line.067.024 line.068.024 line.069.024
+  line.070.024 line.071.024 line.072.024 line.073.024 line.074.024 line.075.024 line.076.024 line.077.024 line.078.024 line.079.024
+  line.080.024 line.081.024 line.082.024 line.083.024 line.084.024 line.085.024 line.086.024 line.087.024 line.088.024 line.089.024
+  line.090.024 line.091.024 line.092.024 line.093.024 line.094.024 line.095.024 line.096.024 line.097.024 line.098.024 line.099.024
+  line.100.024
+ ];
+
+@linesTo025 = [ 
+  line.000.025 line.001.025 line.002.025 line.003.025 line.004.025 line.005.025 line.006.025 line.007.025 line.008.025 line.009.025
+  line.010.025 line.011.025 line.012.025 line.013.025 line.014.025 line.015.025 line.016.025 line.017.025 line.018.025 line.019.025
+  line.020.025 line.021.025 line.022.025 line.023.025 line.024.025 line.025.025 line.026.025 line.027.025 line.028.025 line.029.025
+  line.030.025 line.031.025 line.032.025 line.033.025 line.034.025 line.035.025 line.036.025 line.037.025 line.038.025 line.039.025
+  line.040.025 line.041.025 line.042.025 line.043.025 line.044.025 line.045.025 line.046.025 line.047.025 line.048.025 line.049.025
+  line.050.025 line.051.025 line.052.025 line.053.025 line.054.025 line.055.025 line.056.025 line.057.025 line.058.025 line.059.025
+  line.060.025 line.061.025 line.062.025 line.063.025 line.064.025 line.065.025 line.066.025 line.067.025 line.068.025 line.069.025
+  line.070.025 line.071.025 line.072.025 line.073.025 line.074.025 line.075.025 line.076.025 line.077.025 line.078.025 line.079.025
+  line.080.025 line.081.025 line.082.025 line.083.025 line.084.025 line.085.025 line.086.025 line.087.025 line.088.025 line.089.025
+  line.090.025 line.091.025 line.092.025 line.093.025 line.094.025 line.095.025 line.096.025 line.097.025 line.098.025 line.099.025
+  line.100.025
+ ];
+
+@linesTo026 = [ 
+  line.000.026 line.001.026 line.002.026 line.003.026 line.004.026 line.005.026 line.006.026 line.007.026 line.008.026 line.009.026
+  line.010.026 line.011.026 line.012.026 line.013.026 line.014.026 line.015.026 line.016.026 line.017.026 line.018.026 line.019.026
+  line.020.026 line.021.026 line.022.026 line.023.026 line.024.026 line.025.026 line.026.026 line.027.026 line.028.026 line.029.026
+  line.030.026 line.031.026 line.032.026 line.033.026 line.034.026 line.035.026 line.036.026 line.037.026 line.038.026 line.039.026
+  line.040.026 line.041.026 line.042.026 line.043.026 line.044.026 line.045.026 line.046.026 line.047.026 line.048.026 line.049.026
+  line.050.026 line.051.026 line.052.026 line.053.026 line.054.026 line.055.026 line.056.026 line.057.026 line.058.026 line.059.026
+  line.060.026 line.061.026 line.062.026 line.063.026 line.064.026 line.065.026 line.066.026 line.067.026 line.068.026 line.069.026
+  line.070.026 line.071.026 line.072.026 line.073.026 line.074.026 line.075.026 line.076.026 line.077.026 line.078.026 line.079.026
+  line.080.026 line.081.026 line.082.026 line.083.026 line.084.026 line.085.026 line.086.026 line.087.026 line.088.026 line.089.026
+  line.090.026 line.091.026 line.092.026 line.093.026 line.094.026 line.095.026 line.096.026 line.097.026 line.098.026 line.099.026
+  line.100.026
+ ];
+
+@linesTo027 = [ 
+  line.000.027 line.001.027 line.002.027 line.003.027 line.004.027 line.005.027 line.006.027 line.007.027 line.008.027 line.009.027
+  line.010.027 line.011.027 line.012.027 line.013.027 line.014.027 line.015.027 line.016.027 line.017.027 line.018.027 line.019.027
+  line.020.027 line.021.027 line.022.027 line.023.027 line.024.027 line.025.027 line.026.027 line.027.027 line.028.027 line.029.027
+  line.030.027 line.031.027 line.032.027 line.033.027 line.034.027 line.035.027 line.036.027 line.037.027 line.038.027 line.039.027
+  line.040.027 line.041.027 line.042.027 line.043.027 line.044.027 line.045.027 line.046.027 line.047.027 line.048.027 line.049.027
+  line.050.027 line.051.027 line.052.027 line.053.027 line.054.027 line.055.027 line.056.027 line.057.027 line.058.027 line.059.027
+  line.060.027 line.061.027 line.062.027 line.063.027 line.064.027 line.065.027 line.066.027 line.067.027 line.068.027 line.069.027
+  line.070.027 line.071.027 line.072.027 line.073.027 line.074.027 line.075.027 line.076.027 line.077.027 line.078.027 line.079.027
+  line.080.027 line.081.027 line.082.027 line.083.027 line.084.027 line.085.027 line.086.027 line.087.027 line.088.027 line.089.027
+  line.090.027 line.091.027 line.092.027 line.093.027 line.094.027 line.095.027 line.096.027 line.097.027 line.098.027 line.099.027
+  line.100.027
+ ];
+
+@linesTo028 = [ 
+  line.000.028 line.001.028 line.002.028 line.003.028 line.004.028 line.005.028 line.006.028 line.007.028 line.008.028 line.009.028
+  line.010.028 line.011.028 line.012.028 line.013.028 line.014.028 line.015.028 line.016.028 line.017.028 line.018.028 line.019.028
+  line.020.028 line.021.028 line.022.028 line.023.028 line.024.028 line.025.028 line.026.028 line.027.028 line.028.028 line.029.028
+  line.030.028 line.031.028 line.032.028 line.033.028 line.034.028 line.035.028 line.036.028 line.037.028 line.038.028 line.039.028
+  line.040.028 line.041.028 line.042.028 line.043.028 line.044.028 line.045.028 line.046.028 line.047.028 line.048.028 line.049.028
+  line.050.028 line.051.028 line.052.028 line.053.028 line.054.028 line.055.028 line.056.028 line.057.028 line.058.028 line.059.028
+  line.060.028 line.061.028 line.062.028 line.063.028 line.064.028 line.065.028 line.066.028 line.067.028 line.068.028 line.069.028
+  line.070.028 line.071.028 line.072.028 line.073.028 line.074.028 line.075.028 line.076.028 line.077.028 line.078.028 line.079.028
+  line.080.028 line.081.028 line.082.028 line.083.028 line.084.028 line.085.028 line.086.028 line.087.028 line.088.028 line.089.028
+  line.090.028 line.091.028 line.092.028 line.093.028 line.094.028 line.095.028 line.096.028 line.097.028 line.098.028 line.099.028
+  line.100.028
+ ];
+
+@linesTo029 = [ 
+  line.000.029 line.001.029 line.002.029 line.003.029 line.004.029 line.005.029 line.006.029 line.007.029 line.008.029 line.009.029
+  line.010.029 line.011.029 line.012.029 line.013.029 line.014.029 line.015.029 line.016.029 line.017.029 line.018.029 line.019.029
+  line.020.029 line.021.029 line.022.029 line.023.029 line.024.029 line.025.029 line.026.029 line.027.029 line.028.029 line.029.029
+  line.030.029 line.031.029 line.032.029 line.033.029 line.034.029 line.035.029 line.036.029 line.037.029 line.038.029 line.039.029
+  line.040.029 line.041.029 line.042.029 line.043.029 line.044.029 line.045.029 line.046.029 line.047.029 line.048.029 line.049.029
+  line.050.029 line.051.029 line.052.029 line.053.029 line.054.029 line.055.029 line.056.029 line.057.029 line.058.029 line.059.029
+  line.060.029 line.061.029 line.062.029 line.063.029 line.064.029 line.065.029 line.066.029 line.067.029 line.068.029 line.069.029
+  line.070.029 line.071.029 line.072.029 line.073.029 line.074.029 line.075.029 line.076.029 line.077.029 line.078.029 line.079.029
+  line.080.029 line.081.029 line.082.029 line.083.029 line.084.029 line.085.029 line.086.029 line.087.029 line.088.029 line.089.029
+  line.090.029 line.091.029 line.092.029 line.093.029 line.094.029 line.095.029 line.096.029 line.097.029 line.098.029 line.099.029
+  line.100.029
+ ];
+
+@linesTo030 = [ 
+  line.000.030 line.001.030 line.002.030 line.003.030 line.004.030 line.005.030 line.006.030 line.007.030 line.008.030 line.009.030
+  line.010.030 line.011.030 line.012.030 line.013.030 line.014.030 line.015.030 line.016.030 line.017.030 line.018.030 line.019.030
+  line.020.030 line.021.030 line.022.030 line.023.030 line.024.030 line.025.030 line.026.030 line.027.030 line.028.030 line.029.030
+  line.030.030 line.031.030 line.032.030 line.033.030 line.034.030 line.035.030 line.036.030 line.037.030 line.038.030 line.039.030
+  line.040.030 line.041.030 line.042.030 line.043.030 line.044.030 line.045.030 line.046.030 line.047.030 line.048.030 line.049.030
+  line.050.030 line.051.030 line.052.030 line.053.030 line.054.030 line.055.030 line.056.030 line.057.030 line.058.030 line.059.030
+  line.060.030 line.061.030 line.062.030 line.063.030 line.064.030 line.065.030 line.066.030 line.067.030 line.068.030 line.069.030
+  line.070.030 line.071.030 line.072.030 line.073.030 line.074.030 line.075.030 line.076.030 line.077.030 line.078.030 line.079.030
+  line.080.030 line.081.030 line.082.030 line.083.030 line.084.030 line.085.030 line.086.030 line.087.030 line.088.030 line.089.030
+  line.090.030 line.091.030 line.092.030 line.093.030 line.094.030 line.095.030 line.096.030 line.097.030 line.098.030 line.099.030
+  line.100.030
+ ];
+
+@linesTo031 = [ 
+  line.000.031 line.001.031 line.002.031 line.003.031 line.004.031 line.005.031 line.006.031 line.007.031 line.008.031 line.009.031
+  line.010.031 line.011.031 line.012.031 line.013.031 line.014.031 line.015.031 line.016.031 line.017.031 line.018.031 line.019.031
+  line.020.031 line.021.031 line.022.031 line.023.031 line.024.031 line.025.031 line.026.031 line.027.031 line.028.031 line.029.031
+  line.030.031 line.031.031 line.032.031 line.033.031 line.034.031 line.035.031 line.036.031 line.037.031 line.038.031 line.039.031
+  line.040.031 line.041.031 line.042.031 line.043.031 line.044.031 line.045.031 line.046.031 line.047.031 line.048.031 line.049.031
+  line.050.031 line.051.031 line.052.031 line.053.031 line.054.031 line.055.031 line.056.031 line.057.031 line.058.031 line.059.031
+  line.060.031 line.061.031 line.062.031 line.063.031 line.064.031 line.065.031 line.066.031 line.067.031 line.068.031 line.069.031
+  line.070.031 line.071.031 line.072.031 line.073.031 line.074.031 line.075.031 line.076.031 line.077.031 line.078.031 line.079.031
+  line.080.031 line.081.031 line.082.031 line.083.031 line.084.031 line.085.031 line.086.031 line.087.031 line.088.031 line.089.031
+  line.090.031 line.091.031 line.092.031 line.093.031 line.094.031 line.095.031 line.096.031 line.097.031 line.098.031 line.099.031
+  line.100.031
+ ];
+
+@linesTo032 = [ 
+  line.000.032 line.001.032 line.002.032 line.003.032 line.004.032 line.005.032 line.006.032 line.007.032 line.008.032 line.009.032
+  line.010.032 line.011.032 line.012.032 line.013.032 line.014.032 line.015.032 line.016.032 line.017.032 line.018.032 line.019.032
+  line.020.032 line.021.032 line.022.032 line.023.032 line.024.032 line.025.032 line.026.032 line.027.032 line.028.032 line.029.032
+  line.030.032 line.031.032 line.032.032 line.033.032 line.034.032 line.035.032 line.036.032 line.037.032 line.038.032 line.039.032
+  line.040.032 line.041.032 line.042.032 line.043.032 line.044.032 line.045.032 line.046.032 line.047.032 line.048.032 line.049.032
+  line.050.032 line.051.032 line.052.032 line.053.032 line.054.032 line.055.032 line.056.032 line.057.032 line.058.032 line.059.032
+  line.060.032 line.061.032 line.062.032 line.063.032 line.064.032 line.065.032 line.066.032 line.067.032 line.068.032 line.069.032
+  line.070.032 line.071.032 line.072.032 line.073.032 line.074.032 line.075.032 line.076.032 line.077.032 line.078.032 line.079.032
+  line.080.032 line.081.032 line.082.032 line.083.032 line.084.032 line.085.032 line.086.032 line.087.032 line.088.032 line.089.032
+  line.090.032 line.091.032 line.092.032 line.093.032 line.094.032 line.095.032 line.096.032 line.097.032 line.098.032 line.099.032
+  line.100.032
+ ];
+
+@linesTo033 = [ 
+  line.000.033 line.001.033 line.002.033 line.003.033 line.004.033 line.005.033 line.006.033 line.007.033 line.008.033 line.009.033
+  line.010.033 line.011.033 line.012.033 line.013.033 line.014.033 line.015.033 line.016.033 line.017.033 line.018.033 line.019.033
+  line.020.033 line.021.033 line.022.033 line.023.033 line.024.033 line.025.033 line.026.033 line.027.033 line.028.033 line.029.033
+  line.030.033 line.031.033 line.032.033 line.033.033 line.034.033 line.035.033 line.036.033 line.037.033 line.038.033 line.039.033
+  line.040.033 line.041.033 line.042.033 line.043.033 line.044.033 line.045.033 line.046.033 line.047.033 line.048.033 line.049.033
+  line.050.033 line.051.033 line.052.033 line.053.033 line.054.033 line.055.033 line.056.033 line.057.033 line.058.033 line.059.033
+  line.060.033 line.061.033 line.062.033 line.063.033 line.064.033 line.065.033 line.066.033 line.067.033 line.068.033 line.069.033
+  line.070.033 line.071.033 line.072.033 line.073.033 line.074.033 line.075.033 line.076.033 line.077.033 line.078.033 line.079.033
+  line.080.033 line.081.033 line.082.033 line.083.033 line.084.033 line.085.033 line.086.033 line.087.033 line.088.033 line.089.033
+  line.090.033 line.091.033 line.092.033 line.093.033 line.094.033 line.095.033 line.096.033 line.097.033 line.098.033 line.099.033
+  line.100.033
+ ];
+
+@linesTo034 = [ 
+  line.000.034 line.001.034 line.002.034 line.003.034 line.004.034 line.005.034 line.006.034 line.007.034 line.008.034 line.009.034
+  line.010.034 line.011.034 line.012.034 line.013.034 line.014.034 line.015.034 line.016.034 line.017.034 line.018.034 line.019.034
+  line.020.034 line.021.034 line.022.034 line.023.034 line.024.034 line.025.034 line.026.034 line.027.034 line.028.034 line.029.034
+  line.030.034 line.031.034 line.032.034 line.033.034 line.034.034 line.035.034 line.036.034 line.037.034 line.038.034 line.039.034
+  line.040.034 line.041.034 line.042.034 line.043.034 line.044.034 line.045.034 line.046.034 line.047.034 line.048.034 line.049.034
+  line.050.034 line.051.034 line.052.034 line.053.034 line.054.034 line.055.034 line.056.034 line.057.034 line.058.034 line.059.034
+  line.060.034 line.061.034 line.062.034 line.063.034 line.064.034 line.065.034 line.066.034 line.067.034 line.068.034 line.069.034
+  line.070.034 line.071.034 line.072.034 line.073.034 line.074.034 line.075.034 line.076.034 line.077.034 line.078.034 line.079.034
+  line.080.034 line.081.034 line.082.034 line.083.034 line.084.034 line.085.034 line.086.034 line.087.034 line.088.034 line.089.034
+  line.090.034 line.091.034 line.092.034 line.093.034 line.094.034 line.095.034 line.096.034 line.097.034 line.098.034 line.099.034
+  line.100.034
+ ];
+
+@linesTo035 = [ 
+  line.000.035 line.001.035 line.002.035 line.003.035 line.004.035 line.005.035 line.006.035 line.007.035 line.008.035 line.009.035
+  line.010.035 line.011.035 line.012.035 line.013.035 line.014.035 line.015.035 line.016.035 line.017.035 line.018.035 line.019.035
+  line.020.035 line.021.035 line.022.035 line.023.035 line.024.035 line.025.035 line.026.035 line.027.035 line.028.035 line.029.035
+  line.030.035 line.031.035 line.032.035 line.033.035 line.034.035 line.035.035 line.036.035 line.037.035 line.038.035 line.039.035
+  line.040.035 line.041.035 line.042.035 line.043.035 line.044.035 line.045.035 line.046.035 line.047.035 line.048.035 line.049.035
+  line.050.035 line.051.035 line.052.035 line.053.035 line.054.035 line.055.035 line.056.035 line.057.035 line.058.035 line.059.035
+  line.060.035 line.061.035 line.062.035 line.063.035 line.064.035 line.065.035 line.066.035 line.067.035 line.068.035 line.069.035
+  line.070.035 line.071.035 line.072.035 line.073.035 line.074.035 line.075.035 line.076.035 line.077.035 line.078.035 line.079.035
+  line.080.035 line.081.035 line.082.035 line.083.035 line.084.035 line.085.035 line.086.035 line.087.035 line.088.035 line.089.035
+  line.090.035 line.091.035 line.092.035 line.093.035 line.094.035 line.095.035 line.096.035 line.097.035 line.098.035 line.099.035
+  line.100.035
+ ];
+
+@linesTo036 = [ 
+  line.000.036 line.001.036 line.002.036 line.003.036 line.004.036 line.005.036 line.006.036 line.007.036 line.008.036 line.009.036
+  line.010.036 line.011.036 line.012.036 line.013.036 line.014.036 line.015.036 line.016.036 line.017.036 line.018.036 line.019.036
+  line.020.036 line.021.036 line.022.036 line.023.036 line.024.036 line.025.036 line.026.036 line.027.036 line.028.036 line.029.036
+  line.030.036 line.031.036 line.032.036 line.033.036 line.034.036 line.035.036 line.036.036 line.037.036 line.038.036 line.039.036
+  line.040.036 line.041.036 line.042.036 line.043.036 line.044.036 line.045.036 line.046.036 line.047.036 line.048.036 line.049.036
+  line.050.036 line.051.036 line.052.036 line.053.036 line.054.036 line.055.036 line.056.036 line.057.036 line.058.036 line.059.036
+  line.060.036 line.061.036 line.062.036 line.063.036 line.064.036 line.065.036 line.066.036 line.067.036 line.068.036 line.069.036
+  line.070.036 line.071.036 line.072.036 line.073.036 line.074.036 line.075.036 line.076.036 line.077.036 line.078.036 line.079.036
+  line.080.036 line.081.036 line.082.036 line.083.036 line.084.036 line.085.036 line.086.036 line.087.036 line.088.036 line.089.036
+  line.090.036 line.091.036 line.092.036 line.093.036 line.094.036 line.095.036 line.096.036 line.097.036 line.098.036 line.099.036
+  line.100.036
+ ];
+
+@linesTo037 = [ 
+  line.000.037 line.001.037 line.002.037 line.003.037 line.004.037 line.005.037 line.006.037 line.007.037 line.008.037 line.009.037
+  line.010.037 line.011.037 line.012.037 line.013.037 line.014.037 line.015.037 line.016.037 line.017.037 line.018.037 line.019.037
+  line.020.037 line.021.037 line.022.037 line.023.037 line.024.037 line.025.037 line.026.037 line.027.037 line.028.037 line.029.037
+  line.030.037 line.031.037 line.032.037 line.033.037 line.034.037 line.035.037 line.036.037 line.037.037 line.038.037 line.039.037
+  line.040.037 line.041.037 line.042.037 line.043.037 line.044.037 line.045.037 line.046.037 line.047.037 line.048.037 line.049.037
+  line.050.037 line.051.037 line.052.037 line.053.037 line.054.037 line.055.037 line.056.037 line.057.037 line.058.037 line.059.037
+  line.060.037 line.061.037 line.062.037 line.063.037 line.064.037 line.065.037 line.066.037 line.067.037 line.068.037 line.069.037
+  line.070.037 line.071.037 line.072.037 line.073.037 line.074.037 line.075.037 line.076.037 line.077.037 line.078.037 line.079.037
+  line.080.037 line.081.037 line.082.037 line.083.037 line.084.037 line.085.037 line.086.037 line.087.037 line.088.037 line.089.037
+  line.090.037 line.091.037 line.092.037 line.093.037 line.094.037 line.095.037 line.096.037 line.097.037 line.098.037 line.099.037
+  line.100.037
+ ];
+
+@linesTo038 = [ 
+  line.000.038 line.001.038 line.002.038 line.003.038 line.004.038 line.005.038 line.006.038 line.007.038 line.008.038 line.009.038
+  line.010.038 line.011.038 line.012.038 line.013.038 line.014.038 line.015.038 line.016.038 line.017.038 line.018.038 line.019.038
+  line.020.038 line.021.038 line.022.038 line.023.038 line.024.038 line.025.038 line.026.038 line.027.038 line.028.038 line.029.038
+  line.030.038 line.031.038 line.032.038 line.033.038 line.034.038 line.035.038 line.036.038 line.037.038 line.038.038 line.039.038
+  line.040.038 line.041.038 line.042.038 line.043.038 line.044.038 line.045.038 line.046.038 line.047.038 line.048.038 line.049.038
+  line.050.038 line.051.038 line.052.038 line.053.038 line.054.038 line.055.038 line.056.038 line.057.038 line.058.038 line.059.038
+  line.060.038 line.061.038 line.062.038 line.063.038 line.064.038 line.065.038 line.066.038 line.067.038 line.068.038 line.069.038
+  line.070.038 line.071.038 line.072.038 line.073.038 line.074.038 line.075.038 line.076.038 line.077.038 line.078.038 line.079.038
+  line.080.038 line.081.038 line.082.038 line.083.038 line.084.038 line.085.038 line.086.038 line.087.038 line.088.038 line.089.038
+  line.090.038 line.091.038 line.092.038 line.093.038 line.094.038 line.095.038 line.096.038 line.097.038 line.098.038 line.099.038
+  line.100.038
+ ];
+
+@linesTo039 = [ 
+  line.000.039 line.001.039 line.002.039 line.003.039 line.004.039 line.005.039 line.006.039 line.007.039 line.008.039 line.009.039
+  line.010.039 line.011.039 line.012.039 line.013.039 line.014.039 line.015.039 line.016.039 line.017.039 line.018.039 line.019.039
+  line.020.039 line.021.039 line.022.039 line.023.039 line.024.039 line.025.039 line.026.039 line.027.039 line.028.039 line.029.039
+  line.030.039 line.031.039 line.032.039 line.033.039 line.034.039 line.035.039 line.036.039 line.037.039 line.038.039 line.039.039
+  line.040.039 line.041.039 line.042.039 line.043.039 line.044.039 line.045.039 line.046.039 line.047.039 line.048.039 line.049.039
+  line.050.039 line.051.039 line.052.039 line.053.039 line.054.039 line.055.039 line.056.039 line.057.039 line.058.039 line.059.039
+  line.060.039 line.061.039 line.062.039 line.063.039 line.064.039 line.065.039 line.066.039 line.067.039 line.068.039 line.069.039
+  line.070.039 line.071.039 line.072.039 line.073.039 line.074.039 line.075.039 line.076.039 line.077.039 line.078.039 line.079.039
+  line.080.039 line.081.039 line.082.039 line.083.039 line.084.039 line.085.039 line.086.039 line.087.039 line.088.039 line.089.039
+  line.090.039 line.091.039 line.092.039 line.093.039 line.094.039 line.095.039 line.096.039 line.097.039 line.098.039 line.099.039
+  line.100.039
+ ];
+
+@linesTo040 = [ 
+  line.000.040 line.001.040 line.002.040 line.003.040 line.004.040 line.005.040 line.006.040 line.007.040 line.008.040 line.009.040
+  line.010.040 line.011.040 line.012.040 line.013.040 line.014.040 line.015.040 line.016.040 line.017.040 line.018.040 line.019.040
+  line.020.040 line.021.040 line.022.040 line.023.040 line.024.040 line.025.040 line.026.040 line.027.040 line.028.040 line.029.040
+  line.030.040 line.031.040 line.032.040 line.033.040 line.034.040 line.035.040 line.036.040 line.037.040 line.038.040 line.039.040
+  line.040.040 line.041.040 line.042.040 line.043.040 line.044.040 line.045.040 line.046.040 line.047.040 line.048.040 line.049.040
+  line.050.040 line.051.040 line.052.040 line.053.040 line.054.040 line.055.040 line.056.040 line.057.040 line.058.040 line.059.040
+  line.060.040 line.061.040 line.062.040 line.063.040 line.064.040 line.065.040 line.066.040 line.067.040 line.068.040 line.069.040
+  line.070.040 line.071.040 line.072.040 line.073.040 line.074.040 line.075.040 line.076.040 line.077.040 line.078.040 line.079.040
+  line.080.040 line.081.040 line.082.040 line.083.040 line.084.040 line.085.040 line.086.040 line.087.040 line.088.040 line.089.040
+  line.090.040 line.091.040 line.092.040 line.093.040 line.094.040 line.095.040 line.096.040 line.097.040 line.098.040 line.099.040
+  line.100.040
+ ];
+
+@linesTo041 = [ 
+  line.000.041 line.001.041 line.002.041 line.003.041 line.004.041 line.005.041 line.006.041 line.007.041 line.008.041 line.009.041
+  line.010.041 line.011.041 line.012.041 line.013.041 line.014.041 line.015.041 line.016.041 line.017.041 line.018.041 line.019.041
+  line.020.041 line.021.041 line.022.041 line.023.041 line.024.041 line.025.041 line.026.041 line.027.041 line.028.041 line.029.041
+  line.030.041 line.031.041 line.032.041 line.033.041 line.034.041 line.035.041 line.036.041 line.037.041 line.038.041 line.039.041
+  line.040.041 line.041.041 line.042.041 line.043.041 line.044.041 line.045.041 line.046.041 line.047.041 line.048.041 line.049.041
+  line.050.041 line.051.041 line.052.041 line.053.041 line.054.041 line.055.041 line.056.041 line.057.041 line.058.041 line.059.041
+  line.060.041 line.061.041 line.062.041 line.063.041 line.064.041 line.065.041 line.066.041 line.067.041 line.068.041 line.069.041
+  line.070.041 line.071.041 line.072.041 line.073.041 line.074.041 line.075.041 line.076.041 line.077.041 line.078.041 line.079.041
+  line.080.041 line.081.041 line.082.041 line.083.041 line.084.041 line.085.041 line.086.041 line.087.041 line.088.041 line.089.041
+  line.090.041 line.091.041 line.092.041 line.093.041 line.094.041 line.095.041 line.096.041 line.097.041 line.098.041 line.099.041
+  line.100.041
+ ];
+
+@linesTo042 = [ 
+  line.000.042 line.001.042 line.002.042 line.003.042 line.004.042 line.005.042 line.006.042 line.007.042 line.008.042 line.009.042
+  line.010.042 line.011.042 line.012.042 line.013.042 line.014.042 line.015.042 line.016.042 line.017.042 line.018.042 line.019.042
+  line.020.042 line.021.042 line.022.042 line.023.042 line.024.042 line.025.042 line.026.042 line.027.042 line.028.042 line.029.042
+  line.030.042 line.031.042 line.032.042 line.033.042 line.034.042 line.035.042 line.036.042 line.037.042 line.038.042 line.039.042
+  line.040.042 line.041.042 line.042.042 line.043.042 line.044.042 line.045.042 line.046.042 line.047.042 line.048.042 line.049.042
+  line.050.042 line.051.042 line.052.042 line.053.042 line.054.042 line.055.042 line.056.042 line.057.042 line.058.042 line.059.042
+  line.060.042 line.061.042 line.062.042 line.063.042 line.064.042 line.065.042 line.066.042 line.067.042 line.068.042 line.069.042
+  line.070.042 line.071.042 line.072.042 line.073.042 line.074.042 line.075.042 line.076.042 line.077.042 line.078.042 line.079.042
+  line.080.042 line.081.042 line.082.042 line.083.042 line.084.042 line.085.042 line.086.042 line.087.042 line.088.042 line.089.042
+  line.090.042 line.091.042 line.092.042 line.093.042 line.094.042 line.095.042 line.096.042 line.097.042 line.098.042 line.099.042
+  line.100.042
+ ];
+
+@linesTo043 = [ 
+  line.000.043 line.001.043 line.002.043 line.003.043 line.004.043 line.005.043 line.006.043 line.007.043 line.008.043 line.009.043
+  line.010.043 line.011.043 line.012.043 line.013.043 line.014.043 line.015.043 line.016.043 line.017.043 line.018.043 line.019.043
+  line.020.043 line.021.043 line.022.043 line.023.043 line.024.043 line.025.043 line.026.043 line.027.043 line.028.043 line.029.043
+  line.030.043 line.031.043 line.032.043 line.033.043 line.034.043 line.035.043 line.036.043 line.037.043 line.038.043 line.039.043
+  line.040.043 line.041.043 line.042.043 line.043.043 line.044.043 line.045.043 line.046.043 line.047.043 line.048.043 line.049.043
+  line.050.043 line.051.043 line.052.043 line.053.043 line.054.043 line.055.043 line.056.043 line.057.043 line.058.043 line.059.043
+  line.060.043 line.061.043 line.062.043 line.063.043 line.064.043 line.065.043 line.066.043 line.067.043 line.068.043 line.069.043
+  line.070.043 line.071.043 line.072.043 line.073.043 line.074.043 line.075.043 line.076.043 line.077.043 line.078.043 line.079.043
+  line.080.043 line.081.043 line.082.043 line.083.043 line.084.043 line.085.043 line.086.043 line.087.043 line.088.043 line.089.043
+  line.090.043 line.091.043 line.092.043 line.093.043 line.094.043 line.095.043 line.096.043 line.097.043 line.098.043 line.099.043
+  line.100.043
+ ];
+
+@linesTo044 = [ 
+  line.000.044 line.001.044 line.002.044 line.003.044 line.004.044 line.005.044 line.006.044 line.007.044 line.008.044 line.009.044
+  line.010.044 line.011.044 line.012.044 line.013.044 line.014.044 line.015.044 line.016.044 line.017.044 line.018.044 line.019.044
+  line.020.044 line.021.044 line.022.044 line.023.044 line.024.044 line.025.044 line.026.044 line.027.044 line.028.044 line.029.044
+  line.030.044 line.031.044 line.032.044 line.033.044 line.034.044 line.035.044 line.036.044 line.037.044 line.038.044 line.039.044
+  line.040.044 line.041.044 line.042.044 line.043.044 line.044.044 line.045.044 line.046.044 line.047.044 line.048.044 line.049.044
+  line.050.044 line.051.044 line.052.044 line.053.044 line.054.044 line.055.044 line.056.044 line.057.044 line.058.044 line.059.044
+  line.060.044 line.061.044 line.062.044 line.063.044 line.064.044 line.065.044 line.066.044 line.067.044 line.068.044 line.069.044
+  line.070.044 line.071.044 line.072.044 line.073.044 line.074.044 line.075.044 line.076.044 line.077.044 line.078.044 line.079.044
+  line.080.044 line.081.044 line.082.044 line.083.044 line.084.044 line.085.044 line.086.044 line.087.044 line.088.044 line.089.044
+  line.090.044 line.091.044 line.092.044 line.093.044 line.094.044 line.095.044 line.096.044 line.097.044 line.098.044 line.099.044
+  line.100.044
+ ];
+
+@linesTo045 = [ 
+  line.000.045 line.001.045 line.002.045 line.003.045 line.004.045 line.005.045 line.006.045 line.007.045 line.008.045 line.009.045
+  line.010.045 line.011.045 line.012.045 line.013.045 line.014.045 line.015.045 line.016.045 line.017.045 line.018.045 line.019.045
+  line.020.045 line.021.045 line.022.045 line.023.045 line.024.045 line.025.045 line.026.045 line.027.045 line.028.045 line.029.045
+  line.030.045 line.031.045 line.032.045 line.033.045 line.034.045 line.035.045 line.036.045 line.037.045 line.038.045 line.039.045
+  line.040.045 line.041.045 line.042.045 line.043.045 line.044.045 line.045.045 line.046.045 line.047.045 line.048.045 line.049.045
+  line.050.045 line.051.045 line.052.045 line.053.045 line.054.045 line.055.045 line.056.045 line.057.045 line.058.045 line.059.045
+  line.060.045 line.061.045 line.062.045 line.063.045 line.064.045 line.065.045 line.066.045 line.067.045 line.068.045 line.069.045
+  line.070.045 line.071.045 line.072.045 line.073.045 line.074.045 line.075.045 line.076.045 line.077.045 line.078.045 line.079.045
+  line.080.045 line.081.045 line.082.045 line.083.045 line.084.045 line.085.045 line.086.045 line.087.045 line.088.045 line.089.045
+  line.090.045 line.091.045 line.092.045 line.093.045 line.094.045 line.095.045 line.096.045 line.097.045 line.098.045 line.099.045
+  line.100.045
+ ];
+
+@linesTo046 = [ 
+  line.000.046 line.001.046 line.002.046 line.003.046 line.004.046 line.005.046 line.006.046 line.007.046 line.008.046 line.009.046
+  line.010.046 line.011.046 line.012.046 line.013.046 line.014.046 line.015.046 line.016.046 line.017.046 line.018.046 line.019.046
+  line.020.046 line.021.046 line.022.046 line.023.046 line.024.046 line.025.046 line.026.046 line.027.046 line.028.046 line.029.046
+  line.030.046 line.031.046 line.032.046 line.033.046 line.034.046 line.035.046 line.036.046 line.037.046 line.038.046 line.039.046
+  line.040.046 line.041.046 line.042.046 line.043.046 line.044.046 line.045.046 line.046.046 line.047.046 line.048.046 line.049.046
+  line.050.046 line.051.046 line.052.046 line.053.046 line.054.046 line.055.046 line.056.046 line.057.046 line.058.046 line.059.046
+  line.060.046 line.061.046 line.062.046 line.063.046 line.064.046 line.065.046 line.066.046 line.067.046 line.068.046 line.069.046
+  line.070.046 line.071.046 line.072.046 line.073.046 line.074.046 line.075.046 line.076.046 line.077.046 line.078.046 line.079.046
+  line.080.046 line.081.046 line.082.046 line.083.046 line.084.046 line.085.046 line.086.046 line.087.046 line.088.046 line.089.046
+  line.090.046 line.091.046 line.092.046 line.093.046 line.094.046 line.095.046 line.096.046 line.097.046 line.098.046 line.099.046
+  line.100.046
+ ];
+
+@linesTo047 = [ 
+  line.000.047 line.001.047 line.002.047 line.003.047 line.004.047 line.005.047 line.006.047 line.007.047 line.008.047 line.009.047
+  line.010.047 line.011.047 line.012.047 line.013.047 line.014.047 line.015.047 line.016.047 line.017.047 line.018.047 line.019.047
+  line.020.047 line.021.047 line.022.047 line.023.047 line.024.047 line.025.047 line.026.047 line.027.047 line.028.047 line.029.047
+  line.030.047 line.031.047 line.032.047 line.033.047 line.034.047 line.035.047 line.036.047 line.037.047 line.038.047 line.039.047
+  line.040.047 line.041.047 line.042.047 line.043.047 line.044.047 line.045.047 line.046.047 line.047.047 line.048.047 line.049.047
+  line.050.047 line.051.047 line.052.047 line.053.047 line.054.047 line.055.047 line.056.047 line.057.047 line.058.047 line.059.047
+  line.060.047 line.061.047 line.062.047 line.063.047 line.064.047 line.065.047 line.066.047 line.067.047 line.068.047 line.069.047
+  line.070.047 line.071.047 line.072.047 line.073.047 line.074.047 line.075.047 line.076.047 line.077.047 line.078.047 line.079.047
+  line.080.047 line.081.047 line.082.047 line.083.047 line.084.047 line.085.047 line.086.047 line.087.047 line.088.047 line.089.047
+  line.090.047 line.091.047 line.092.047 line.093.047 line.094.047 line.095.047 line.096.047 line.097.047 line.098.047 line.099.047
+  line.100.047
+ ];
+
+@linesTo048 = [ 
+  line.000.048 line.001.048 line.002.048 line.003.048 line.004.048 line.005.048 line.006.048 line.007.048 line.008.048 line.009.048
+  line.010.048 line.011.048 line.012.048 line.013.048 line.014.048 line.015.048 line.016.048 line.017.048 line.018.048 line.019.048
+  line.020.048 line.021.048 line.022.048 line.023.048 line.024.048 line.025.048 line.026.048 line.027.048 line.028.048 line.029.048
+  line.030.048 line.031.048 line.032.048 line.033.048 line.034.048 line.035.048 line.036.048 line.037.048 line.038.048 line.039.048
+  line.040.048 line.041.048 line.042.048 line.043.048 line.044.048 line.045.048 line.046.048 line.047.048 line.048.048 line.049.048
+  line.050.048 line.051.048 line.052.048 line.053.048 line.054.048 line.055.048 line.056.048 line.057.048 line.058.048 line.059.048
+  line.060.048 line.061.048 line.062.048 line.063.048 line.064.048 line.065.048 line.066.048 line.067.048 line.068.048 line.069.048
+  line.070.048 line.071.048 line.072.048 line.073.048 line.074.048 line.075.048 line.076.048 line.077.048 line.078.048 line.079.048
+  line.080.048 line.081.048 line.082.048 line.083.048 line.084.048 line.085.048 line.086.048 line.087.048 line.088.048 line.089.048
+  line.090.048 line.091.048 line.092.048 line.093.048 line.094.048 line.095.048 line.096.048 line.097.048 line.098.048 line.099.048
+  line.100.048
+ ];
+
+@linesTo049 = [ 
+  line.000.049 line.001.049 line.002.049 line.003.049 line.004.049 line.005.049 line.006.049 line.007.049 line.008.049 line.009.049
+  line.010.049 line.011.049 line.012.049 line.013.049 line.014.049 line.015.049 line.016.049 line.017.049 line.018.049 line.019.049
+  line.020.049 line.021.049 line.022.049 line.023.049 line.024.049 line.025.049 line.026.049 line.027.049 line.028.049 line.029.049
+  line.030.049 line.031.049 line.032.049 line.033.049 line.034.049 line.035.049 line.036.049 line.037.049 line.038.049 line.039.049
+  line.040.049 line.041.049 line.042.049 line.043.049 line.044.049 line.045.049 line.046.049 line.047.049 line.048.049 line.049.049
+  line.050.049 line.051.049 line.052.049 line.053.049 line.054.049 line.055.049 line.056.049 line.057.049 line.058.049 line.059.049
+  line.060.049 line.061.049 line.062.049 line.063.049 line.064.049 line.065.049 line.066.049 line.067.049 line.068.049 line.069.049
+  line.070.049 line.071.049 line.072.049 line.073.049 line.074.049 line.075.049 line.076.049 line.077.049 line.078.049 line.079.049
+  line.080.049 line.081.049 line.082.049 line.083.049 line.084.049 line.085.049 line.086.049 line.087.049 line.088.049 line.089.049
+  line.090.049 line.091.049 line.092.049 line.093.049 line.094.049 line.095.049 line.096.049 line.097.049 line.098.049 line.099.049
+  line.100.049
+ ];
+
+@linesTo050 = [ 
+  line.000.050 line.001.050 line.002.050 line.003.050 line.004.050 line.005.050 line.006.050 line.007.050 line.008.050 line.009.050
+  line.010.050 line.011.050 line.012.050 line.013.050 line.014.050 line.015.050 line.016.050 line.017.050 line.018.050 line.019.050
+  line.020.050 line.021.050 line.022.050 line.023.050 line.024.050 line.025.050 line.026.050 line.027.050 line.028.050 line.029.050
+  line.030.050 line.031.050 line.032.050 line.033.050 line.034.050 line.035.050 line.036.050 line.037.050 line.038.050 line.039.050
+  line.040.050 line.041.050 line.042.050 line.043.050 line.044.050 line.045.050 line.046.050 line.047.050 line.048.050 line.049.050
+  line.050.050 line.051.050 line.052.050 line.053.050 line.054.050 line.055.050 line.056.050 line.057.050 line.058.050 line.059.050
+  line.060.050 line.061.050 line.062.050 line.063.050 line.064.050 line.065.050 line.066.050 line.067.050 line.068.050 line.069.050
+  line.070.050 line.071.050 line.072.050 line.073.050 line.074.050 line.075.050 line.076.050 line.077.050 line.078.050 line.079.050
+  line.080.050 line.081.050 line.082.050 line.083.050 line.084.050 line.085.050 line.086.050 line.087.050 line.088.050 line.089.050
+  line.090.050 line.091.050 line.092.050 line.093.050 line.094.050 line.095.050 line.096.050 line.097.050 line.098.050 line.099.050
+  line.100.050
+ ];
+
+@linesTo051 = [ 
+  line.000.051 line.001.051 line.002.051 line.003.051 line.004.051 line.005.051 line.006.051 line.007.051 line.008.051 line.009.051
+  line.010.051 line.011.051 line.012.051 line.013.051 line.014.051 line.015.051 line.016.051 line.017.051 line.018.051 line.019.051
+  line.020.051 line.021.051 line.022.051 line.023.051 line.024.051 line.025.051 line.026.051 line.027.051 line.028.051 line.029.051
+  line.030.051 line.031.051 line.032.051 line.033.051 line.034.051 line.035.051 line.036.051 line.037.051 line.038.051 line.039.051
+  line.040.051 line.041.051 line.042.051 line.043.051 line.044.051 line.045.051 line.046.051 line.047.051 line.048.051 line.049.051
+  line.050.051 line.051.051 line.052.051 line.053.051 line.054.051 line.055.051 line.056.051 line.057.051 line.058.051 line.059.051
+  line.060.051 line.061.051 line.062.051 line.063.051 line.064.051 line.065.051 line.066.051 line.067.051 line.068.051 line.069.051
+  line.070.051 line.071.051 line.072.051 line.073.051 line.074.051 line.075.051 line.076.051 line.077.051 line.078.051 line.079.051
+  line.080.051 line.081.051 line.082.051 line.083.051 line.084.051 line.085.051 line.086.051 line.087.051 line.088.051 line.089.051
+  line.090.051 line.091.051 line.092.051 line.093.051 line.094.051 line.095.051 line.096.051 line.097.051 line.098.051 line.099.051
+  line.100.051
+ ];
+
+@linesTo052 = [ 
+  line.000.052 line.001.052 line.002.052 line.003.052 line.004.052 line.005.052 line.006.052 line.007.052 line.008.052 line.009.052
+  line.010.052 line.011.052 line.012.052 line.013.052 line.014.052 line.015.052 line.016.052 line.017.052 line.018.052 line.019.052
+  line.020.052 line.021.052 line.022.052 line.023.052 line.024.052 line.025.052 line.026.052 line.027.052 line.028.052 line.029.052
+  line.030.052 line.031.052 line.032.052 line.033.052 line.034.052 line.035.052 line.036.052 line.037.052 line.038.052 line.039.052
+  line.040.052 line.041.052 line.042.052 line.043.052 line.044.052 line.045.052 line.046.052 line.047.052 line.048.052 line.049.052
+  line.050.052 line.051.052 line.052.052 line.053.052 line.054.052 line.055.052 line.056.052 line.057.052 line.058.052 line.059.052
+  line.060.052 line.061.052 line.062.052 line.063.052 line.064.052 line.065.052 line.066.052 line.067.052 line.068.052 line.069.052
+  line.070.052 line.071.052 line.072.052 line.073.052 line.074.052 line.075.052 line.076.052 line.077.052 line.078.052 line.079.052
+  line.080.052 line.081.052 line.082.052 line.083.052 line.084.052 line.085.052 line.086.052 line.087.052 line.088.052 line.089.052
+  line.090.052 line.091.052 line.092.052 line.093.052 line.094.052 line.095.052 line.096.052 line.097.052 line.098.052 line.099.052
+  line.100.052
+ ];
+
+@linesTo053 = [ 
+  line.000.053 line.001.053 line.002.053 line.003.053 line.004.053 line.005.053 line.006.053 line.007.053 line.008.053 line.009.053
+  line.010.053 line.011.053 line.012.053 line.013.053 line.014.053 line.015.053 line.016.053 line.017.053 line.018.053 line.019.053
+  line.020.053 line.021.053 line.022.053 line.023.053 line.024.053 line.025.053 line.026.053 line.027.053 line.028.053 line.029.053
+  line.030.053 line.031.053 line.032.053 line.033.053 line.034.053 line.035.053 line.036.053 line.037.053 line.038.053 line.039.053
+  line.040.053 line.041.053 line.042.053 line.043.053 line.044.053 line.045.053 line.046.053 line.047.053 line.048.053 line.049.053
+  line.050.053 line.051.053 line.052.053 line.053.053 line.054.053 line.055.053 line.056.053 line.057.053 line.058.053 line.059.053
+  line.060.053 line.061.053 line.062.053 line.063.053 line.064.053 line.065.053 line.066.053 line.067.053 line.068.053 line.069.053
+  line.070.053 line.071.053 line.072.053 line.073.053 line.074.053 line.075.053 line.076.053 line.077.053 line.078.053 line.079.053
+  line.080.053 line.081.053 line.082.053 line.083.053 line.084.053 line.085.053 line.086.053 line.087.053 line.088.053 line.089.053
+  line.090.053 line.091.053 line.092.053 line.093.053 line.094.053 line.095.053 line.096.053 line.097.053 line.098.053 line.099.053
+  line.100.053
+ ];
+
+@linesTo054 = [ 
+  line.000.054 line.001.054 line.002.054 line.003.054 line.004.054 line.005.054 line.006.054 line.007.054 line.008.054 line.009.054
+  line.010.054 line.011.054 line.012.054 line.013.054 line.014.054 line.015.054 line.016.054 line.017.054 line.018.054 line.019.054
+  line.020.054 line.021.054 line.022.054 line.023.054 line.024.054 line.025.054 line.026.054 line.027.054 line.028.054 line.029.054
+  line.030.054 line.031.054 line.032.054 line.033.054 line.034.054 line.035.054 line.036.054 line.037.054 line.038.054 line.039.054
+  line.040.054 line.041.054 line.042.054 line.043.054 line.044.054 line.045.054 line.046.054 line.047.054 line.048.054 line.049.054
+  line.050.054 line.051.054 line.052.054 line.053.054 line.054.054 line.055.054 line.056.054 line.057.054 line.058.054 line.059.054
+  line.060.054 line.061.054 line.062.054 line.063.054 line.064.054 line.065.054 line.066.054 line.067.054 line.068.054 line.069.054
+  line.070.054 line.071.054 line.072.054 line.073.054 line.074.054 line.075.054 line.076.054 line.077.054 line.078.054 line.079.054
+  line.080.054 line.081.054 line.082.054 line.083.054 line.084.054 line.085.054 line.086.054 line.087.054 line.088.054 line.089.054
+  line.090.054 line.091.054 line.092.054 line.093.054 line.094.054 line.095.054 line.096.054 line.097.054 line.098.054 line.099.054
+  line.100.054
+ ];
+
+@linesTo055 = [ 
+  line.000.055 line.001.055 line.002.055 line.003.055 line.004.055 line.005.055 line.006.055 line.007.055 line.008.055 line.009.055
+  line.010.055 line.011.055 line.012.055 line.013.055 line.014.055 line.015.055 line.016.055 line.017.055 line.018.055 line.019.055
+  line.020.055 line.021.055 line.022.055 line.023.055 line.024.055 line.025.055 line.026.055 line.027.055 line.028.055 line.029.055
+  line.030.055 line.031.055 line.032.055 line.033.055 line.034.055 line.035.055 line.036.055 line.037.055 line.038.055 line.039.055
+  line.040.055 line.041.055 line.042.055 line.043.055 line.044.055 line.045.055 line.046.055 line.047.055 line.048.055 line.049.055
+  line.050.055 line.051.055 line.052.055 line.053.055 line.054.055 line.055.055 line.056.055 line.057.055 line.058.055 line.059.055
+  line.060.055 line.061.055 line.062.055 line.063.055 line.064.055 line.065.055 line.066.055 line.067.055 line.068.055 line.069.055
+  line.070.055 line.071.055 line.072.055 line.073.055 line.074.055 line.075.055 line.076.055 line.077.055 line.078.055 line.079.055
+  line.080.055 line.081.055 line.082.055 line.083.055 line.084.055 line.085.055 line.086.055 line.087.055 line.088.055 line.089.055
+  line.090.055 line.091.055 line.092.055 line.093.055 line.094.055 line.095.055 line.096.055 line.097.055 line.098.055 line.099.055
+  line.100.055
+ ];
+
+@linesTo056 = [ 
+  line.000.056 line.001.056 line.002.056 line.003.056 line.004.056 line.005.056 line.006.056 line.007.056 line.008.056 line.009.056
+  line.010.056 line.011.056 line.012.056 line.013.056 line.014.056 line.015.056 line.016.056 line.017.056 line.018.056 line.019.056
+  line.020.056 line.021.056 line.022.056 line.023.056 line.024.056 line.025.056 line.026.056 line.027.056 line.028.056 line.029.056
+  line.030.056 line.031.056 line.032.056 line.033.056 line.034.056 line.035.056 line.036.056 line.037.056 line.038.056 line.039.056
+  line.040.056 line.041.056 line.042.056 line.043.056 line.044.056 line.045.056 line.046.056 line.047.056 line.048.056 line.049.056
+  line.050.056 line.051.056 line.052.056 line.053.056 line.054.056 line.055.056 line.056.056 line.057.056 line.058.056 line.059.056
+  line.060.056 line.061.056 line.062.056 line.063.056 line.064.056 line.065.056 line.066.056 line.067.056 line.068.056 line.069.056
+  line.070.056 line.071.056 line.072.056 line.073.056 line.074.056 line.075.056 line.076.056 line.077.056 line.078.056 line.079.056
+  line.080.056 line.081.056 line.082.056 line.083.056 line.084.056 line.085.056 line.086.056 line.087.056 line.088.056 line.089.056
+  line.090.056 line.091.056 line.092.056 line.093.056 line.094.056 line.095.056 line.096.056 line.097.056 line.098.056 line.099.056
+  line.100.056
+ ];
+
+@linesTo057 = [ 
+  line.000.057 line.001.057 line.002.057 line.003.057 line.004.057 line.005.057 line.006.057 line.007.057 line.008.057 line.009.057
+  line.010.057 line.011.057 line.012.057 line.013.057 line.014.057 line.015.057 line.016.057 line.017.057 line.018.057 line.019.057
+  line.020.057 line.021.057 line.022.057 line.023.057 line.024.057 line.025.057 line.026.057 line.027.057 line.028.057 line.029.057
+  line.030.057 line.031.057 line.032.057 line.033.057 line.034.057 line.035.057 line.036.057 line.037.057 line.038.057 line.039.057
+  line.040.057 line.041.057 line.042.057 line.043.057 line.044.057 line.045.057 line.046.057 line.047.057 line.048.057 line.049.057
+  line.050.057 line.051.057 line.052.057 line.053.057 line.054.057 line.055.057 line.056.057 line.057.057 line.058.057 line.059.057
+  line.060.057 line.061.057 line.062.057 line.063.057 line.064.057 line.065.057 line.066.057 line.067.057 line.068.057 line.069.057
+  line.070.057 line.071.057 line.072.057 line.073.057 line.074.057 line.075.057 line.076.057 line.077.057 line.078.057 line.079.057
+  line.080.057 line.081.057 line.082.057 line.083.057 line.084.057 line.085.057 line.086.057 line.087.057 line.088.057 line.089.057
+  line.090.057 line.091.057 line.092.057 line.093.057 line.094.057 line.095.057 line.096.057 line.097.057 line.098.057 line.099.057
+  line.100.057
+ ];
+
+@linesTo058 = [ 
+  line.000.058 line.001.058 line.002.058 line.003.058 line.004.058 line.005.058 line.006.058 line.007.058 line.008.058 line.009.058
+  line.010.058 line.011.058 line.012.058 line.013.058 line.014.058 line.015.058 line.016.058 line.017.058 line.018.058 line.019.058
+  line.020.058 line.021.058 line.022.058 line.023.058 line.024.058 line.025.058 line.026.058 line.027.058 line.028.058 line.029.058
+  line.030.058 line.031.058 line.032.058 line.033.058 line.034.058 line.035.058 line.036.058 line.037.058 line.038.058 line.039.058
+  line.040.058 line.041.058 line.042.058 line.043.058 line.044.058 line.045.058 line.046.058 line.047.058 line.048.058 line.049.058
+  line.050.058 line.051.058 line.052.058 line.053.058 line.054.058 line.055.058 line.056.058 line.057.058 line.058.058 line.059.058
+  line.060.058 line.061.058 line.062.058 line.063.058 line.064.058 line.065.058 line.066.058 line.067.058 line.068.058 line.069.058
+  line.070.058 line.071.058 line.072.058 line.073.058 line.074.058 line.075.058 line.076.058 line.077.058 line.078.058 line.079.058
+  line.080.058 line.081.058 line.082.058 line.083.058 line.084.058 line.085.058 line.086.058 line.087.058 line.088.058 line.089.058
+  line.090.058 line.091.058 line.092.058 line.093.058 line.094.058 line.095.058 line.096.058 line.097.058 line.098.058 line.099.058
+  line.100.058
+ ];
+
+@linesTo059 = [ 
+  line.000.059 line.001.059 line.002.059 line.003.059 line.004.059 line.005.059 line.006.059 line.007.059 line.008.059 line.009.059
+  line.010.059 line.011.059 line.012.059 line.013.059 line.014.059 line.015.059 line.016.059 line.017.059 line.018.059 line.019.059
+  line.020.059 line.021.059 line.022.059 line.023.059 line.024.059 line.025.059 line.026.059 line.027.059 line.028.059 line.029.059
+  line.030.059 line.031.059 line.032.059 line.033.059 line.034.059 line.035.059 line.036.059 line.037.059 line.038.059 line.039.059
+  line.040.059 line.041.059 line.042.059 line.043.059 line.044.059 line.045.059 line.046.059 line.047.059 line.048.059 line.049.059
+  line.050.059 line.051.059 line.052.059 line.053.059 line.054.059 line.055.059 line.056.059 line.057.059 line.058.059 line.059.059
+  line.060.059 line.061.059 line.062.059 line.063.059 line.064.059 line.065.059 line.066.059 line.067.059 line.068.059 line.069.059
+  line.070.059 line.071.059 line.072.059 line.073.059 line.074.059 line.075.059 line.076.059 line.077.059 line.078.059 line.079.059
+  line.080.059 line.081.059 line.082.059 line.083.059 line.084.059 line.085.059 line.086.059 line.087.059 line.088.059 line.089.059
+  line.090.059 line.091.059 line.092.059 line.093.059 line.094.059 line.095.059 line.096.059 line.097.059 line.098.059 line.099.059
+  line.100.059
+ ];
+
+@linesTo060 = [ 
+  line.000.060 line.001.060 line.002.060 line.003.060 line.004.060 line.005.060 line.006.060 line.007.060 line.008.060 line.009.060
+  line.010.060 line.011.060 line.012.060 line.013.060 line.014.060 line.015.060 line.016.060 line.017.060 line.018.060 line.019.060
+  line.020.060 line.021.060 line.022.060 line.023.060 line.024.060 line.025.060 line.026.060 line.027.060 line.028.060 line.029.060
+  line.030.060 line.031.060 line.032.060 line.033.060 line.034.060 line.035.060 line.036.060 line.037.060 line.038.060 line.039.060
+  line.040.060 line.041.060 line.042.060 line.043.060 line.044.060 line.045.060 line.046.060 line.047.060 line.048.060 line.049.060
+  line.050.060 line.051.060 line.052.060 line.053.060 line.054.060 line.055.060 line.056.060 line.057.060 line.058.060 line.059.060
+  line.060.060 line.061.060 line.062.060 line.063.060 line.064.060 line.065.060 line.066.060 line.067.060 line.068.060 line.069.060
+  line.070.060 line.071.060 line.072.060 line.073.060 line.074.060 line.075.060 line.076.060 line.077.060 line.078.060 line.079.060
+  line.080.060 line.081.060 line.082.060 line.083.060 line.084.060 line.085.060 line.086.060 line.087.060 line.088.060 line.089.060
+  line.090.060 line.091.060 line.092.060 line.093.060 line.094.060 line.095.060 line.096.060 line.097.060 line.098.060 line.099.060
+  line.100.060
+ ];
+
+@linesTo061 = [ 
+  line.000.061 line.001.061 line.002.061 line.003.061 line.004.061 line.005.061 line.006.061 line.007.061 line.008.061 line.009.061
+  line.010.061 line.011.061 line.012.061 line.013.061 line.014.061 line.015.061 line.016.061 line.017.061 line.018.061 line.019.061
+  line.020.061 line.021.061 line.022.061 line.023.061 line.024.061 line.025.061 line.026.061 line.027.061 line.028.061 line.029.061
+  line.030.061 line.031.061 line.032.061 line.033.061 line.034.061 line.035.061 line.036.061 line.037.061 line.038.061 line.039.061
+  line.040.061 line.041.061 line.042.061 line.043.061 line.044.061 line.045.061 line.046.061 line.047.061 line.048.061 line.049.061
+  line.050.061 line.051.061 line.052.061 line.053.061 line.054.061 line.055.061 line.056.061 line.057.061 line.058.061 line.059.061
+  line.060.061 line.061.061 line.062.061 line.063.061 line.064.061 line.065.061 line.066.061 line.067.061 line.068.061 line.069.061
+  line.070.061 line.071.061 line.072.061 line.073.061 line.074.061 line.075.061 line.076.061 line.077.061 line.078.061 line.079.061
+  line.080.061 line.081.061 line.082.061 line.083.061 line.084.061 line.085.061 line.086.061 line.087.061 line.088.061 line.089.061
+  line.090.061 line.091.061 line.092.061 line.093.061 line.094.061 line.095.061 line.096.061 line.097.061 line.098.061 line.099.061
+  line.100.061
+ ];
+
+@linesTo062 = [ 
+  line.000.062 line.001.062 line.002.062 line.003.062 line.004.062 line.005.062 line.006.062 line.007.062 line.008.062 line.009.062
+  line.010.062 line.011.062 line.012.062 line.013.062 line.014.062 line.015.062 line.016.062 line.017.062 line.018.062 line.019.062
+  line.020.062 line.021.062 line.022.062 line.023.062 line.024.062 line.025.062 line.026.062 line.027.062 line.028.062 line.029.062
+  line.030.062 line.031.062 line.032.062 line.033.062 line.034.062 line.035.062 line.036.062 line.037.062 line.038.062 line.039.062
+  line.040.062 line.041.062 line.042.062 line.043.062 line.044.062 line.045.062 line.046.062 line.047.062 line.048.062 line.049.062
+  line.050.062 line.051.062 line.052.062 line.053.062 line.054.062 line.055.062 line.056.062 line.057.062 line.058.062 line.059.062
+  line.060.062 line.061.062 line.062.062 line.063.062 line.064.062 line.065.062 line.066.062 line.067.062 line.068.062 line.069.062
+  line.070.062 line.071.062 line.072.062 line.073.062 line.074.062 line.075.062 line.076.062 line.077.062 line.078.062 line.079.062
+  line.080.062 line.081.062 line.082.062 line.083.062 line.084.062 line.085.062 line.086.062 line.087.062 line.088.062 line.089.062
+  line.090.062 line.091.062 line.092.062 line.093.062 line.094.062 line.095.062 line.096.062 line.097.062 line.098.062 line.099.062
+  line.100.062
+ ];
+
+@linesTo063 = [ 
+  line.000.063 line.001.063 line.002.063 line.003.063 line.004.063 line.005.063 line.006.063 line.007.063 line.008.063 line.009.063
+  line.010.063 line.011.063 line.012.063 line.013.063 line.014.063 line.015.063 line.016.063 line.017.063 line.018.063 line.019.063
+  line.020.063 line.021.063 line.022.063 line.023.063 line.024.063 line.025.063 line.026.063 line.027.063 line.028.063 line.029.063
+  line.030.063 line.031.063 line.032.063 line.033.063 line.034.063 line.035.063 line.036.063 line.037.063 line.038.063 line.039.063
+  line.040.063 line.041.063 line.042.063 line.043.063 line.044.063 line.045.063 line.046.063 line.047.063 line.048.063 line.049.063
+  line.050.063 line.051.063 line.052.063 line.053.063 line.054.063 line.055.063 line.056.063 line.057.063 line.058.063 line.059.063
+  line.060.063 line.061.063 line.062.063 line.063.063 line.064.063 line.065.063 line.066.063 line.067.063 line.068.063 line.069.063
+  line.070.063 line.071.063 line.072.063 line.073.063 line.074.063 line.075.063 line.076.063 line.077.063 line.078.063 line.079.063
+  line.080.063 line.081.063 line.082.063 line.083.063 line.084.063 line.085.063 line.086.063 line.087.063 line.088.063 line.089.063
+  line.090.063 line.091.063 line.092.063 line.093.063 line.094.063 line.095.063 line.096.063 line.097.063 line.098.063 line.099.063
+  line.100.063
+ ];
+
+@linesTo064 = [ 
+  line.000.064 line.001.064 line.002.064 line.003.064 line.004.064 line.005.064 line.006.064 line.007.064 line.008.064 line.009.064
+  line.010.064 line.011.064 line.012.064 line.013.064 line.014.064 line.015.064 line.016.064 line.017.064 line.018.064 line.019.064
+  line.020.064 line.021.064 line.022.064 line.023.064 line.024.064 line.025.064 line.026.064 line.027.064 line.028.064 line.029.064
+  line.030.064 line.031.064 line.032.064 line.033.064 line.034.064 line.035.064 line.036.064 line.037.064 line.038.064 line.039.064
+  line.040.064 line.041.064 line.042.064 line.043.064 line.044.064 line.045.064 line.046.064 line.047.064 line.048.064 line.049.064
+  line.050.064 line.051.064 line.052.064 line.053.064 line.054.064 line.055.064 line.056.064 line.057.064 line.058.064 line.059.064
+  line.060.064 line.061.064 line.062.064 line.063.064 line.064.064 line.065.064 line.066.064 line.067.064 line.068.064 line.069.064
+  line.070.064 line.071.064 line.072.064 line.073.064 line.074.064 line.075.064 line.076.064 line.077.064 line.078.064 line.079.064
+  line.080.064 line.081.064 line.082.064 line.083.064 line.084.064 line.085.064 line.086.064 line.087.064 line.088.064 line.089.064
+  line.090.064 line.091.064 line.092.064 line.093.064 line.094.064 line.095.064 line.096.064 line.097.064 line.098.064 line.099.064
+  line.100.064
+ ];
+
+@linesTo065 = [ 
+  line.000.065 line.001.065 line.002.065 line.003.065 line.004.065 line.005.065 line.006.065 line.007.065 line.008.065 line.009.065
+  line.010.065 line.011.065 line.012.065 line.013.065 line.014.065 line.015.065 line.016.065 line.017.065 line.018.065 line.019.065
+  line.020.065 line.021.065 line.022.065 line.023.065 line.024.065 line.025.065 line.026.065 line.027.065 line.028.065 line.029.065
+  line.030.065 line.031.065 line.032.065 line.033.065 line.034.065 line.035.065 line.036.065 line.037.065 line.038.065 line.039.065
+  line.040.065 line.041.065 line.042.065 line.043.065 line.044.065 line.045.065 line.046.065 line.047.065 line.048.065 line.049.065
+  line.050.065 line.051.065 line.052.065 line.053.065 line.054.065 line.055.065 line.056.065 line.057.065 line.058.065 line.059.065
+  line.060.065 line.061.065 line.062.065 line.063.065 line.064.065 line.065.065 line.066.065 line.067.065 line.068.065 line.069.065
+  line.070.065 line.071.065 line.072.065 line.073.065 line.074.065 line.075.065 line.076.065 line.077.065 line.078.065 line.079.065
+  line.080.065 line.081.065 line.082.065 line.083.065 line.084.065 line.085.065 line.086.065 line.087.065 line.088.065 line.089.065
+  line.090.065 line.091.065 line.092.065 line.093.065 line.094.065 line.095.065 line.096.065 line.097.065 line.098.065 line.099.065
+  line.100.065
+ ];
+
+@linesTo066 = [ 
+  line.000.066 line.001.066 line.002.066 line.003.066 line.004.066 line.005.066 line.006.066 line.007.066 line.008.066 line.009.066
+  line.010.066 line.011.066 line.012.066 line.013.066 line.014.066 line.015.066 line.016.066 line.017.066 line.018.066 line.019.066
+  line.020.066 line.021.066 line.022.066 line.023.066 line.024.066 line.025.066 line.026.066 line.027.066 line.028.066 line.029.066
+  line.030.066 line.031.066 line.032.066 line.033.066 line.034.066 line.035.066 line.036.066 line.037.066 line.038.066 line.039.066
+  line.040.066 line.041.066 line.042.066 line.043.066 line.044.066 line.045.066 line.046.066 line.047.066 line.048.066 line.049.066
+  line.050.066 line.051.066 line.052.066 line.053.066 line.054.066 line.055.066 line.056.066 line.057.066 line.058.066 line.059.066
+  line.060.066 line.061.066 line.062.066 line.063.066 line.064.066 line.065.066 line.066.066 line.067.066 line.068.066 line.069.066
+  line.070.066 line.071.066 line.072.066 line.073.066 line.074.066 line.075.066 line.076.066 line.077.066 line.078.066 line.079.066
+  line.080.066 line.081.066 line.082.066 line.083.066 line.084.066 line.085.066 line.086.066 line.087.066 line.088.066 line.089.066
+  line.090.066 line.091.066 line.092.066 line.093.066 line.094.066 line.095.066 line.096.066 line.097.066 line.098.066 line.099.066
+  line.100.066
+ ];
+
+@linesTo067 = [ 
+  line.000.067 line.001.067 line.002.067 line.003.067 line.004.067 line.005.067 line.006.067 line.007.067 line.008.067 line.009.067
+  line.010.067 line.011.067 line.012.067 line.013.067 line.014.067 line.015.067 line.016.067 line.017.067 line.018.067 line.019.067
+  line.020.067 line.021.067 line.022.067 line.023.067 line.024.067 line.025.067 line.026.067 line.027.067 line.028.067 line.029.067
+  line.030.067 line.031.067 line.032.067 line.033.067 line.034.067 line.035.067 line.036.067 line.037.067 line.038.067 line.039.067
+  line.040.067 line.041.067 line.042.067 line.043.067 line.044.067 line.045.067 line.046.067 line.047.067 line.048.067 line.049.067
+  line.050.067 line.051.067 line.052.067 line.053.067 line.054.067 line.055.067 line.056.067 line.057.067 line.058.067 line.059.067
+  line.060.067 line.061.067 line.062.067 line.063.067 line.064.067 line.065.067 line.066.067 line.067.067 line.068.067 line.069.067
+  line.070.067 line.071.067 line.072.067 line.073.067 line.074.067 line.075.067 line.076.067 line.077.067 line.078.067 line.079.067
+  line.080.067 line.081.067 line.082.067 line.083.067 line.084.067 line.085.067 line.086.067 line.087.067 line.088.067 line.089.067
+  line.090.067 line.091.067 line.092.067 line.093.067 line.094.067 line.095.067 line.096.067 line.097.067 line.098.067 line.099.067
+  line.100.067
+ ];
+
+@linesTo068 = [ 
+  line.000.068 line.001.068 line.002.068 line.003.068 line.004.068 line.005.068 line.006.068 line.007.068 line.008.068 line.009.068
+  line.010.068 line.011.068 line.012.068 line.013.068 line.014.068 line.015.068 line.016.068 line.017.068 line.018.068 line.019.068
+  line.020.068 line.021.068 line.022.068 line.023.068 line.024.068 line.025.068 line.026.068 line.027.068 line.028.068 line.029.068
+  line.030.068 line.031.068 line.032.068 line.033.068 line.034.068 line.035.068 line.036.068 line.037.068 line.038.068 line.039.068
+  line.040.068 line.041.068 line.042.068 line.043.068 line.044.068 line.045.068 line.046.068 line.047.068 line.048.068 line.049.068
+  line.050.068 line.051.068 line.052.068 line.053.068 line.054.068 line.055.068 line.056.068 line.057.068 line.058.068 line.059.068
+  line.060.068 line.061.068 line.062.068 line.063.068 line.064.068 line.065.068 line.066.068 line.067.068 line.068.068 line.069.068
+  line.070.068 line.071.068 line.072.068 line.073.068 line.074.068 line.075.068 line.076.068 line.077.068 line.078.068 line.079.068
+  line.080.068 line.081.068 line.082.068 line.083.068 line.084.068 line.085.068 line.086.068 line.087.068 line.088.068 line.089.068
+  line.090.068 line.091.068 line.092.068 line.093.068 line.094.068 line.095.068 line.096.068 line.097.068 line.098.068 line.099.068
+  line.100.068
+ ];
+
+@linesTo069 = [ 
+  line.000.069 line.001.069 line.002.069 line.003.069 line.004.069 line.005.069 line.006.069 line.007.069 line.008.069 line.009.069
+  line.010.069 line.011.069 line.012.069 line.013.069 line.014.069 line.015.069 line.016.069 line.017.069 line.018.069 line.019.069
+  line.020.069 line.021.069 line.022.069 line.023.069 line.024.069 line.025.069 line.026.069 line.027.069 line.028.069 line.029.069
+  line.030.069 line.031.069 line.032.069 line.033.069 line.034.069 line.035.069 line.036.069 line.037.069 line.038.069 line.039.069
+  line.040.069 line.041.069 line.042.069 line.043.069 line.044.069 line.045.069 line.046.069 line.047.069 line.048.069 line.049.069
+  line.050.069 line.051.069 line.052.069 line.053.069 line.054.069 line.055.069 line.056.069 line.057.069 line.058.069 line.059.069
+  line.060.069 line.061.069 line.062.069 line.063.069 line.064.069 line.065.069 line.066.069 line.067.069 line.068.069 line.069.069
+  line.070.069 line.071.069 line.072.069 line.073.069 line.074.069 line.075.069 line.076.069 line.077.069 line.078.069 line.079.069
+  line.080.069 line.081.069 line.082.069 line.083.069 line.084.069 line.085.069 line.086.069 line.087.069 line.088.069 line.089.069
+  line.090.069 line.091.069 line.092.069 line.093.069 line.094.069 line.095.069 line.096.069 line.097.069 line.098.069 line.099.069
+  line.100.069
+ ];
+
+@linesTo070 = [ 
+  line.000.070 line.001.070 line.002.070 line.003.070 line.004.070 line.005.070 line.006.070 line.007.070 line.008.070 line.009.070
+  line.010.070 line.011.070 line.012.070 line.013.070 line.014.070 line.015.070 line.016.070 line.017.070 line.018.070 line.019.070
+  line.020.070 line.021.070 line.022.070 line.023.070 line.024.070 line.025.070 line.026.070 line.027.070 line.028.070 line.029.070
+  line.030.070 line.031.070 line.032.070 line.033.070 line.034.070 line.035.070 line.036.070 line.037.070 line.038.070 line.039.070
+  line.040.070 line.041.070 line.042.070 line.043.070 line.044.070 line.045.070 line.046.070 line.047.070 line.048.070 line.049.070
+  line.050.070 line.051.070 line.052.070 line.053.070 line.054.070 line.055.070 line.056.070 line.057.070 line.058.070 line.059.070
+  line.060.070 line.061.070 line.062.070 line.063.070 line.064.070 line.065.070 line.066.070 line.067.070 line.068.070 line.069.070
+  line.070.070 line.071.070 line.072.070 line.073.070 line.074.070 line.075.070 line.076.070 line.077.070 line.078.070 line.079.070
+  line.080.070 line.081.070 line.082.070 line.083.070 line.084.070 line.085.070 line.086.070 line.087.070 line.088.070 line.089.070
+  line.090.070 line.091.070 line.092.070 line.093.070 line.094.070 line.095.070 line.096.070 line.097.070 line.098.070 line.099.070
+  line.100.070
+ ];
+
+@linesTo071 = [ 
+  line.000.071 line.001.071 line.002.071 line.003.071 line.004.071 line.005.071 line.006.071 line.007.071 line.008.071 line.009.071
+  line.010.071 line.011.071 line.012.071 line.013.071 line.014.071 line.015.071 line.016.071 line.017.071 line.018.071 line.019.071
+  line.020.071 line.021.071 line.022.071 line.023.071 line.024.071 line.025.071 line.026.071 line.027.071 line.028.071 line.029.071
+  line.030.071 line.031.071 line.032.071 line.033.071 line.034.071 line.035.071 line.036.071 line.037.071 line.038.071 line.039.071
+  line.040.071 line.041.071 line.042.071 line.043.071 line.044.071 line.045.071 line.046.071 line.047.071 line.048.071 line.049.071
+  line.050.071 line.051.071 line.052.071 line.053.071 line.054.071 line.055.071 line.056.071 line.057.071 line.058.071 line.059.071
+  line.060.071 line.061.071 line.062.071 line.063.071 line.064.071 line.065.071 line.066.071 line.067.071 line.068.071 line.069.071
+  line.070.071 line.071.071 line.072.071 line.073.071 line.074.071 line.075.071 line.076.071 line.077.071 line.078.071 line.079.071
+  line.080.071 line.081.071 line.082.071 line.083.071 line.084.071 line.085.071 line.086.071 line.087.071 line.088.071 line.089.071
+  line.090.071 line.091.071 line.092.071 line.093.071 line.094.071 line.095.071 line.096.071 line.097.071 line.098.071 line.099.071
+  line.100.071
+ ];
+
+@linesTo072 = [ 
+  line.000.072 line.001.072 line.002.072 line.003.072 line.004.072 line.005.072 line.006.072 line.007.072 line.008.072 line.009.072
+  line.010.072 line.011.072 line.012.072 line.013.072 line.014.072 line.015.072 line.016.072 line.017.072 line.018.072 line.019.072
+  line.020.072 line.021.072 line.022.072 line.023.072 line.024.072 line.025.072 line.026.072 line.027.072 line.028.072 line.029.072
+  line.030.072 line.031.072 line.032.072 line.033.072 line.034.072 line.035.072 line.036.072 line.037.072 line.038.072 line.039.072
+  line.040.072 line.041.072 line.042.072 line.043.072 line.044.072 line.045.072 line.046.072 line.047.072 line.048.072 line.049.072
+  line.050.072 line.051.072 line.052.072 line.053.072 line.054.072 line.055.072 line.056.072 line.057.072 line.058.072 line.059.072
+  line.060.072 line.061.072 line.062.072 line.063.072 line.064.072 line.065.072 line.066.072 line.067.072 line.068.072 line.069.072
+  line.070.072 line.071.072 line.072.072 line.073.072 line.074.072 line.075.072 line.076.072 line.077.072 line.078.072 line.079.072
+  line.080.072 line.081.072 line.082.072 line.083.072 line.084.072 line.085.072 line.086.072 line.087.072 line.088.072 line.089.072
+  line.090.072 line.091.072 line.092.072 line.093.072 line.094.072 line.095.072 line.096.072 line.097.072 line.098.072 line.099.072
+  line.100.072
+ ];
+
+@linesTo073 = [ 
+  line.000.073 line.001.073 line.002.073 line.003.073 line.004.073 line.005.073 line.006.073 line.007.073 line.008.073 line.009.073
+  line.010.073 line.011.073 line.012.073 line.013.073 line.014.073 line.015.073 line.016.073 line.017.073 line.018.073 line.019.073
+  line.020.073 line.021.073 line.022.073 line.023.073 line.024.073 line.025.073 line.026.073 line.027.073 line.028.073 line.029.073
+  line.030.073 line.031.073 line.032.073 line.033.073 line.034.073 line.035.073 line.036.073 line.037.073 line.038.073 line.039.073
+  line.040.073 line.041.073 line.042.073 line.043.073 line.044.073 line.045.073 line.046.073 line.047.073 line.048.073 line.049.073
+  line.050.073 line.051.073 line.052.073 line.053.073 line.054.073 line.055.073 line.056.073 line.057.073 line.058.073 line.059.073
+  line.060.073 line.061.073 line.062.073 line.063.073 line.064.073 line.065.073 line.066.073 line.067.073 line.068.073 line.069.073
+  line.070.073 line.071.073 line.072.073 line.073.073 line.074.073 line.075.073 line.076.073 line.077.073 line.078.073 line.079.073
+  line.080.073 line.081.073 line.082.073 line.083.073 line.084.073 line.085.073 line.086.073 line.087.073 line.088.073 line.089.073
+  line.090.073 line.091.073 line.092.073 line.093.073 line.094.073 line.095.073 line.096.073 line.097.073 line.098.073 line.099.073
+  line.100.073
+ ];
+
+@linesTo074 = [ 
+  line.000.074 line.001.074 line.002.074 line.003.074 line.004.074 line.005.074 line.006.074 line.007.074 line.008.074 line.009.074
+  line.010.074 line.011.074 line.012.074 line.013.074 line.014.074 line.015.074 line.016.074 line.017.074 line.018.074 line.019.074
+  line.020.074 line.021.074 line.022.074 line.023.074 line.024.074 line.025.074 line.026.074 line.027.074 line.028.074 line.029.074
+  line.030.074 line.031.074 line.032.074 line.033.074 line.034.074 line.035.074 line.036.074 line.037.074 line.038.074 line.039.074
+  line.040.074 line.041.074 line.042.074 line.043.074 line.044.074 line.045.074 line.046.074 line.047.074 line.048.074 line.049.074
+  line.050.074 line.051.074 line.052.074 line.053.074 line.054.074 line.055.074 line.056.074 line.057.074 line.058.074 line.059.074
+  line.060.074 line.061.074 line.062.074 line.063.074 line.064.074 line.065.074 line.066.074 line.067.074 line.068.074 line.069.074
+  line.070.074 line.071.074 line.072.074 line.073.074 line.074.074 line.075.074 line.076.074 line.077.074 line.078.074 line.079.074
+  line.080.074 line.081.074 line.082.074 line.083.074 line.084.074 line.085.074 line.086.074 line.087.074 line.088.074 line.089.074
+  line.090.074 line.091.074 line.092.074 line.093.074 line.094.074 line.095.074 line.096.074 line.097.074 line.098.074 line.099.074
+  line.100.074
+ ];
+
+@linesTo075 = [ 
+  line.000.075 line.001.075 line.002.075 line.003.075 line.004.075 line.005.075 line.006.075 line.007.075 line.008.075 line.009.075
+  line.010.075 line.011.075 line.012.075 line.013.075 line.014.075 line.015.075 line.016.075 line.017.075 line.018.075 line.019.075
+  line.020.075 line.021.075 line.022.075 line.023.075 line.024.075 line.025.075 line.026.075 line.027.075 line.028.075 line.029.075
+  line.030.075 line.031.075 line.032.075 line.033.075 line.034.075 line.035.075 line.036.075 line.037.075 line.038.075 line.039.075
+  line.040.075 line.041.075 line.042.075 line.043.075 line.044.075 line.045.075 line.046.075 line.047.075 line.048.075 line.049.075
+  line.050.075 line.051.075 line.052.075 line.053.075 line.054.075 line.055.075 line.056.075 line.057.075 line.058.075 line.059.075
+  line.060.075 line.061.075 line.062.075 line.063.075 line.064.075 line.065.075 line.066.075 line.067.075 line.068.075 line.069.075
+  line.070.075 line.071.075 line.072.075 line.073.075 line.074.075 line.075.075 line.076.075 line.077.075 line.078.075 line.079.075
+  line.080.075 line.081.075 line.082.075 line.083.075 line.084.075 line.085.075 line.086.075 line.087.075 line.088.075 line.089.075
+  line.090.075 line.091.075 line.092.075 line.093.075 line.094.075 line.095.075 line.096.075 line.097.075 line.098.075 line.099.075
+  line.100.075
+ ];
+
+@linesTo076 = [ 
+  line.000.076 line.001.076 line.002.076 line.003.076 line.004.076 line.005.076 line.006.076 line.007.076 line.008.076 line.009.076
+  line.010.076 line.011.076 line.012.076 line.013.076 line.014.076 line.015.076 line.016.076 line.017.076 line.018.076 line.019.076
+  line.020.076 line.021.076 line.022.076 line.023.076 line.024.076 line.025.076 line.026.076 line.027.076 line.028.076 line.029.076
+  line.030.076 line.031.076 line.032.076 line.033.076 line.034.076 line.035.076 line.036.076 line.037.076 line.038.076 line.039.076
+  line.040.076 line.041.076 line.042.076 line.043.076 line.044.076 line.045.076 line.046.076 line.047.076 line.048.076 line.049.076
+  line.050.076 line.051.076 line.052.076 line.053.076 line.054.076 line.055.076 line.056.076 line.057.076 line.058.076 line.059.076
+  line.060.076 line.061.076 line.062.076 line.063.076 line.064.076 line.065.076 line.066.076 line.067.076 line.068.076 line.069.076
+  line.070.076 line.071.076 line.072.076 line.073.076 line.074.076 line.075.076 line.076.076 line.077.076 line.078.076 line.079.076
+  line.080.076 line.081.076 line.082.076 line.083.076 line.084.076 line.085.076 line.086.076 line.087.076 line.088.076 line.089.076
+  line.090.076 line.091.076 line.092.076 line.093.076 line.094.076 line.095.076 line.096.076 line.097.076 line.098.076 line.099.076
+  line.100.076
+ ];
+
+@linesTo077 = [ 
+  line.000.077 line.001.077 line.002.077 line.003.077 line.004.077 line.005.077 line.006.077 line.007.077 line.008.077 line.009.077
+  line.010.077 line.011.077 line.012.077 line.013.077 line.014.077 line.015.077 line.016.077 line.017.077 line.018.077 line.019.077
+  line.020.077 line.021.077 line.022.077 line.023.077 line.024.077 line.025.077 line.026.077 line.027.077 line.028.077 line.029.077
+  line.030.077 line.031.077 line.032.077 line.033.077 line.034.077 line.035.077 line.036.077 line.037.077 line.038.077 line.039.077
+  line.040.077 line.041.077 line.042.077 line.043.077 line.044.077 line.045.077 line.046.077 line.047.077 line.048.077 line.049.077
+  line.050.077 line.051.077 line.052.077 line.053.077 line.054.077 line.055.077 line.056.077 line.057.077 line.058.077 line.059.077
+  line.060.077 line.061.077 line.062.077 line.063.077 line.064.077 line.065.077 line.066.077 line.067.077 line.068.077 line.069.077
+  line.070.077 line.071.077 line.072.077 line.073.077 line.074.077 line.075.077 line.076.077 line.077.077 line.078.077 line.079.077
+  line.080.077 line.081.077 line.082.077 line.083.077 line.084.077 line.085.077 line.086.077 line.087.077 line.088.077 line.089.077
+  line.090.077 line.091.077 line.092.077 line.093.077 line.094.077 line.095.077 line.096.077 line.097.077 line.098.077 line.099.077
+  line.100.077
+ ];
+
+@linesTo078 = [ 
+  line.000.078 line.001.078 line.002.078 line.003.078 line.004.078 line.005.078 line.006.078 line.007.078 line.008.078 line.009.078
+  line.010.078 line.011.078 line.012.078 line.013.078 line.014.078 line.015.078 line.016.078 line.017.078 line.018.078 line.019.078
+  line.020.078 line.021.078 line.022.078 line.023.078 line.024.078 line.025.078 line.026.078 line.027.078 line.028.078 line.029.078
+  line.030.078 line.031.078 line.032.078 line.033.078 line.034.078 line.035.078 line.036.078 line.037.078 line.038.078 line.039.078
+  line.040.078 line.041.078 line.042.078 line.043.078 line.044.078 line.045.078 line.046.078 line.047.078 line.048.078 line.049.078
+  line.050.078 line.051.078 line.052.078 line.053.078 line.054.078 line.055.078 line.056.078 line.057.078 line.058.078 line.059.078
+  line.060.078 line.061.078 line.062.078 line.063.078 line.064.078 line.065.078 line.066.078 line.067.078 line.068.078 line.069.078
+  line.070.078 line.071.078 line.072.078 line.073.078 line.074.078 line.075.078 line.076.078 line.077.078 line.078.078 line.079.078
+  line.080.078 line.081.078 line.082.078 line.083.078 line.084.078 line.085.078 line.086.078 line.087.078 line.088.078 line.089.078
+  line.090.078 line.091.078 line.092.078 line.093.078 line.094.078 line.095.078 line.096.078 line.097.078 line.098.078 line.099.078
+  line.100.078
+ ];
+
+@linesTo079 = [ 
+  line.000.079 line.001.079 line.002.079 line.003.079 line.004.079 line.005.079 line.006.079 line.007.079 line.008.079 line.009.079
+  line.010.079 line.011.079 line.012.079 line.013.079 line.014.079 line.015.079 line.016.079 line.017.079 line.018.079 line.019.079
+  line.020.079 line.021.079 line.022.079 line.023.079 line.024.079 line.025.079 line.026.079 line.027.079 line.028.079 line.029.079
+  line.030.079 line.031.079 line.032.079 line.033.079 line.034.079 line.035.079 line.036.079 line.037.079 line.038.079 line.039.079
+  line.040.079 line.041.079 line.042.079 line.043.079 line.044.079 line.045.079 line.046.079 line.047.079 line.048.079 line.049.079
+  line.050.079 line.051.079 line.052.079 line.053.079 line.054.079 line.055.079 line.056.079 line.057.079 line.058.079 line.059.079
+  line.060.079 line.061.079 line.062.079 line.063.079 line.064.079 line.065.079 line.066.079 line.067.079 line.068.079 line.069.079
+  line.070.079 line.071.079 line.072.079 line.073.079 line.074.079 line.075.079 line.076.079 line.077.079 line.078.079 line.079.079
+  line.080.079 line.081.079 line.082.079 line.083.079 line.084.079 line.085.079 line.086.079 line.087.079 line.088.079 line.089.079
+  line.090.079 line.091.079 line.092.079 line.093.079 line.094.079 line.095.079 line.096.079 line.097.079 line.098.079 line.099.079
+  line.100.079
+ ];
+
+@linesTo080 = [ 
+  line.000.080 line.001.080 line.002.080 line.003.080 line.004.080 line.005.080 line.006.080 line.007.080 line.008.080 line.009.080
+  line.010.080 line.011.080 line.012.080 line.013.080 line.014.080 line.015.080 line.016.080 line.017.080 line.018.080 line.019.080
+  line.020.080 line.021.080 line.022.080 line.023.080 line.024.080 line.025.080 line.026.080 line.027.080 line.028.080 line.029.080
+  line.030.080 line.031.080 line.032.080 line.033.080 line.034.080 line.035.080 line.036.080 line.037.080 line.038.080 line.039.080
+  line.040.080 line.041.080 line.042.080 line.043.080 line.044.080 line.045.080 line.046.080 line.047.080 line.048.080 line.049.080
+  line.050.080 line.051.080 line.052.080 line.053.080 line.054.080 line.055.080 line.056.080 line.057.080 line.058.080 line.059.080
+  line.060.080 line.061.080 line.062.080 line.063.080 line.064.080 line.065.080 line.066.080 line.067.080 line.068.080 line.069.080
+  line.070.080 line.071.080 line.072.080 line.073.080 line.074.080 line.075.080 line.076.080 line.077.080 line.078.080 line.079.080
+  line.080.080 line.081.080 line.082.080 line.083.080 line.084.080 line.085.080 line.086.080 line.087.080 line.088.080 line.089.080
+  line.090.080 line.091.080 line.092.080 line.093.080 line.094.080 line.095.080 line.096.080 line.097.080 line.098.080 line.099.080
+  line.100.080
+ ];
+
+@linesTo081 = [ 
+  line.000.081 line.001.081 line.002.081 line.003.081 line.004.081 line.005.081 line.006.081 line.007.081 line.008.081 line.009.081
+  line.010.081 line.011.081 line.012.081 line.013.081 line.014.081 line.015.081 line.016.081 line.017.081 line.018.081 line.019.081
+  line.020.081 line.021.081 line.022.081 line.023.081 line.024.081 line.025.081 line.026.081 line.027.081 line.028.081 line.029.081
+  line.030.081 line.031.081 line.032.081 line.033.081 line.034.081 line.035.081 line.036.081 line.037.081 line.038.081 line.039.081
+  line.040.081 line.041.081 line.042.081 line.043.081 line.044.081 line.045.081 line.046.081 line.047.081 line.048.081 line.049.081
+  line.050.081 line.051.081 line.052.081 line.053.081 line.054.081 line.055.081 line.056.081 line.057.081 line.058.081 line.059.081
+  line.060.081 line.061.081 line.062.081 line.063.081 line.064.081 line.065.081 line.066.081 line.067.081 line.068.081 line.069.081
+  line.070.081 line.071.081 line.072.081 line.073.081 line.074.081 line.075.081 line.076.081 line.077.081 line.078.081 line.079.081
+  line.080.081 line.081.081 line.082.081 line.083.081 line.084.081 line.085.081 line.086.081 line.087.081 line.088.081 line.089.081
+  line.090.081 line.091.081 line.092.081 line.093.081 line.094.081 line.095.081 line.096.081 line.097.081 line.098.081 line.099.081
+  line.100.081
+ ];
+
+@linesTo082 = [ 
+  line.000.082 line.001.082 line.002.082 line.003.082 line.004.082 line.005.082 line.006.082 line.007.082 line.008.082 line.009.082
+  line.010.082 line.011.082 line.012.082 line.013.082 line.014.082 line.015.082 line.016.082 line.017.082 line.018.082 line.019.082
+  line.020.082 line.021.082 line.022.082 line.023.082 line.024.082 line.025.082 line.026.082 line.027.082 line.028.082 line.029.082
+  line.030.082 line.031.082 line.032.082 line.033.082 line.034.082 line.035.082 line.036.082 line.037.082 line.038.082 line.039.082
+  line.040.082 line.041.082 line.042.082 line.043.082 line.044.082 line.045.082 line.046.082 line.047.082 line.048.082 line.049.082
+  line.050.082 line.051.082 line.052.082 line.053.082 line.054.082 line.055.082 line.056.082 line.057.082 line.058.082 line.059.082
+  line.060.082 line.061.082 line.062.082 line.063.082 line.064.082 line.065.082 line.066.082 line.067.082 line.068.082 line.069.082
+  line.070.082 line.071.082 line.072.082 line.073.082 line.074.082 line.075.082 line.076.082 line.077.082 line.078.082 line.079.082
+  line.080.082 line.081.082 line.082.082 line.083.082 line.084.082 line.085.082 line.086.082 line.087.082 line.088.082 line.089.082
+  line.090.082 line.091.082 line.092.082 line.093.082 line.094.082 line.095.082 line.096.082 line.097.082 line.098.082 line.099.082
+  line.100.082
+ ];
+
+@linesTo083 = [ 
+  line.000.083 line.001.083 line.002.083 line.003.083 line.004.083 line.005.083 line.006.083 line.007.083 line.008.083 line.009.083
+  line.010.083 line.011.083 line.012.083 line.013.083 line.014.083 line.015.083 line.016.083 line.017.083 line.018.083 line.019.083
+  line.020.083 line.021.083 line.022.083 line.023.083 line.024.083 line.025.083 line.026.083 line.027.083 line.028.083 line.029.083
+  line.030.083 line.031.083 line.032.083 line.033.083 line.034.083 line.035.083 line.036.083 line.037.083 line.038.083 line.039.083
+  line.040.083 line.041.083 line.042.083 line.043.083 line.044.083 line.045.083 line.046.083 line.047.083 line.048.083 line.049.083
+  line.050.083 line.051.083 line.052.083 line.053.083 line.054.083 line.055.083 line.056.083 line.057.083 line.058.083 line.059.083
+  line.060.083 line.061.083 line.062.083 line.063.083 line.064.083 line.065.083 line.066.083 line.067.083 line.068.083 line.069.083
+  line.070.083 line.071.083 line.072.083 line.073.083 line.074.083 line.075.083 line.076.083 line.077.083 line.078.083 line.079.083
+  line.080.083 line.081.083 line.082.083 line.083.083 line.084.083 line.085.083 line.086.083 line.087.083 line.088.083 line.089.083
+  line.090.083 line.091.083 line.092.083 line.093.083 line.094.083 line.095.083 line.096.083 line.097.083 line.098.083 line.099.083
+  line.100.083
+ ];
+
+@linesTo084 = [ 
+  line.000.084 line.001.084 line.002.084 line.003.084 line.004.084 line.005.084 line.006.084 line.007.084 line.008.084 line.009.084
+  line.010.084 line.011.084 line.012.084 line.013.084 line.014.084 line.015.084 line.016.084 line.017.084 line.018.084 line.019.084
+  line.020.084 line.021.084 line.022.084 line.023.084 line.024.084 line.025.084 line.026.084 line.027.084 line.028.084 line.029.084
+  line.030.084 line.031.084 line.032.084 line.033.084 line.034.084 line.035.084 line.036.084 line.037.084 line.038.084 line.039.084
+  line.040.084 line.041.084 line.042.084 line.043.084 line.044.084 line.045.084 line.046.084 line.047.084 line.048.084 line.049.084
+  line.050.084 line.051.084 line.052.084 line.053.084 line.054.084 line.055.084 line.056.084 line.057.084 line.058.084 line.059.084
+  line.060.084 line.061.084 line.062.084 line.063.084 line.064.084 line.065.084 line.066.084 line.067.084 line.068.084 line.069.084
+  line.070.084 line.071.084 line.072.084 line.073.084 line.074.084 line.075.084 line.076.084 line.077.084 line.078.084 line.079.084
+  line.080.084 line.081.084 line.082.084 line.083.084 line.084.084 line.085.084 line.086.084 line.087.084 line.088.084 line.089.084
+  line.090.084 line.091.084 line.092.084 line.093.084 line.094.084 line.095.084 line.096.084 line.097.084 line.098.084 line.099.084
+  line.100.084
+ ];
+
+@linesTo085 = [ 
+  line.000.085 line.001.085 line.002.085 line.003.085 line.004.085 line.005.085 line.006.085 line.007.085 line.008.085 line.009.085
+  line.010.085 line.011.085 line.012.085 line.013.085 line.014.085 line.015.085 line.016.085 line.017.085 line.018.085 line.019.085
+  line.020.085 line.021.085 line.022.085 line.023.085 line.024.085 line.025.085 line.026.085 line.027.085 line.028.085 line.029.085
+  line.030.085 line.031.085 line.032.085 line.033.085 line.034.085 line.035.085 line.036.085 line.037.085 line.038.085 line.039.085
+  line.040.085 line.041.085 line.042.085 line.043.085 line.044.085 line.045.085 line.046.085 line.047.085 line.048.085 line.049.085
+  line.050.085 line.051.085 line.052.085 line.053.085 line.054.085 line.055.085 line.056.085 line.057.085 line.058.085 line.059.085
+  line.060.085 line.061.085 line.062.085 line.063.085 line.064.085 line.065.085 line.066.085 line.067.085 line.068.085 line.069.085
+  line.070.085 line.071.085 line.072.085 line.073.085 line.074.085 line.075.085 line.076.085 line.077.085 line.078.085 line.079.085
+  line.080.085 line.081.085 line.082.085 line.083.085 line.084.085 line.085.085 line.086.085 line.087.085 line.088.085 line.089.085
+  line.090.085 line.091.085 line.092.085 line.093.085 line.094.085 line.095.085 line.096.085 line.097.085 line.098.085 line.099.085
+  line.100.085
+ ];
+
+@linesTo086 = [ 
+  line.000.086 line.001.086 line.002.086 line.003.086 line.004.086 line.005.086 line.006.086 line.007.086 line.008.086 line.009.086
+  line.010.086 line.011.086 line.012.086 line.013.086 line.014.086 line.015.086 line.016.086 line.017.086 line.018.086 line.019.086
+  line.020.086 line.021.086 line.022.086 line.023.086 line.024.086 line.025.086 line.026.086 line.027.086 line.028.086 line.029.086
+  line.030.086 line.031.086 line.032.086 line.033.086 line.034.086 line.035.086 line.036.086 line.037.086 line.038.086 line.039.086
+  line.040.086 line.041.086 line.042.086 line.043.086 line.044.086 line.045.086 line.046.086 line.047.086 line.048.086 line.049.086
+  line.050.086 line.051.086 line.052.086 line.053.086 line.054.086 line.055.086 line.056.086 line.057.086 line.058.086 line.059.086
+  line.060.086 line.061.086 line.062.086 line.063.086 line.064.086 line.065.086 line.066.086 line.067.086 line.068.086 line.069.086
+  line.070.086 line.071.086 line.072.086 line.073.086 line.074.086 line.075.086 line.076.086 line.077.086 line.078.086 line.079.086
+  line.080.086 line.081.086 line.082.086 line.083.086 line.084.086 line.085.086 line.086.086 line.087.086 line.088.086 line.089.086
+  line.090.086 line.091.086 line.092.086 line.093.086 line.094.086 line.095.086 line.096.086 line.097.086 line.098.086 line.099.086
+  line.100.086
+ ];
+
+@linesTo087 = [ 
+  line.000.087 line.001.087 line.002.087 line.003.087 line.004.087 line.005.087 line.006.087 line.007.087 line.008.087 line.009.087
+  line.010.087 line.011.087 line.012.087 line.013.087 line.014.087 line.015.087 line.016.087 line.017.087 line.018.087 line.019.087
+  line.020.087 line.021.087 line.022.087 line.023.087 line.024.087 line.025.087 line.026.087 line.027.087 line.028.087 line.029.087
+  line.030.087 line.031.087 line.032.087 line.033.087 line.034.087 line.035.087 line.036.087 line.037.087 line.038.087 line.039.087
+  line.040.087 line.041.087 line.042.087 line.043.087 line.044.087 line.045.087 line.046.087 line.047.087 line.048.087 line.049.087
+  line.050.087 line.051.087 line.052.087 line.053.087 line.054.087 line.055.087 line.056.087 line.057.087 line.058.087 line.059.087
+  line.060.087 line.061.087 line.062.087 line.063.087 line.064.087 line.065.087 line.066.087 line.067.087 line.068.087 line.069.087
+  line.070.087 line.071.087 line.072.087 line.073.087 line.074.087 line.075.087 line.076.087 line.077.087 line.078.087 line.079.087
+  line.080.087 line.081.087 line.082.087 line.083.087 line.084.087 line.085.087 line.086.087 line.087.087 line.088.087 line.089.087
+  line.090.087 line.091.087 line.092.087 line.093.087 line.094.087 line.095.087 line.096.087 line.097.087 line.098.087 line.099.087
+  line.100.087
+ ];
+
+@linesTo088 = [ 
+  line.000.088 line.001.088 line.002.088 line.003.088 line.004.088 line.005.088 line.006.088 line.007.088 line.008.088 line.009.088
+  line.010.088 line.011.088 line.012.088 line.013.088 line.014.088 line.015.088 line.016.088 line.017.088 line.018.088 line.019.088
+  line.020.088 line.021.088 line.022.088 line.023.088 line.024.088 line.025.088 line.026.088 line.027.088 line.028.088 line.029.088
+  line.030.088 line.031.088 line.032.088 line.033.088 line.034.088 line.035.088 line.036.088 line.037.088 line.038.088 line.039.088
+  line.040.088 line.041.088 line.042.088 line.043.088 line.044.088 line.045.088 line.046.088 line.047.088 line.048.088 line.049.088
+  line.050.088 line.051.088 line.052.088 line.053.088 line.054.088 line.055.088 line.056.088 line.057.088 line.058.088 line.059.088
+  line.060.088 line.061.088 line.062.088 line.063.088 line.064.088 line.065.088 line.066.088 line.067.088 line.068.088 line.069.088
+  line.070.088 line.071.088 line.072.088 line.073.088 line.074.088 line.075.088 line.076.088 line.077.088 line.078.088 line.079.088
+  line.080.088 line.081.088 line.082.088 line.083.088 line.084.088 line.085.088 line.086.088 line.087.088 line.088.088 line.089.088
+  line.090.088 line.091.088 line.092.088 line.093.088 line.094.088 line.095.088 line.096.088 line.097.088 line.098.088 line.099.088
+  line.100.088
+ ];
+
+@linesTo089 = [ 
+  line.000.089 line.001.089 line.002.089 line.003.089 line.004.089 line.005.089 line.006.089 line.007.089 line.008.089 line.009.089
+  line.010.089 line.011.089 line.012.089 line.013.089 line.014.089 line.015.089 line.016.089 line.017.089 line.018.089 line.019.089
+  line.020.089 line.021.089 line.022.089 line.023.089 line.024.089 line.025.089 line.026.089 line.027.089 line.028.089 line.029.089
+  line.030.089 line.031.089 line.032.089 line.033.089 line.034.089 line.035.089 line.036.089 line.037.089 line.038.089 line.039.089
+  line.040.089 line.041.089 line.042.089 line.043.089 line.044.089 line.045.089 line.046.089 line.047.089 line.048.089 line.049.089
+  line.050.089 line.051.089 line.052.089 line.053.089 line.054.089 line.055.089 line.056.089 line.057.089 line.058.089 line.059.089
+  line.060.089 line.061.089 line.062.089 line.063.089 line.064.089 line.065.089 line.066.089 line.067.089 line.068.089 line.069.089
+  line.070.089 line.071.089 line.072.089 line.073.089 line.074.089 line.075.089 line.076.089 line.077.089 line.078.089 line.079.089
+  line.080.089 line.081.089 line.082.089 line.083.089 line.084.089 line.085.089 line.086.089 line.087.089 line.088.089 line.089.089
+  line.090.089 line.091.089 line.092.089 line.093.089 line.094.089 line.095.089 line.096.089 line.097.089 line.098.089 line.099.089
+  line.100.089
+ ];
+
+@linesTo090 = [ 
+  line.000.090 line.001.090 line.002.090 line.003.090 line.004.090 line.005.090 line.006.090 line.007.090 line.008.090 line.009.090
+  line.010.090 line.011.090 line.012.090 line.013.090 line.014.090 line.015.090 line.016.090 line.017.090 line.018.090 line.019.090
+  line.020.090 line.021.090 line.022.090 line.023.090 line.024.090 line.025.090 line.026.090 line.027.090 line.028.090 line.029.090
+  line.030.090 line.031.090 line.032.090 line.033.090 line.034.090 line.035.090 line.036.090 line.037.090 line.038.090 line.039.090
+  line.040.090 line.041.090 line.042.090 line.043.090 line.044.090 line.045.090 line.046.090 line.047.090 line.048.090 line.049.090
+  line.050.090 line.051.090 line.052.090 line.053.090 line.054.090 line.055.090 line.056.090 line.057.090 line.058.090 line.059.090
+  line.060.090 line.061.090 line.062.090 line.063.090 line.064.090 line.065.090 line.066.090 line.067.090 line.068.090 line.069.090
+  line.070.090 line.071.090 line.072.090 line.073.090 line.074.090 line.075.090 line.076.090 line.077.090 line.078.090 line.079.090
+  line.080.090 line.081.090 line.082.090 line.083.090 line.084.090 line.085.090 line.086.090 line.087.090 line.088.090 line.089.090
+  line.090.090 line.091.090 line.092.090 line.093.090 line.094.090 line.095.090 line.096.090 line.097.090 line.098.090 line.099.090
+  line.100.090
+ ];
+
+@linesTo091 = [ 
+  line.000.091 line.001.091 line.002.091 line.003.091 line.004.091 line.005.091 line.006.091 line.007.091 line.008.091 line.009.091
+  line.010.091 line.011.091 line.012.091 line.013.091 line.014.091 line.015.091 line.016.091 line.017.091 line.018.091 line.019.091
+  line.020.091 line.021.091 line.022.091 line.023.091 line.024.091 line.025.091 line.026.091 line.027.091 line.028.091 line.029.091
+  line.030.091 line.031.091 line.032.091 line.033.091 line.034.091 line.035.091 line.036.091 line.037.091 line.038.091 line.039.091
+  line.040.091 line.041.091 line.042.091 line.043.091 line.044.091 line.045.091 line.046.091 line.047.091 line.048.091 line.049.091
+  line.050.091 line.051.091 line.052.091 line.053.091 line.054.091 line.055.091 line.056.091 line.057.091 line.058.091 line.059.091
+  line.060.091 line.061.091 line.062.091 line.063.091 line.064.091 line.065.091 line.066.091 line.067.091 line.068.091 line.069.091
+  line.070.091 line.071.091 line.072.091 line.073.091 line.074.091 line.075.091 line.076.091 line.077.091 line.078.091 line.079.091
+  line.080.091 line.081.091 line.082.091 line.083.091 line.084.091 line.085.091 line.086.091 line.087.091 line.088.091 line.089.091
+  line.090.091 line.091.091 line.092.091 line.093.091 line.094.091 line.095.091 line.096.091 line.097.091 line.098.091 line.099.091
+  line.100.091
+ ];
+
+@linesTo092 = [ 
+  line.000.092 line.001.092 line.002.092 line.003.092 line.004.092 line.005.092 line.006.092 line.007.092 line.008.092 line.009.092
+  line.010.092 line.011.092 line.012.092 line.013.092 line.014.092 line.015.092 line.016.092 line.017.092 line.018.092 line.019.092
+  line.020.092 line.021.092 line.022.092 line.023.092 line.024.092 line.025.092 line.026.092 line.027.092 line.028.092 line.029.092
+  line.030.092 line.031.092 line.032.092 line.033.092 line.034.092 line.035.092 line.036.092 line.037.092 line.038.092 line.039.092
+  line.040.092 line.041.092 line.042.092 line.043.092 line.044.092 line.045.092 line.046.092 line.047.092 line.048.092 line.049.092
+  line.050.092 line.051.092 line.052.092 line.053.092 line.054.092 line.055.092 line.056.092 line.057.092 line.058.092 line.059.092
+  line.060.092 line.061.092 line.062.092 line.063.092 line.064.092 line.065.092 line.066.092 line.067.092 line.068.092 line.069.092
+  line.070.092 line.071.092 line.072.092 line.073.092 line.074.092 line.075.092 line.076.092 line.077.092 line.078.092 line.079.092
+  line.080.092 line.081.092 line.082.092 line.083.092 line.084.092 line.085.092 line.086.092 line.087.092 line.088.092 line.089.092
+  line.090.092 line.091.092 line.092.092 line.093.092 line.094.092 line.095.092 line.096.092 line.097.092 line.098.092 line.099.092
+  line.100.092
+ ];
+
+@linesTo093 = [ 
+  line.000.093 line.001.093 line.002.093 line.003.093 line.004.093 line.005.093 line.006.093 line.007.093 line.008.093 line.009.093
+  line.010.093 line.011.093 line.012.093 line.013.093 line.014.093 line.015.093 line.016.093 line.017.093 line.018.093 line.019.093
+  line.020.093 line.021.093 line.022.093 line.023.093 line.024.093 line.025.093 line.026.093 line.027.093 line.028.093 line.029.093
+  line.030.093 line.031.093 line.032.093 line.033.093 line.034.093 line.035.093 line.036.093 line.037.093 line.038.093 line.039.093
+  line.040.093 line.041.093 line.042.093 line.043.093 line.044.093 line.045.093 line.046.093 line.047.093 line.048.093 line.049.093
+  line.050.093 line.051.093 line.052.093 line.053.093 line.054.093 line.055.093 line.056.093 line.057.093 line.058.093 line.059.093
+  line.060.093 line.061.093 line.062.093 line.063.093 line.064.093 line.065.093 line.066.093 line.067.093 line.068.093 line.069.093
+  line.070.093 line.071.093 line.072.093 line.073.093 line.074.093 line.075.093 line.076.093 line.077.093 line.078.093 line.079.093
+  line.080.093 line.081.093 line.082.093 line.083.093 line.084.093 line.085.093 line.086.093 line.087.093 line.088.093 line.089.093
+  line.090.093 line.091.093 line.092.093 line.093.093 line.094.093 line.095.093 line.096.093 line.097.093 line.098.093 line.099.093
+  line.100.093
+ ];
+
+@linesTo094 = [ 
+  line.000.094 line.001.094 line.002.094 line.003.094 line.004.094 line.005.094 line.006.094 line.007.094 line.008.094 line.009.094
+  line.010.094 line.011.094 line.012.094 line.013.094 line.014.094 line.015.094 line.016.094 line.017.094 line.018.094 line.019.094
+  line.020.094 line.021.094 line.022.094 line.023.094 line.024.094 line.025.094 line.026.094 line.027.094 line.028.094 line.029.094
+  line.030.094 line.031.094 line.032.094 line.033.094 line.034.094 line.035.094 line.036.094 line.037.094 line.038.094 line.039.094
+  line.040.094 line.041.094 line.042.094 line.043.094 line.044.094 line.045.094 line.046.094 line.047.094 line.048.094 line.049.094
+  line.050.094 line.051.094 line.052.094 line.053.094 line.054.094 line.055.094 line.056.094 line.057.094 line.058.094 line.059.094
+  line.060.094 line.061.094 line.062.094 line.063.094 line.064.094 line.065.094 line.066.094 line.067.094 line.068.094 line.069.094
+  line.070.094 line.071.094 line.072.094 line.073.094 line.074.094 line.075.094 line.076.094 line.077.094 line.078.094 line.079.094
+  line.080.094 line.081.094 line.082.094 line.083.094 line.084.094 line.085.094 line.086.094 line.087.094 line.088.094 line.089.094
+  line.090.094 line.091.094 line.092.094 line.093.094 line.094.094 line.095.094 line.096.094 line.097.094 line.098.094 line.099.094
+  line.100.094
+ ];
+
+@linesTo095 = [ 
+  line.000.095 line.001.095 line.002.095 line.003.095 line.004.095 line.005.095 line.006.095 line.007.095 line.008.095 line.009.095
+  line.010.095 line.011.095 line.012.095 line.013.095 line.014.095 line.015.095 line.016.095 line.017.095 line.018.095 line.019.095
+  line.020.095 line.021.095 line.022.095 line.023.095 line.024.095 line.025.095 line.026.095 line.027.095 line.028.095 line.029.095
+  line.030.095 line.031.095 line.032.095 line.033.095 line.034.095 line.035.095 line.036.095 line.037.095 line.038.095 line.039.095
+  line.040.095 line.041.095 line.042.095 line.043.095 line.044.095 line.045.095 line.046.095 line.047.095 line.048.095 line.049.095
+  line.050.095 line.051.095 line.052.095 line.053.095 line.054.095 line.055.095 line.056.095 line.057.095 line.058.095 line.059.095
+  line.060.095 line.061.095 line.062.095 line.063.095 line.064.095 line.065.095 line.066.095 line.067.095 line.068.095 line.069.095
+  line.070.095 line.071.095 line.072.095 line.073.095 line.074.095 line.075.095 line.076.095 line.077.095 line.078.095 line.079.095
+  line.080.095 line.081.095 line.082.095 line.083.095 line.084.095 line.085.095 line.086.095 line.087.095 line.088.095 line.089.095
+  line.090.095 line.091.095 line.092.095 line.093.095 line.094.095 line.095.095 line.096.095 line.097.095 line.098.095 line.099.095
+  line.100.095
+ ];
+
+@linesTo096 = [ 
+  line.000.096 line.001.096 line.002.096 line.003.096 line.004.096 line.005.096 line.006.096 line.007.096 line.008.096 line.009.096
+  line.010.096 line.011.096 line.012.096 line.013.096 line.014.096 line.015.096 line.016.096 line.017.096 line.018.096 line.019.096
+  line.020.096 line.021.096 line.022.096 line.023.096 line.024.096 line.025.096 line.026.096 line.027.096 line.028.096 line.029.096
+  line.030.096 line.031.096 line.032.096 line.033.096 line.034.096 line.035.096 line.036.096 line.037.096 line.038.096 line.039.096
+  line.040.096 line.041.096 line.042.096 line.043.096 line.044.096 line.045.096 line.046.096 line.047.096 line.048.096 line.049.096
+  line.050.096 line.051.096 line.052.096 line.053.096 line.054.096 line.055.096 line.056.096 line.057.096 line.058.096 line.059.096
+  line.060.096 line.061.096 line.062.096 line.063.096 line.064.096 line.065.096 line.066.096 line.067.096 line.068.096 line.069.096
+  line.070.096 line.071.096 line.072.096 line.073.096 line.074.096 line.075.096 line.076.096 line.077.096 line.078.096 line.079.096
+  line.080.096 line.081.096 line.082.096 line.083.096 line.084.096 line.085.096 line.086.096 line.087.096 line.088.096 line.089.096
+  line.090.096 line.091.096 line.092.096 line.093.096 line.094.096 line.095.096 line.096.096 line.097.096 line.098.096 line.099.096
+  line.100.096
+ ];
+
+@linesTo097 = [ 
+  line.000.097 line.001.097 line.002.097 line.003.097 line.004.097 line.005.097 line.006.097 line.007.097 line.008.097 line.009.097
+  line.010.097 line.011.097 line.012.097 line.013.097 line.014.097 line.015.097 line.016.097 line.017.097 line.018.097 line.019.097
+  line.020.097 line.021.097 line.022.097 line.023.097 line.024.097 line.025.097 line.026.097 line.027.097 line.028.097 line.029.097
+  line.030.097 line.031.097 line.032.097 line.033.097 line.034.097 line.035.097 line.036.097 line.037.097 line.038.097 line.039.097
+  line.040.097 line.041.097 line.042.097 line.043.097 line.044.097 line.045.097 line.046.097 line.047.097 line.048.097 line.049.097
+  line.050.097 line.051.097 line.052.097 line.053.097 line.054.097 line.055.097 line.056.097 line.057.097 line.058.097 line.059.097
+  line.060.097 line.061.097 line.062.097 line.063.097 line.064.097 line.065.097 line.066.097 line.067.097 line.068.097 line.069.097
+  line.070.097 line.071.097 line.072.097 line.073.097 line.074.097 line.075.097 line.076.097 line.077.097 line.078.097 line.079.097
+  line.080.097 line.081.097 line.082.097 line.083.097 line.084.097 line.085.097 line.086.097 line.087.097 line.088.097 line.089.097
+  line.090.097 line.091.097 line.092.097 line.093.097 line.094.097 line.095.097 line.096.097 line.097.097 line.098.097 line.099.097
+  line.100.097
+ ];
+
+@linesTo098 = [ 
+  line.000.098 line.001.098 line.002.098 line.003.098 line.004.098 line.005.098 line.006.098 line.007.098 line.008.098 line.009.098
+  line.010.098 line.011.098 line.012.098 line.013.098 line.014.098 line.015.098 line.016.098 line.017.098 line.018.098 line.019.098
+  line.020.098 line.021.098 line.022.098 line.023.098 line.024.098 line.025.098 line.026.098 line.027.098 line.028.098 line.029.098
+  line.030.098 line.031.098 line.032.098 line.033.098 line.034.098 line.035.098 line.036.098 line.037.098 line.038.098 line.039.098
+  line.040.098 line.041.098 line.042.098 line.043.098 line.044.098 line.045.098 line.046.098 line.047.098 line.048.098 line.049.098
+  line.050.098 line.051.098 line.052.098 line.053.098 line.054.098 line.055.098 line.056.098 line.057.098 line.058.098 line.059.098
+  line.060.098 line.061.098 line.062.098 line.063.098 line.064.098 line.065.098 line.066.098 line.067.098 line.068.098 line.069.098
+  line.070.098 line.071.098 line.072.098 line.073.098 line.074.098 line.075.098 line.076.098 line.077.098 line.078.098 line.079.098
+  line.080.098 line.081.098 line.082.098 line.083.098 line.084.098 line.085.098 line.086.098 line.087.098 line.088.098 line.089.098
+  line.090.098 line.091.098 line.092.098 line.093.098 line.094.098 line.095.098 line.096.098 line.097.098 line.098.098 line.099.098
+  line.100.098
+ ];
+
+@linesTo099 = [ 
+  line.000.099 line.001.099 line.002.099 line.003.099 line.004.099 line.005.099 line.006.099 line.007.099 line.008.099 line.009.099
+  line.010.099 line.011.099 line.012.099 line.013.099 line.014.099 line.015.099 line.016.099 line.017.099 line.018.099 line.019.099
+  line.020.099 line.021.099 line.022.099 line.023.099 line.024.099 line.025.099 line.026.099 line.027.099 line.028.099 line.029.099
+  line.030.099 line.031.099 line.032.099 line.033.099 line.034.099 line.035.099 line.036.099 line.037.099 line.038.099 line.039.099
+  line.040.099 line.041.099 line.042.099 line.043.099 line.044.099 line.045.099 line.046.099 line.047.099 line.048.099 line.049.099
+  line.050.099 line.051.099 line.052.099 line.053.099 line.054.099 line.055.099 line.056.099 line.057.099 line.058.099 line.059.099
+  line.060.099 line.061.099 line.062.099 line.063.099 line.064.099 line.065.099 line.066.099 line.067.099 line.068.099 line.069.099
+  line.070.099 line.071.099 line.072.099 line.073.099 line.074.099 line.075.099 line.076.099 line.077.099 line.078.099 line.079.099
+  line.080.099 line.081.099 line.082.099 line.083.099 line.084.099 line.085.099 line.086.099 line.087.099 line.088.099 line.089.099
+  line.090.099 line.091.099 line.092.099 line.093.099 line.094.099 line.095.099 line.096.099 line.097.099 line.098.099 line.099.099
+  line.100.099
+ ];
+
+@linesTo100 = [ 
+  line.000.100 line.001.100 line.002.100 line.003.100 line.004.100 line.005.100 line.006.100 line.007.100 line.008.100 line.009.100
+  line.010.100 line.011.100 line.012.100 line.013.100 line.014.100 line.015.100 line.016.100 line.017.100 line.018.100 line.019.100
+  line.020.100 line.021.100 line.022.100 line.023.100 line.024.100 line.025.100 line.026.100 line.027.100 line.028.100 line.029.100
+  line.030.100 line.031.100 line.032.100 line.033.100 line.034.100 line.035.100 line.036.100 line.037.100 line.038.100 line.039.100
+  line.040.100 line.041.100 line.042.100 line.043.100 line.044.100 line.045.100 line.046.100 line.047.100 line.048.100 line.049.100
+  line.050.100 line.051.100 line.052.100 line.053.100 line.054.100 line.055.100 line.056.100 line.057.100 line.058.100 line.059.100
+  line.060.100 line.061.100 line.062.100 line.063.100 line.064.100 line.065.100 line.066.100 line.067.100 line.068.100 line.069.100
+  line.070.100 line.071.100 line.072.100 line.073.100 line.074.100 line.075.100 line.076.100 line.077.100 line.078.100 line.079.100
+  line.080.100 line.081.100 line.082.100 line.083.100 line.084.100 line.085.100 line.086.100 line.087.100 line.088.100 line.089.100
+  line.090.100 line.091.100 line.092.100 line.093.100 line.094.100 line.095.100 line.096.100 line.097.100 line.098.100 line.099.100
+  line.100.100
+ ];
+
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+feature calt {
+  # Swap numbers for dots, as distinct steps, because ... I actually have no idea why.
+  lookup dotsIgnore {
+    ignore sub zero' comma space;
+    ignore sub one' comma space;
+    ignore sub two' comma space;
+    ignore sub three' comma space;
+    ignore sub four' comma space;
+    ignore sub five' comma space;
+    ignore sub six' comma space;
+    ignore sub seven' comma space;
+    ignore sub eight' comma space;
+    ignore sub nine' comma space;
+    ignore sub one' zero' comma space;
+    ignore sub one' one' comma space;
+    ignore sub one' two' comma space;
+    ignore sub one' three' comma space;
+    ignore sub one' four' comma space;
+    ignore sub one' five' comma space;
+    ignore sub one' six' comma space;
+    ignore sub one' seven' comma space;
+    ignore sub one' eight' comma space;
+    ignore sub one' nine' comma space;
+    ignore sub two' zero' comma space;
+    ignore sub two' one' comma space;
+    ignore sub two' two' comma space;
+    ignore sub two' three' comma space;
+    ignore sub two' four' comma space;
+    ignore sub two' five' comma space;
+    ignore sub two' six' comma space;
+    ignore sub two' seven' comma space;
+    ignore sub two' eight' comma space;
+    ignore sub two' nine' comma space;
+    ignore sub three' zero' comma space;
+    ignore sub three' one' comma space;
+    ignore sub three' two' comma space;
+    ignore sub three' three' comma space;
+    ignore sub three' four' comma space;
+    ignore sub three' five' comma space;
+    ignore sub three' six' comma space;
+    ignore sub three' seven' comma space;
+    ignore sub three' eight' comma space;
+    ignore sub three' nine' comma space;
+    ignore sub four' zero' comma space;
+    ignore sub four' one' comma space;
+    ignore sub four' two' comma space;
+    ignore sub four' three' comma space;
+    ignore sub four' four' comma space;
+    ignore sub four' five' comma space;
+    ignore sub four' six' comma space;
+    ignore sub four' seven' comma space;
+    ignore sub four' eight' comma space;
+    ignore sub four' nine' comma space;
+    ignore sub five' zero' comma space;
+    ignore sub five' one' comma space;
+    ignore sub five' two' comma space;
+    ignore sub five' three' comma space;
+    ignore sub five' four' comma space;
+    ignore sub five' five' comma space;
+    ignore sub five' six' comma space;
+    ignore sub five' seven' comma space;
+    ignore sub five' eight' comma space;
+    ignore sub five' nine' comma space;
+    ignore sub six' zero' comma space;
+    ignore sub six' one' comma space;
+    ignore sub six' two' comma space;
+    ignore sub six' three' comma space;
+    ignore sub six' four' comma space;
+    ignore sub six' five' comma space;
+    ignore sub six' six' comma space;
+    ignore sub six' seven' comma space;
+    ignore sub six' eight' comma space;
+    ignore sub six' nine' comma space;
+    ignore sub seven' zero' comma space;
+    ignore sub seven' one' comma space;
+    ignore sub seven' two' comma space;
+    ignore sub seven' three' comma space;
+    ignore sub seven' four' comma space;
+    ignore sub seven' five' comma space;
+    ignore sub seven' six' comma space;
+    ignore sub seven' seven' comma space;
+    ignore sub seven' eight' comma space;
+    ignore sub seven' nine' comma space;
+    ignore sub eight' zero' comma space;
+    ignore sub eight' one' comma space;
+    ignore sub eight' two' comma space;
+    ignore sub eight' three' comma space;
+    ignore sub eight' four' comma space;
+    ignore sub eight' five' comma space;
+    ignore sub eight' six' comma space;
+    ignore sub eight' seven' comma space;
+    ignore sub eight' eight' comma space;
+    ignore sub eight' nine' comma space;
+    ignore sub nine' zero' comma space;
+    ignore sub nine' one' comma space;
+    ignore sub nine' two' comma space;
+    ignore sub nine' three' comma space;
+    ignore sub nine' four' comma space;
+    ignore sub nine' five' comma space;
+    ignore sub nine' six' comma space;
+    ignore sub nine' seven' comma space;
+    ignore sub nine' eight' comma space;
+    ignore sub nine' nine' comma space;
+    ignore sub one' zero' zero' comma space;
+  } dotsIgnore;
+
+  lookup dotsSolo {
+    sub braceleft' zero' braceright' by dot.000;
+    sub braceleft' one' braceright' by dot.001;
+    sub braceleft' two' braceright' by dot.002;
+    sub braceleft' three' braceright' by dot.003;
+    sub braceleft' four' braceright' by dot.004;
+    sub braceleft' five' braceright' by dot.005;
+    sub braceleft' six' braceright' by dot.006;
+    sub braceleft' seven' braceright' by dot.007;
+    sub braceleft' eight' braceright' by dot.008;
+    sub braceleft' nine' braceright' by dot.009;
+    sub braceleft' one' zero' braceright' by dot.010;
+    sub braceleft' one' one' braceright' by dot.011;
+    sub braceleft' one' two' braceright' by dot.012;
+    sub braceleft' one' three' braceright' by dot.013;
+    sub braceleft' one' four' braceright' by dot.014;
+    sub braceleft' one' five' braceright' by dot.015;
+    sub braceleft' one' six' braceright' by dot.016;
+    sub braceleft' one' seven' braceright' by dot.017;
+    sub braceleft' one' eight' braceright' by dot.018;
+    sub braceleft' one' nine' braceright' by dot.019;
+    sub braceleft' two' zero' braceright' by dot.020;
+    sub braceleft' two' one' braceright' by dot.021;
+    sub braceleft' two' two' braceright' by dot.022;
+    sub braceleft' two' three' braceright' by dot.023;
+    sub braceleft' two' four' braceright' by dot.024;
+    sub braceleft' two' five' braceright' by dot.025;
+    sub braceleft' two' six' braceright' by dot.026;
+    sub braceleft' two' seven' braceright' by dot.027;
+    sub braceleft' two' eight' braceright' by dot.028;
+    sub braceleft' two' nine' braceright' by dot.029;
+    sub braceleft' three' zero' braceright' by dot.030;
+    sub braceleft' three' one' braceright' by dot.031;
+    sub braceleft' three' two' braceright' by dot.032;
+    sub braceleft' three' three' braceright' by dot.033;
+    sub braceleft' three' four' braceright' by dot.034;
+    sub braceleft' three' five' braceright' by dot.035;
+    sub braceleft' three' six' braceright' by dot.036;
+    sub braceleft' three' seven' braceright' by dot.037;
+    sub braceleft' three' eight' braceright' by dot.038;
+    sub braceleft' three' nine' braceright' by dot.039;
+    sub braceleft' four' zero' braceright' by dot.040;
+    sub braceleft' four' one' braceright' by dot.041;
+    sub braceleft' four' two' braceright' by dot.042;
+    sub braceleft' four' three' braceright' by dot.043;
+    sub braceleft' four' four' braceright' by dot.044;
+    sub braceleft' four' five' braceright' by dot.045;
+    sub braceleft' four' six' braceright' by dot.046;
+    sub braceleft' four' seven' braceright' by dot.047;
+    sub braceleft' four' eight' braceright' by dot.048;
+    sub braceleft' four' nine' braceright' by dot.049;
+    sub braceleft' five' zero' braceright' by dot.050;
+    sub braceleft' five' one' braceright' by dot.051;
+    sub braceleft' five' two' braceright' by dot.052;
+    sub braceleft' five' three' braceright' by dot.053;
+    sub braceleft' five' four' braceright' by dot.054;
+    sub braceleft' five' five' braceright' by dot.055;
+    sub braceleft' five' six' braceright' by dot.056;
+    sub braceleft' five' seven' braceright' by dot.057;
+    sub braceleft' five' eight' braceright' by dot.058;
+    sub braceleft' five' nine' braceright' by dot.059;
+    sub braceleft' six' zero' braceright' by dot.060;
+    sub braceleft' six' one' braceright' by dot.061;
+    sub braceleft' six' two' braceright' by dot.062;
+    sub braceleft' six' three' braceright' by dot.063;
+    sub braceleft' six' four' braceright' by dot.064;
+    sub braceleft' six' five' braceright' by dot.065;
+    sub braceleft' six' six' braceright' by dot.066;
+    sub braceleft' six' seven' braceright' by dot.067;
+    sub braceleft' six' eight' braceright' by dot.068;
+    sub braceleft' six' nine' braceright' by dot.069;
+    sub braceleft' seven' zero' braceright' by dot.070;
+    sub braceleft' seven' one' braceright' by dot.071;
+    sub braceleft' seven' two' braceright' by dot.072;
+    sub braceleft' seven' three' braceright' by dot.073;
+    sub braceleft' seven' four' braceright' by dot.074;
+    sub braceleft' seven' five' braceright' by dot.075;
+    sub braceleft' seven' six' braceright' by dot.076;
+    sub braceleft' seven' seven' braceright' by dot.077;
+    sub braceleft' seven' eight' braceright' by dot.078;
+    sub braceleft' seven' nine' braceright' by dot.079;
+    sub braceleft' eight' zero' braceright' by dot.080;
+    sub braceleft' eight' one' braceright' by dot.081;
+    sub braceleft' eight' two' braceright' by dot.082;
+    sub braceleft' eight' three' braceright' by dot.083;
+    sub braceleft' eight' four' braceright' by dot.084;
+    sub braceleft' eight' five' braceright' by dot.085;
+    sub braceleft' eight' six' braceright' by dot.086;
+    sub braceleft' eight' seven' braceright' by dot.087;
+    sub braceleft' eight' eight' braceright' by dot.088;
+    sub braceleft' eight' nine' braceright' by dot.089;
+    sub braceleft' nine' zero' braceright' by dot.090;
+    sub braceleft' nine' one' braceright' by dot.091;
+    sub braceleft' nine' two' braceright' by dot.092;
+    sub braceleft' nine' three' braceright' by dot.093;
+    sub braceleft' nine' four' braceright' by dot.094;
+    sub braceleft' nine' five' braceright' by dot.095;
+    sub braceleft' nine' six' braceright' by dot.096;
+    sub braceleft' nine' seven' braceright' by dot.097;
+    sub braceleft' nine' eight' braceright' by dot.098;
+    sub braceleft' nine' nine' braceright' by dot.099;
+    sub braceleft' one' zero' zero' braceright' by dot.100;
+  } dotsSolo;
+
+  lookup dotsInitial {
+    sub braceleft' zero' comma' by dot.000;
+    sub braceleft' one' comma' by dot.001;
+    sub braceleft' two' comma' by dot.002;
+    sub braceleft' three' comma' by dot.003;
+    sub braceleft' four' comma' by dot.004;
+    sub braceleft' five' comma' by dot.005;
+    sub braceleft' six' comma' by dot.006;
+    sub braceleft' seven' comma' by dot.007;
+    sub braceleft' eight' comma' by dot.008;
+    sub braceleft' nine' comma' by dot.009;
+    sub braceleft' one' zero' comma' by dot.010;
+    sub braceleft' one' one' comma' by dot.011;
+    sub braceleft' one' two' comma' by dot.012;
+    sub braceleft' one' three' comma' by dot.013;
+    sub braceleft' one' four' comma' by dot.014;
+    sub braceleft' one' five' comma' by dot.015;
+    sub braceleft' one' six' comma' by dot.016;
+    sub braceleft' one' seven' comma' by dot.017;
+    sub braceleft' one' eight' comma' by dot.018;
+    sub braceleft' one' nine' comma' by dot.019;
+    sub braceleft' two' zero' comma' by dot.020;
+    sub braceleft' two' one' comma' by dot.021;
+    sub braceleft' two' two' comma' by dot.022;
+    sub braceleft' two' three' comma' by dot.023;
+    sub braceleft' two' four' comma' by dot.024;
+    sub braceleft' two' five' comma' by dot.025;
+    sub braceleft' two' six' comma' by dot.026;
+    sub braceleft' two' seven' comma' by dot.027;
+    sub braceleft' two' eight' comma' by dot.028;
+    sub braceleft' two' nine' comma' by dot.029;
+    sub braceleft' three' zero' comma' by dot.030;
+    sub braceleft' three' one' comma' by dot.031;
+    sub braceleft' three' two' comma' by dot.032;
+    sub braceleft' three' three' comma' by dot.033;
+    sub braceleft' three' four' comma' by dot.034;
+    sub braceleft' three' five' comma' by dot.035;
+    sub braceleft' three' six' comma' by dot.036;
+    sub braceleft' three' seven' comma' by dot.037;
+    sub braceleft' three' eight' comma' by dot.038;
+    sub braceleft' three' nine' comma' by dot.039;
+    sub braceleft' four' zero' comma' by dot.040;
+    sub braceleft' four' one' comma' by dot.041;
+    sub braceleft' four' two' comma' by dot.042;
+    sub braceleft' four' three' comma' by dot.043;
+    sub braceleft' four' four' comma' by dot.044;
+    sub braceleft' four' five' comma' by dot.045;
+    sub braceleft' four' six' comma' by dot.046;
+    sub braceleft' four' seven' comma' by dot.047;
+    sub braceleft' four' eight' comma' by dot.048;
+    sub braceleft' four' nine' comma' by dot.049;
+    sub braceleft' five' zero' comma' by dot.050;
+    sub braceleft' five' one' comma' by dot.051;
+    sub braceleft' five' two' comma' by dot.052;
+    sub braceleft' five' three' comma' by dot.053;
+    sub braceleft' five' four' comma' by dot.054;
+    sub braceleft' five' five' comma' by dot.055;
+    sub braceleft' five' six' comma' by dot.056;
+    sub braceleft' five' seven' comma' by dot.057;
+    sub braceleft' five' eight' comma' by dot.058;
+    sub braceleft' five' nine' comma' by dot.059;
+    sub braceleft' six' zero' comma' by dot.060;
+    sub braceleft' six' one' comma' by dot.061;
+    sub braceleft' six' two' comma' by dot.062;
+    sub braceleft' six' three' comma' by dot.063;
+    sub braceleft' six' four' comma' by dot.064;
+    sub braceleft' six' five' comma' by dot.065;
+    sub braceleft' six' six' comma' by dot.066;
+    sub braceleft' six' seven' comma' by dot.067;
+    sub braceleft' six' eight' comma' by dot.068;
+    sub braceleft' six' nine' comma' by dot.069;
+    sub braceleft' seven' zero' comma' by dot.070;
+    sub braceleft' seven' one' comma' by dot.071;
+    sub braceleft' seven' two' comma' by dot.072;
+    sub braceleft' seven' three' comma' by dot.073;
+    sub braceleft' seven' four' comma' by dot.074;
+    sub braceleft' seven' five' comma' by dot.075;
+    sub braceleft' seven' six' comma' by dot.076;
+    sub braceleft' seven' seven' comma' by dot.077;
+    sub braceleft' seven' eight' comma' by dot.078;
+    sub braceleft' seven' nine' comma' by dot.079;
+    sub braceleft' eight' zero' comma' by dot.080;
+    sub braceleft' eight' one' comma' by dot.081;
+    sub braceleft' eight' two' comma' by dot.082;
+    sub braceleft' eight' three' comma' by dot.083;
+    sub braceleft' eight' four' comma' by dot.084;
+    sub braceleft' eight' five' comma' by dot.085;
+    sub braceleft' eight' six' comma' by dot.086;
+    sub braceleft' eight' seven' comma' by dot.087;
+    sub braceleft' eight' eight' comma' by dot.088;
+    sub braceleft' eight' nine' comma' by dot.089;
+    sub braceleft' nine' zero' comma' by dot.090;
+    sub braceleft' nine' one' comma' by dot.091;
+    sub braceleft' nine' two' comma' by dot.092;
+    sub braceleft' nine' three' comma' by dot.093;
+    sub braceleft' nine' four' comma' by dot.094;
+    sub braceleft' nine' five' comma' by dot.095;
+    sub braceleft' nine' six' comma' by dot.096;
+    sub braceleft' nine' seven' comma' by dot.097;
+    sub braceleft' nine' eight' comma' by dot.098;
+    sub braceleft' nine' nine' comma' by dot.099;
+    sub braceleft' one' zero' zero' comma' by dot.100;
+  } dotsInitial;
+
+  lookup dotsMiddle {
+    sub zero' comma' by dot.000;
+    sub one' comma' by dot.001;
+    sub two' comma' by dot.002;
+    sub three' comma' by dot.003;
+    sub four' comma' by dot.004;
+    sub five' comma' by dot.005;
+    sub six' comma' by dot.006;
+    sub seven' comma' by dot.007;
+    sub eight' comma' by dot.008;
+    sub nine' comma' by dot.009;
+    sub one' zero' comma' by dot.010;
+    sub one' one' comma' by dot.011;
+    sub one' two' comma' by dot.012;
+    sub one' three' comma' by dot.013;
+    sub one' four' comma' by dot.014;
+    sub one' five' comma' by dot.015;
+    sub one' six' comma' by dot.016;
+    sub one' seven' comma' by dot.017;
+    sub one' eight' comma' by dot.018;
+    sub one' nine' comma' by dot.019;
+    sub two' zero' comma' by dot.020;
+    sub two' one' comma' by dot.021;
+    sub two' two' comma' by dot.022;
+    sub two' three' comma' by dot.023;
+    sub two' four' comma' by dot.024;
+    sub two' five' comma' by dot.025;
+    sub two' six' comma' by dot.026;
+    sub two' seven' comma' by dot.027;
+    sub two' eight' comma' by dot.028;
+    sub two' nine' comma' by dot.029;
+    sub three' zero' comma' by dot.030;
+    sub three' one' comma' by dot.031;
+    sub three' two' comma' by dot.032;
+    sub three' three' comma' by dot.033;
+    sub three' four' comma' by dot.034;
+    sub three' five' comma' by dot.035;
+    sub three' six' comma' by dot.036;
+    sub three' seven' comma' by dot.037;
+    sub three' eight' comma' by dot.038;
+    sub three' nine' comma' by dot.039;
+    sub four' zero' comma' by dot.040;
+    sub four' one' comma' by dot.041;
+    sub four' two' comma' by dot.042;
+    sub four' three' comma' by dot.043;
+    sub four' four' comma' by dot.044;
+    sub four' five' comma' by dot.045;
+    sub four' six' comma' by dot.046;
+    sub four' seven' comma' by dot.047;
+    sub four' eight' comma' by dot.048;
+    sub four' nine' comma' by dot.049;
+    sub five' zero' comma' by dot.050;
+    sub five' one' comma' by dot.051;
+    sub five' two' comma' by dot.052;
+    sub five' three' comma' by dot.053;
+    sub five' four' comma' by dot.054;
+    sub five' five' comma' by dot.055;
+    sub five' six' comma' by dot.056;
+    sub five' seven' comma' by dot.057;
+    sub five' eight' comma' by dot.058;
+    sub five' nine' comma' by dot.059;
+    sub six' zero' comma' by dot.060;
+    sub six' one' comma' by dot.061;
+    sub six' two' comma' by dot.062;
+    sub six' three' comma' by dot.063;
+    sub six' four' comma' by dot.064;
+    sub six' five' comma' by dot.065;
+    sub six' six' comma' by dot.066;
+    sub six' seven' comma' by dot.067;
+    sub six' eight' comma' by dot.068;
+    sub six' nine' comma' by dot.069;
+    sub seven' zero' comma' by dot.070;
+    sub seven' one' comma' by dot.071;
+    sub seven' two' comma' by dot.072;
+    sub seven' three' comma' by dot.073;
+    sub seven' four' comma' by dot.074;
+    sub seven' five' comma' by dot.075;
+    sub seven' six' comma' by dot.076;
+    sub seven' seven' comma' by dot.077;
+    sub seven' eight' comma' by dot.078;
+    sub seven' nine' comma' by dot.079;
+    sub eight' zero' comma' by dot.080;
+    sub eight' one' comma' by dot.081;
+    sub eight' two' comma' by dot.082;
+    sub eight' three' comma' by dot.083;
+    sub eight' four' comma' by dot.084;
+    sub eight' five' comma' by dot.085;
+    sub eight' six' comma' by dot.086;
+    sub eight' seven' comma' by dot.087;
+    sub eight' eight' comma' by dot.088;
+    sub eight' nine' comma' by dot.089;
+    sub nine' zero' comma' by dot.090;
+    sub nine' one' comma' by dot.091;
+    sub nine' two' comma' by dot.092;
+    sub nine' three' comma' by dot.093;
+    sub nine' four' comma' by dot.094;
+    sub nine' five' comma' by dot.095;
+    sub nine' six' comma' by dot.096;
+    sub nine' seven' comma' by dot.097;
+    sub nine' eight' comma' by dot.098;
+    sub nine' nine' comma' by dot.099;
+    sub one' zero' zero' comma' by dot.100;
+  } dotsMiddle;
+
+  lookup dotsFinal {
+    sub zero' braceright' by dot.000;
+    sub one' braceright' by dot.001;
+    sub two' braceright' by dot.002;
+    sub three' braceright' by dot.003;
+    sub four' braceright' by dot.004;
+    sub five' braceright' by dot.005;
+    sub six' braceright' by dot.006;
+    sub seven' braceright' by dot.007;
+    sub eight' braceright' by dot.008;
+    sub nine' braceright' by dot.009;
+    sub one' zero' braceright' by dot.010;
+    sub one' one' braceright' by dot.011;
+    sub one' two' braceright' by dot.012;
+    sub one' three' braceright' by dot.013;
+    sub one' four' braceright' by dot.014;
+    sub one' five' braceright' by dot.015;
+    sub one' six' braceright' by dot.016;
+    sub one' seven' braceright' by dot.017;
+    sub one' eight' braceright' by dot.018;
+    sub one' nine' braceright' by dot.019;
+    sub two' zero' braceright' by dot.020;
+    sub two' one' braceright' by dot.021;
+    sub two' two' braceright' by dot.022;
+    sub two' three' braceright' by dot.023;
+    sub two' four' braceright' by dot.024;
+    sub two' five' braceright' by dot.025;
+    sub two' six' braceright' by dot.026;
+    sub two' seven' braceright' by dot.027;
+    sub two' eight' braceright' by dot.028;
+    sub two' nine' braceright' by dot.029;
+    sub three' zero' braceright' by dot.030;
+    sub three' one' braceright' by dot.031;
+    sub three' two' braceright' by dot.032;
+    sub three' three' braceright' by dot.033;
+    sub three' four' braceright' by dot.034;
+    sub three' five' braceright' by dot.035;
+    sub three' six' braceright' by dot.036;
+    sub three' seven' braceright' by dot.037;
+    sub three' eight' braceright' by dot.038;
+    sub three' nine' braceright' by dot.039;
+    sub four' zero' braceright' by dot.040;
+    sub four' one' braceright' by dot.041;
+    sub four' two' braceright' by dot.042;
+    sub four' three' braceright' by dot.043;
+    sub four' four' braceright' by dot.044;
+    sub four' five' braceright' by dot.045;
+    sub four' six' braceright' by dot.046;
+    sub four' seven' braceright' by dot.047;
+    sub four' eight' braceright' by dot.048;
+    sub four' nine' braceright' by dot.049;
+    sub five' zero' braceright' by dot.050;
+    sub five' one' braceright' by dot.051;
+    sub five' two' braceright' by dot.052;
+    sub five' three' braceright' by dot.053;
+    sub five' four' braceright' by dot.054;
+    sub five' five' braceright' by dot.055;
+    sub five' six' braceright' by dot.056;
+    sub five' seven' braceright' by dot.057;
+    sub five' eight' braceright' by dot.058;
+    sub five' nine' braceright' by dot.059;
+    sub six' zero' braceright' by dot.060;
+    sub six' one' braceright' by dot.061;
+    sub six' two' braceright' by dot.062;
+    sub six' three' braceright' by dot.063;
+    sub six' four' braceright' by dot.064;
+    sub six' five' braceright' by dot.065;
+    sub six' six' braceright' by dot.066;
+    sub six' seven' braceright' by dot.067;
+    sub six' eight' braceright' by dot.068;
+    sub six' nine' braceright' by dot.069;
+    sub seven' zero' braceright' by dot.070;
+    sub seven' one' braceright' by dot.071;
+    sub seven' two' braceright' by dot.072;
+    sub seven' three' braceright' by dot.073;
+    sub seven' four' braceright' by dot.074;
+    sub seven' five' braceright' by dot.075;
+    sub seven' six' braceright' by dot.076;
+    sub seven' seven' braceright' by dot.077;
+    sub seven' eight' braceright' by dot.078;
+    sub seven' nine' braceright' by dot.079;
+    sub eight' zero' braceright' by dot.080;
+    sub eight' one' braceright' by dot.081;
+    sub eight' two' braceright' by dot.082;
+    sub eight' three' braceright' by dot.083;
+    sub eight' four' braceright' by dot.084;
+    sub eight' five' braceright' by dot.085;
+    sub eight' six' braceright' by dot.086;
+    sub eight' seven' braceright' by dot.087;
+    sub eight' eight' braceright' by dot.088;
+    sub eight' nine' braceright' by dot.089;
+    sub nine' zero' braceright' by dot.090;
+    sub nine' one' braceright' by dot.091;
+    sub nine' two' braceright' by dot.092;
+    sub nine' three' braceright' by dot.093;
+    sub nine' four' braceright' by dot.094;
+    sub nine' five' braceright' by dot.095;
+    sub nine' six' braceright' by dot.096;
+    sub nine' seven' braceright' by dot.097;
+    sub nine' eight' braceright' by dot.098;
+    sub nine' nine' braceright' by dot.099;
+    sub one' zero' zero' braceright' by dot.100;
+  } dotsFinal;
+
+  # Now switch dot pairs for lines
+  lookup linesAll {
+    sub @theDots' dot.000 by @linesTo000;
+    sub @theDots' dot.001 by @linesTo001;
+    sub @theDots' dot.002 by @linesTo002;
+    sub @theDots' dot.003 by @linesTo003;
+    sub @theDots' dot.004 by @linesTo004;
+    sub @theDots' dot.005 by @linesTo005;
+    sub @theDots' dot.006 by @linesTo006;
+    sub @theDots' dot.007 by @linesTo007;
+    sub @theDots' dot.008 by @linesTo008;
+    sub @theDots' dot.009 by @linesTo009;
+    sub @theDots' dot.010 by @linesTo010;
+    sub @theDots' dot.011 by @linesTo011;
+    sub @theDots' dot.012 by @linesTo012;
+    sub @theDots' dot.013 by @linesTo013;
+    sub @theDots' dot.014 by @linesTo014;
+    sub @theDots' dot.015 by @linesTo015;
+    sub @theDots' dot.016 by @linesTo016;
+    sub @theDots' dot.017 by @linesTo017;
+    sub @theDots' dot.018 by @linesTo018;
+    sub @theDots' dot.019 by @linesTo019;
+    sub @theDots' dot.020 by @linesTo020;
+    sub @theDots' dot.021 by @linesTo021;
+    sub @theDots' dot.022 by @linesTo022;
+    sub @theDots' dot.023 by @linesTo023;
+    sub @theDots' dot.024 by @linesTo024;
+    sub @theDots' dot.025 by @linesTo025;
+    sub @theDots' dot.026 by @linesTo026;
+    sub @theDots' dot.027 by @linesTo027;
+    sub @theDots' dot.028 by @linesTo028;
+    sub @theDots' dot.029 by @linesTo029;
+    sub @theDots' dot.030 by @linesTo030;
+    sub @theDots' dot.031 by @linesTo031;
+    sub @theDots' dot.032 by @linesTo032;
+    sub @theDots' dot.033 by @linesTo033;
+    sub @theDots' dot.034 by @linesTo034;
+    sub @theDots' dot.035 by @linesTo035;
+    sub @theDots' dot.036 by @linesTo036;
+    sub @theDots' dot.037 by @linesTo037;
+    sub @theDots' dot.038 by @linesTo038;
+    sub @theDots' dot.039 by @linesTo039;
+    sub @theDots' dot.040 by @linesTo040;
+    sub @theDots' dot.041 by @linesTo041;
+    sub @theDots' dot.042 by @linesTo042;
+    sub @theDots' dot.043 by @linesTo043;
+    sub @theDots' dot.044 by @linesTo044;
+    sub @theDots' dot.045 by @linesTo045;
+    sub @theDots' dot.046 by @linesTo046;
+    sub @theDots' dot.047 by @linesTo047;
+    sub @theDots' dot.048 by @linesTo048;
+    sub @theDots' dot.049 by @linesTo049;
+    sub @theDots' dot.050 by @linesTo050;
+    sub @theDots' dot.051 by @linesTo051;
+    sub @theDots' dot.052 by @linesTo052;
+    sub @theDots' dot.053 by @linesTo053;
+    sub @theDots' dot.054 by @linesTo054;
+    sub @theDots' dot.055 by @linesTo055;
+    sub @theDots' dot.056 by @linesTo056;
+    sub @theDots' dot.057 by @linesTo057;
+    sub @theDots' dot.058 by @linesTo058;
+    sub @theDots' dot.059 by @linesTo059;
+    sub @theDots' dot.060 by @linesTo060;
+    sub @theDots' dot.061 by @linesTo061;
+    sub @theDots' dot.062 by @linesTo062;
+    sub @theDots' dot.063 by @linesTo063;
+    sub @theDots' dot.064 by @linesTo064;
+    sub @theDots' dot.065 by @linesTo065;
+    sub @theDots' dot.066 by @linesTo066;
+    sub @theDots' dot.067 by @linesTo067;
+    sub @theDots' dot.068 by @linesTo068;
+    sub @theDots' dot.069 by @linesTo069;
+    sub @theDots' dot.070 by @linesTo070;
+    sub @theDots' dot.071 by @linesTo071;
+    sub @theDots' dot.072 by @linesTo072;
+    sub @theDots' dot.073 by @linesTo073;
+    sub @theDots' dot.074 by @linesTo074;
+    sub @theDots' dot.075 by @linesTo075;
+    sub @theDots' dot.076 by @linesTo076;
+    sub @theDots' dot.077 by @linesTo077;
+    sub @theDots' dot.078 by @linesTo078;
+    sub @theDots' dot.079 by @linesTo079;
+    sub @theDots' dot.080 by @linesTo080;
+    sub @theDots' dot.081 by @linesTo081;
+    sub @theDots' dot.082 by @linesTo082;
+    sub @theDots' dot.083 by @linesTo083;
+    sub @theDots' dot.084 by @linesTo084;
+    sub @theDots' dot.085 by @linesTo085;
+    sub @theDots' dot.086 by @linesTo086;
+    sub @theDots' dot.087 by @linesTo087;
+    sub @theDots' dot.088 by @linesTo088;
+    sub @theDots' dot.089 by @linesTo089;
+    sub @theDots' dot.090 by @linesTo090;
+    sub @theDots' dot.091 by @linesTo091;
+    sub @theDots' dot.092 by @linesTo092;
+    sub @theDots' dot.093 by @linesTo093;
+    sub @theDots' dot.094 by @linesTo094;
+    sub @theDots' dot.095 by @linesTo095;
+    sub @theDots' dot.096 by @linesTo096;
+    sub @theDots' dot.097 by @linesTo097;
+    sub @theDots' dot.098 by @linesTo098;
+    sub @theDots' dot.099 by @linesTo099;
+    sub @theDots' dot.100 by @linesTo100;
+  } linesAll;
+
+  # Circled letters
+  lookup circledLetters {
+    sub braceleft' w' braceright' by circle.w;
+    sub braceleft' W' braceright' by circle.w;
+    sub braceleft' l' braceright' by circle.l;
+    sub braceleft' L' braceright' by circle.l;
+    sub braceleft' d' braceright' by circle.d;
+    sub braceleft' D' braceright' by circle.d;
+  } circledLetters;
+
+  # Circled arrows
+  lookup circledArrows {
+    sub braceleft' u' p' braceright' by circle.arrowup;
+    sub braceleft' d' o' w' n' braceright' by circle.arrowdown;
+  } circledArrows;
+} calt;
+
+feature kern {
+lookup kernNormal {
+  lookupflag IgnoreMarks;
+  pos @punctuation.lower @slant.down.left -70;
+  pos @punctuation.upper @round.left -10;
+  pos @punctuation.upper @slant.up.left -50;
+  pos @round.right @punctuation.upper -10;
+  pos @round.right @slant.down.left -20;
+  pos @round.right @slant.up.left -20;
+  pos @slant.down.right @punctuation.upper -50;
+  pos @slant.down.right @round.left -20;
+  pos @slant.up.right @punctuation.lower -70;
+  pos @slant.up.right @round.left -20;
+  pos P @slant.up.left -35;
+  pos p @slant.up.left -35;
+} kernNormal;
+
+lookup kernChartsLeft {
+  lookupflag IgnoreMarks;
+  pos @numerals @theDots 100;
+  pos @numerals @linesTo000 100;
+  pos @numerals @linesTo001 100;
+  pos @numerals @linesTo002 100;
+  pos @numerals @linesTo003 100;
+  pos @numerals @linesTo004 100;
+  pos @numerals @linesTo005 100;
+  pos @numerals @linesTo006 100;
+  pos @numerals @linesTo007 100;
+  pos @numerals @linesTo008 100;
+  pos @numerals @linesTo009 100;
+  pos @numerals @linesTo010 100;
+  pos @numerals @linesTo011 100;
+  pos @numerals @linesTo012 100;
+  pos @numerals @linesTo013 100;
+  pos @numerals @linesTo014 100;
+  pos @numerals @linesTo015 100;
+  pos @numerals @linesTo016 100;
+  pos @numerals @linesTo017 100;
+  pos @numerals @linesTo018 100;
+  pos @numerals @linesTo019 100;
+  pos @numerals @linesTo020 100;
+  pos @numerals @linesTo021 100;
+  pos @numerals @linesTo022 100;
+  pos @numerals @linesTo023 100;
+  pos @numerals @linesTo024 100;
+  pos @numerals @linesTo025 100;
+  pos @numerals @linesTo026 100;
+  pos @numerals @linesTo027 100;
+  pos @numerals @linesTo028 100;
+  pos @numerals @linesTo029 100;
+  pos @numerals @linesTo030 100;
+  pos @numerals @linesTo031 100;
+  pos @numerals @linesTo032 100;
+  pos @numerals @linesTo033 100;
+  pos @numerals @linesTo034 100;
+  pos @numerals @linesTo035 100;
+  pos @numerals @linesTo036 100;
+  pos @numerals @linesTo037 100;
+  pos @numerals @linesTo038 100;
+  pos @numerals @linesTo039 100;
+  pos @numerals @linesTo040 100;
+  pos @numerals @linesTo041 100;
+  pos @numerals @linesTo042 100;
+  pos @numerals @linesTo043 100;
+  pos @numerals @linesTo044 100;
+  pos @numerals @linesTo045 100;
+  pos @numerals @linesTo046 100;
+  pos @numerals @linesTo047 100;
+  pos @numerals @linesTo048 100;
+  pos @numerals @linesTo049 100;
+  pos @numerals @linesTo050 100;
+  pos @numerals @linesTo051 100;
+  pos @numerals @linesTo052 100;
+  pos @numerals @linesTo053 100;
+  pos @numerals @linesTo054 100;
+  pos @numerals @linesTo055 100;
+  pos @numerals @linesTo056 100;
+  pos @numerals @linesTo057 100;
+  pos @numerals @linesTo058 100;
+  pos @numerals @linesTo059 100;
+  pos @numerals @linesTo060 100;
+  pos @numerals @linesTo061 100;
+  pos @numerals @linesTo062 100;
+  pos @numerals @linesTo063 100;
+  pos @numerals @linesTo064 100;
+  pos @numerals @linesTo065 100;
+  pos @numerals @linesTo066 100;
+  pos @numerals @linesTo067 100;
+  pos @numerals @linesTo068 100;
+  pos @numerals @linesTo069 100;
+  pos @numerals @linesTo070 100;
+  pos @numerals @linesTo071 100;
+  pos @numerals @linesTo072 100;
+  pos @numerals @linesTo073 100;
+  pos @numerals @linesTo074 100;
+  pos @numerals @linesTo075 100;
+  pos @numerals @linesTo076 100;
+  pos @numerals @linesTo077 100;
+  pos @numerals @linesTo078 100;
+  pos @numerals @linesTo079 100;
+  pos @numerals @linesTo080 100;
+  pos @numerals @linesTo081 100;
+  pos @numerals @linesTo082 100;
+  pos @numerals @linesTo083 100;
+  pos @numerals @linesTo084 100;
+  pos @numerals @linesTo085 100;
+  pos @numerals @linesTo086 100;
+  pos @numerals @linesTo087 100;
+  pos @numerals @linesTo088 100;
+  pos @numerals @linesTo089 100;
+  pos @numerals @linesTo090 100;
+  pos @numerals @linesTo091 100;
+  pos @numerals @linesTo092 100;
+  pos @numerals @linesTo093 100;
+  pos @numerals @linesTo094 100;
+  pos @numerals @linesTo095 100;
+  pos @numerals @linesTo096 100;
+  pos @numerals @linesTo097 100;
+  pos @numerals @linesTo098 100;
+  pos @numerals @linesTo099 100;
+  pos @numerals @linesTo100 100;
+} kernChartsLeft;
+
+lookup kernChartsRight {
+  lookupflag IgnoreMarks;
+  pos @theDots @numerals 100;
+  pos @linesTo000 @numerals 100;
+  pos @linesTo001 @numerals 100;
+  pos @linesTo002 @numerals 100;
+  pos @linesTo003 @numerals 100;
+  pos @linesTo004 @numerals 100;
+  pos @linesTo005 @numerals 100;
+  pos @linesTo006 @numerals 100;
+  pos @linesTo007 @numerals 100;
+  pos @linesTo008 @numerals 100;
+  pos @linesTo009 @numerals 100;
+  pos @linesTo010 @numerals 100;
+  pos @linesTo011 @numerals 100;
+  pos @linesTo012 @numerals 100;
+  pos @linesTo013 @numerals 100;
+  pos @linesTo014 @numerals 100;
+  pos @linesTo015 @numerals 100;
+  pos @linesTo016 @numerals 100;
+  pos @linesTo017 @numerals 100;
+  pos @linesTo018 @numerals 100;
+  pos @linesTo019 @numerals 100;
+  pos @linesTo020 @numerals 100;
+  pos @linesTo021 @numerals 100;
+  pos @linesTo022 @numerals 100;
+  pos @linesTo023 @numerals 100;
+  pos @linesTo024 @numerals 100;
+  pos @linesTo025 @numerals 100;
+  pos @linesTo026 @numerals 100;
+  pos @linesTo027 @numerals 100;
+  pos @linesTo028 @numerals 100;
+  pos @linesTo029 @numerals 100;
+  pos @linesTo030 @numerals 100;
+  pos @linesTo031 @numerals 100;
+  pos @linesTo032 @numerals 100;
+  pos @linesTo033 @numerals 100;
+  pos @linesTo034 @numerals 100;
+  pos @linesTo035 @numerals 100;
+  pos @linesTo036 @numerals 100;
+  pos @linesTo037 @numerals 100;
+  pos @linesTo038 @numerals 100;
+  pos @linesTo039 @numerals 100;
+  pos @linesTo040 @numerals 100;
+  pos @linesTo041 @numerals 100;
+  pos @linesTo042 @numerals 100;
+  pos @linesTo043 @numerals 100;
+  pos @linesTo044 @numerals 100;
+  pos @linesTo045 @numerals 100;
+  pos @linesTo046 @numerals 100;
+  pos @linesTo047 @numerals 100;
+  pos @linesTo048 @numerals 100;
+  pos @linesTo049 @numerals 100;
+  pos @linesTo050 @numerals 100;
+  pos @linesTo051 @numerals 100;
+  pos @linesTo052 @numerals 100;
+  pos @linesTo053 @numerals 100;
+  pos @linesTo054 @numerals 100;
+  pos @linesTo055 @numerals 100;
+  pos @linesTo056 @numerals 100;
+  pos @linesTo057 @numerals 100;
+  pos @linesTo058 @numerals 100;
+  pos @linesTo059 @numerals 100;
+  pos @linesTo060 @numerals 100;
+  pos @linesTo061 @numerals 100;
+  pos @linesTo062 @numerals 100;
+  pos @linesTo063 @numerals 100;
+  pos @linesTo064 @numerals 100;
+  pos @linesTo065 @numerals 100;
+  pos @linesTo066 @numerals 100;
+  pos @linesTo067 @numerals 100;
+  pos @linesTo068 @numerals 100;
+  pos @linesTo069 @numerals 100;
+  pos @linesTo070 @numerals 100;
+  pos @linesTo071 @numerals 100;
+  pos @linesTo072 @numerals 100;
+  pos @linesTo073 @numerals 100;
+  pos @linesTo074 @numerals 100;
+  pos @linesTo075 @numerals 100;
+  pos @linesTo076 @numerals 100;
+  pos @linesTo077 @numerals 100;
+  pos @linesTo078 @numerals 100;
+  pos @linesTo079 @numerals 100;
+  pos @linesTo080 @numerals 100;
+  pos @linesTo081 @numerals 100;
+  pos @linesTo082 @numerals 100;
+  pos @linesTo083 @numerals 100;
+  pos @linesTo084 @numerals 100;
+  pos @linesTo085 @numerals 100;
+  pos @linesTo086 @numerals 100;
+  pos @linesTo087 @numerals 100;
+  pos @linesTo088 @numerals 100;
+  pos @linesTo089 @numerals 100;
+  pos @linesTo090 @numerals 100;
+  pos @linesTo091 @numerals 100;
+  pos @linesTo092 @numerals 100;
+  pos @linesTo093 @numerals 100;
+  pos @linesTo094 @numerals 100;
+  pos @linesTo095 @numerals 100;
+  pos @linesTo096 @numerals 100;
+  pos @linesTo097 @numerals 100;
+  pos @linesTo098 @numerals 100;
+  pos @linesTo099 @numerals 100;
+  pos @linesTo100 @numerals 100;
+} kernChartsRight;
+} kern;
+
+feature aalt {
+feature calt;
+feature sups;
+feature frac;
+feature ordn;
+} aalt;
+
+feature sups {
+sub one by onesuperior;
+sub two by twosuperior;
+sub three by threesuperior;
+} sups;
+
+feature frac {
+sub one slash four by onequarter;
+sub one slash two by onehalf;
+sub three slash four by threequarters;
+} frac;
+
+feature ordn {
+sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+} ordn;
+

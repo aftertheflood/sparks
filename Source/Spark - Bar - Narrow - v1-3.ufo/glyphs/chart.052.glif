@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="chart.052" format="1">
-  <advance width="300"/>
-  <outline>
-    <component base="chart.primitive" yScale="53.0"/>
-  </outline>
-</glyph>
