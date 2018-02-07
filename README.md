@@ -116,7 +116,7 @@ This works because OpenType substitution is a linear process in which each rule 
 ---
 
 ### About us
-[After the flood](http://aftertheflood.co/) is a design company based in London. We make new digital products and we believe data is the building material of the modern, 21st-century business. Using lean concepts, we collaborate with internal teams to harness their data and create products that users love. Organisations such as the NHS, Google, Nikkei and UEFA choose us to complement their domain knowledge with our experience in data products across many sectors, from equity finance to sports entertainment.
+[After the flood](http://aftertheflood.co/) is a design consultancy based in London. We work with global corporations like Google, Nikkei and Ford to solve business problems that combine our understanding of AI and data as a material with unique user insight. Our consulting model means guaranteed access to our top team. Our approach is user-centred and lean, showing progress to clients and working with a variety of expert partners.
 
 ### License
 Sparks has been distributed under the [SIL Open Font License](https://github.com/aftertheflood/spark/blob/master/LICENSE).
