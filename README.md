@@ -105,7 +105,7 @@ feature calt {
 
 ```
 
-In theory the **dot-line** variation could be just like the **bar** and **dot** variations with only a single round of glyph substitutions, however because the **dot-line** fonts are are plotting connections rather than single positions you would end up with *many* lines of code (almost 11k). Fine in the abstract, but it turns out that OpenType has a limit for how many lines of code can be in a single lookup table (around 3k – everything in a lookup table has to fit into 16 bits, because reasons), so compilation fails. There are definitely many ways around this, but it is a headache. The **dot-line** version sorts the problem by
+In theory the **dot-line** variation could be just like the **bar** and **dot** variations with only a single round of glyph substitutions, however because the **dot-line** fonts are plotting connections rather than single positions you would end up with *many* lines of code (almost 11k). Fine in the abstract, but it turns out that OpenType has a limit for how many lines of code can be in a single lookup table (around 3k – everything in a lookup table has to fit into 16 bits, because reasons), so compilation fails. There are definitely many ways around this, but it is a headache. The **dot-line** version sorts the problem by
 
 - first setting up classes for both the dots and the lines
 - then substituting numbers for the appropriate dot glyph (just like in the **bar** and **dot** variants, however here the sequence is a lot more important)
