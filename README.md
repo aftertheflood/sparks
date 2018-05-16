@@ -1,5 +1,7 @@
 # Sparks
 
+![Sparks GIF](https://aftertheflood.co/wp-content/uploads/2018/01/spark-typing-v2.gif)
+
 Sparks is a typeface for creating sparklines in text. It uses OpenType's *contextual alternates* feature to perform simple replacement operations on numbers. It works on both the desktop and the web where it works without Javascript, though it does require a modern-ish web browser that can make use of OpenType features in text. At the moment it is compatible with Microsoft Word (2010 and later), Apple Pages, Adobe Creative Cloud applications, Chrome 33+, Safari 6+, Firefox 4+, and Internet Explorer 10+. (See: http://stateofwebtype.com/ for a fuller listing of browser compatibility.)
 
 There are currently three variations: **bars, dots, and dot-lines** (line charts with tiny dots at the joints between segments), each of which has five weight variants.
