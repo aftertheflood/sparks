@@ -6,7 +6,7 @@ Sparks is a typeface for creating sparklines in text. It uses OpenType's *contex
 
 There are currently three variations: **bars, dots, and dot-lines** (line charts with tiny dots at the joints between segments), each of which has five weight variants.
 
-All three of the variants use a fixed scale of 0–100. If you're data only goes to e.g., 10, you'll need to first translate your numbers to be out of 100, otherwise you'll end up rendering an especially tiny chart.
+All three of the variants use a fixed scale of 0–100. If your data only goes to e.g., 10, you'll need to first translate your numbers to be out of 100, otherwise you'll end up rendering an especially tiny chart.
 
 The contextual alternates feature (`calt`) is baked into OpenType and Sparks simply leverages this feature in an unconventional way. It takes strings like `123{30,60,90}456` and outputs a sparkline. The example of `123{30,60,90}456` would have with three datapoints of 30, 60, and 90 framed by 123 and 456. Spaces after the commas will prevent the numbers from being transformed. Numbers outside of the brackets are never transformed.
 
