@@ -1,6 +1,6 @@
 # Sparks
 
-![Sparks GIF](https://aftertheflood.co/wp-content/uploads/2018/01/spark-typing-v2.gif)
+![Sparks GIF](https://aftertheflood.com/wp-content/uploads/2018/01/spark-typing-v2.gif)
 
 Sparks is a typeface for creating sparklines in text. It uses OpenType's *contextual alternates* feature to perform simple replacement operations on numbers. It works on both the desktop and the web where it works without Javascript, though it does require a modern-ish web browser that can make use of OpenType features in text. At the moment it is compatible with Microsoft Word (2010 and later), Apple Pages, Adobe Creative Cloud applications, Chrome 33+, Safari 6+, Firefox 4+, and Internet Explorer 10+. (See: http://stateofwebtype.com/ for a fuller listing of browser compatibility.)
 
@@ -10,7 +10,7 @@ All three of the variants use a fixed scale of 0–100. If your data only goes t
 
 The contextual alternates feature (`calt`) is baked into OpenType and Sparks simply leverages this feature in an unconventional way. It takes strings like `123{30,60,90}456` and outputs a sparkline. The example of `123{30,60,90}456` would have with three datapoints of 30, 60, and 90 framed by 123 and 456. Spaces after the commas will prevent the numbers from being transformed. Numbers outside of the brackets are never transformed.
 
-See it working on our [website](http://aftertheflood.co/projects/atf-spark).
+See it working on our [website](http://aftertheflood.com/projects/atf-spark).
 
 
 
@@ -118,7 +118,7 @@ This works because OpenType substitution is a linear process in which each rule 
 ---
 
 ### About us
-[After the flood](http://aftertheflood.co/) is a design consultancy based in London. We work with global corporations like Google, Nikkei and Ford to solve business problems that combine our understanding of AI and data as a material with unique user insight. Our consulting model means guaranteed access to our top team. Our approach is user-centred and lean, showing progress to clients and working with a variety of expert partners.
+[After the flood](http://aftertheflood.com/) is a design consultancy based in London. We work with global corporations like Google, Nikkei and Ford to solve business problems that combine our understanding of AI and data as a material with unique user insight. Our consulting model means guaranteed access to our top team. Our approach is user-centred and lean, showing progress to clients and working with a variety of expert partners.
 
 ### License
 Sparks has been distributed under the [SIL Open Font License](https://github.com/aftertheflood/spark/blob/master/LICENSE).

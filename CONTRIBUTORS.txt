@@ -9,6 +9,6 @@
 # Names should be added to this file as:
 # Name <email address>
 
-After the flood <info@aftertheflood.co>
-Mike Gallagher <mike@aftertheflood.co>
-Max Gadney <max@aftertheflood.co>
+After the flood <info@aftertheflood.com>
+Mike Gallagher <mike@aftertheflood.com>
+Max Gadney <max@aftertheflood.com>
