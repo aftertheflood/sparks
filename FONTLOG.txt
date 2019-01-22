@@ -9,7 +9,7 @@ Sparks is a font family for creating sparklines charts in text via OpenType cont
 
 Sparks currently features three styles (bar, dot, and dot-line), each of which has five weights.
 
-To contribute to the project contact Mike Gallagher at mike@aftertheflood.co
+To contribute to the project contact Mike Gallagher at mike@aftertheflood.com
 
 ChangeLog
 
@@ -33,8 +33,8 @@ email (E), web-address (if you have one) (W) and
 description (D). This list is in alphabetical order.
 
 N: Mike Gallagher
-E: mike@aftertheflood.co / mail@mikegallagher.org
-W: https://aftertheflood.co / http://mikegallagher.org
+E: mike@aftertheflood.com / mail@mikegallagher.org
+W: https://aftertheflood.com / http://mikegallagher.org
 D: Designer
 
 After the Flood is a design company based in London. We make new digital products and we believe data is the building material of the modern, 21st-century business.
