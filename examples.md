@@ -1,5 +1,7 @@
 # Displaying charts in text without having to use code
 
+<div class="full-width">
+
 Sparks, now in its second release, is a family of 15 fonts (three variants in five weights each) that allows for the easy combination of text and visual data by removing the need for any technical know-how. By installing the Spark font you can use them immediately without the need for custom code.
 
 Data can be hard to grasp however visualising it can make comprehension faster. Sparklines (tiny charts in text, like this: <span class="sparks dotline-extrathin">123{10,20,30,40,50,60,70,80,90,100}789</span>) are a useful tool, but creating them for the web has always required code and using them in word documents was previously impossible.
@@ -16,7 +18,7 @@ The different spark fonts allow for a degree of flexibility in the way different
  * Bar wide: <span class="sparks bar-wide">123{0,100,10,90,20,80,30,70,40,60,50}987</span>
  * Bar extra wide: <span class="sparks bar-extrawide">123{0,100,10,90,20,80,30,70,40,60,50}987</span>
  
-### Dots</h3>
+### Dots
 
  * Dot extra small: <span class="sparks dot-extrasmall">123{0,100,10,90,20,80,30,70,40,60,50}987</span>
  * Dot small: <span class="sparks dot-small">123{0,100,10,90,20,80,30,70,40,60,50}987</span>
@@ -33,3 +35,5 @@ The different spark fonts allow for a degree of flexibility in the way different
  * Dotline extra thick: <span class="sparks dotline-extrathick">123{0,100,10,90,20,80,30,70,40,60,50}987</span>
 
 Further usage examples can be found as <a href="https://beta.observablehq.com/collection/@tomgp/sparks/2">Observable notebooks</a>
+
+</div>
