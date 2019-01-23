@@ -10,7 +10,7 @@ All three of the variants use a fixed scale of 0–100. If your data only goes t
 
 The contextual alternates feature (`calt`) is baked into OpenType and Sparks simply leverages this feature in an unconventional way. It takes strings like `123{30,60,90}456` and outputs a sparkline. The example of `123{30,60,90}456` would have with three datapoints of 30, 60, and 90 framed by 123 and 456. Spaces after the commas will prevent the numbers from being transformed. Numbers outside of the brackets are never transformed.
 
-See it working on our [website](http://aftertheflood.com/projects/atf-spark).
+See it working on our [website](http://aftertheflood.com/projects/atf-spark) or in an <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">interactive Observable notebook</a>
 
 # Using Sparks
 

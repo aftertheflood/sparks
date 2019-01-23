@@ -1,0 +1,29 @@
+/* Classes for Sparks
+----------------------------------------------------------------------------- */
+
+.sparks {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: contextual;
+  font-feature-settings: "calt" 1, "kern" 1;
+  font-kerning: normal;
+  -webkit-font-feature-settings: "calt", "kern";
+  -moz-font-feature-settings: "calt=1", "kern=1";
+}
+
+.dotline-extrathin  {font-family: Sparks-Dotline-Extrathin;}
+.dotline-thin       {font-family: Sparks-Dotline-Thin;}
+.dotline-medium     {font-family: Sparks-Dotline-Medium;}
+.dotline-thick      {font-family: Sparks-Dotline-thick;}
+.dotline-extrathick {font-family: Sparks-Dotline-Extrathick;}
+
+.dot-extrasmall     {font-family: Sparks-Dot-Extrasmall;}
+.dot-small          {font-family: Sparks-Dot-Small;}
+.dot-medium         {font-family: Sparks-Dot-Medium;}
+.dot-large          {font-family: Sparks-Dot-Large;}
+.dot-extralarge     {font-family: Sparks-Dot-Extralarge;}
+
+.bar-extranarrow    {font-family: Sparks-Bar-Extranarrow;}
+.bar-narrow         {font-family: Sparks-Bar-Narrow;}
+.bar-medium         {font-family: Sparks-Bar-Medium;}
+.bar-wide           {font-family: Sparks-Bar-Wide;}
+.bar-extrawide      {font-family: Sparks-Bar-Extrawide;}
