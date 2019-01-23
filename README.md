@@ -12,14 +12,11 @@ The contextual alternates feature (`calt`) is baked into OpenType and Sparks sim
 
 See it working on our [website](http://aftertheflood.com/projects/atf-spark).
 
-
-
-
 # Using Sparks
 
 ### On the web
 
-When using the Sparks webfonts in a browser, you *should* enable the `calt` feature in your CSS, however it seems that these days `calt` is enabled by default in some browsers and you don't need to do anything to make it work other than assign the font to your text. Still, better safe than sorry. The CSS to explicitly turn on the feature looks like this (example pilfered from https://helpx.adobe.com/typekit/using/open-type-syntax.html#calt):
+When using Sparks as a webfont you *may* wish to explicitly enable the `calt` feature. Contextual ligatures are enabled by default in most modern browsers but in order to support older browsers you can use the following CSS (example pilfered from Adobe's [Syntax for OpenType features in CSS](https://helpx.adobe.com/typekit/using/open-type-syntax.html#calt) page):
 
 ```
 .yourClass {
@@ -30,7 +27,12 @@ When using the Sparks webfonts in a browser, you *should* enable the `calt` feat
 }
 ```
 
-For more on this see the example code in the **tests** folder.
+For more on this see the example code in the [**tests**](https://github.com/aftertheflood/sparks/tree/master/tests) folder.
+
+To get started quickly you may want to use our stylesheet which defines all the font-faces and links to the relevant files hosted on github
+```
+  <link href="https://aftertheflood.github.io/sparks/styles/font-faces.css" rel="stylesheet" />
+```
 
 ### In MS Word
 
