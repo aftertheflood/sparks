@@ -1,10 +1,12 @@
 # Sparks
 
-![Sparks GIF](https://aftertheflood.com/wp-content/uploads/2018/01/spark-typing-v2.gif)
+Data can be hard to grasp, visualising it can improve comprehension. Sparklines (tiny charts in text, like this: <span class="sparks dotline-extrathin">123{10,20,30,40,50,60,70,80,90,100}789</span>) are a useful tool, but creating them for the web has always required code and using them in word documents was previously impossible.
 
-Sparks is a typeface for creating sparklines in text. It uses OpenType's *contextual alternates* feature to perform simple replacement operations on numbers. It works on both the desktop and the web where it works without Javascript, though it does require a modern-ish web browser that can make use of OpenType features in text. At the moment it is compatible with Microsoft Word (2010 and later), Apple Pages, Adobe Creative Cloud applications, Chrome 33+, Safari 6+, Firefox 4+, and Internet Explorer 10+. (See: http://stateofwebtype.com/ for a fuller listing of browser compatibility.)
+![An animation showing how spark lines are built as the user types](https://aftertheflood.com/wp-content/uploads/2018/01/spark-typing-v2.gif)
 
-There are currently three variations: **bars, dots, and dot-lines** (line charts with tiny dots at the joints between segments), each of which has five weight variants.
+Sparks is a typeface for creating sparklines in text. It uses OpenType's *contextual alternates* feature to perform simple replacement operations on numbers. It works on both in desktop software and on the web without the need for Javascript, though it does require a modern-ish web browser that can make use of OpenType features in text. At the moment it is compatible with Microsoft Word (2010 and later), Apple Pages, Adobe Creative Cloud applications, Chrome 33+, Safari 6+, Firefox 4+, and Internet Explorer 10+. (See: http://stateofwebtype.com/ for a fuller listing of browser compatibility.)
+
+There are currently three variations: **bars, dots, and dot-lines** (line charts with tiny dots at the joints between segments), each of which has five weight variants. You can see all the available sizes on [the examples page](/sparks/examples)
 
 All three of the variants use a fixed scale of 0–100. If your data only goes to e.g., 10, you'll need to first translate your numbers to be out of 100, otherwise you'll end up rendering an especially tiny chart.
 
@@ -40,11 +42,11 @@ If you are using MS Word you need to enable the "Use Contextual Alternates" feat
 
 ### In Adobe Illustrator
 
-Turn on contextual alternates from the OpenType panel menu (Window > Type > OpenType). Here's a [screenshot](https://user-images.githubusercontent.com/771600/30393566-7ebc3a96-98b8-11e7-9b18-34cf6b1550c4.png).
+Turn on contextual alternates from the OpenType panel menu (Window > Type > OpenType). Here's a [screenshot](https://github.com/aftertheflood/sparks/assets/illustrator-opentype.png).
 
 ### In Adobe InDesign
 
-Sometimes contextual alternates are activated by default and sometimes they are not. We have no idea why. Use the OpenType menu to make sure they are turned on, which can be found in the options menu of the character palette (Character > Options > OpenType > Contextual Alternates). Here's a [screenshot](https://github.com/aftertheflood/sparks/documentation/indesign-contextual-alternates.png).
+Sometimes contextual alternates are activated by default and sometimes they are not. We have no idea why. Use the OpenType menu to make sure they are turned on, which can be found in the options menu of the character palette (Character > Options > OpenType > Contextual Alternates). Here's a [screenshot](https://github.com/aftertheflood/sparks/assets/indesign-contextual-alternates.png).
 
 
 

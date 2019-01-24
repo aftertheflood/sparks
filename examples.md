@@ -2,10 +2,6 @@
 
 Sparks, now in its second release, is a family of 15 fonts (three variants in five weights each) that allows for the easy combination of text and visual data by removing the need for any technical know-how. By installing the Spark font you can use them immediately without the need for custom code.
 
-Data can be hard to grasp however visualising it can make comprehension faster. Sparklines (tiny charts in text, like this: <span class="sparks dotline-extrathin">123{10,20,30,40,50,60,70,80,90,100}789</span>) are a useful tool, but creating them for the web has always required code and using them in word documents was previously impossible.
-
-## Other types of chart are available
-
 The different spark fonts allow for a degree of flexibility in the way different types of data can be displayed.
 
 ### Bars
