@@ -9,10 +9,24 @@
   </head>
   <body>
     <div class="page">
-      <header>
-        <h1><span class="highlight">After The Flood, {{ site.name }}</span> <span class="secondary">{{ site.description }}</span></h1>
-      </header>
-      <div role="main" class="content"><div class="full-width">{{ content }}</div></div>
+
+			<header>
+				<ul>
+					<li class="page-title"><a href="/">After the Flood</a></li>
+					<li>Making new services from data</li>
+				</ul>
+			</header>
+
+			<div role="primary title" class="mini-site-title content">
+				<h1>
+					Sparks
+				</h1>
+			</div>
+
+      <div role="main" class="content project">
+        {{ content }}
+      </div>
+      
       <footer>
         <p class="secondary">
           After the flood
@@ -22,6 +36,7 @@
           <br>Registered in England and Wales as After the flood Limited. 7792366
         </p>
       </footer>
+
     </div>
   </body>
 </html>
