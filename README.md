@@ -12,7 +12,7 @@ The contextual alternates feature (`calt`) is baked into OpenType and Sparks sim
 
 See it working on our [website](http://aftertheflood.com/projects/atf-spark) or in an <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">interactive Observable notebook</a>
 
-# Using Sparks
+## Using Sparks
 
 ### On the web
 
@@ -49,7 +49,7 @@ Sometimes contextual alternates are activated by default and sometimes they are 
 
 
 
-# How it works: the OpenType code
+## How it works: the OpenType code
 
 Inside the font files the code that powers the replacement operation for the **bar** and **dot** variations works like this:
 
