@@ -39,7 +39,7 @@ For more on this see the example code in the [**tests**](https://github.com/afte
 
 To get started quickly you may want to use our stylesheet which defines all the font-faces and links to the relevant files hosted on github
 ```
-  <link href="https://aftertheflood.github.io/sparks/styles/font-faces.css" rel="stylesheet" />
+  <link href="https://tools.aftertheflood.com/sparks/styles/font-faces.css" rel="stylesheet" />
 ```
 
 ### In MS Word
