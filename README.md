@@ -1,10 +1,12 @@
+A typeface for creating sparklines in text.
+
 <div>
   <hr class="no-top-border">
   <img class="full-width" src="https://aftertheflood.com/wp-content/uploads/2018/01/spark-typing-v2.gif" alt="Sparks GIF" />
   <hr class="no-top-border">
 </div>
 
-Sparks is a typeface for creating sparklines in text. It uses OpenType's *contextual alternates* feature to perform simple replacement operations on numbers. It works on both the desktop and the web where it works without Javascript, though it does require a modern-ish web browser that can make use of OpenType features in text. At the moment it is compatible with Microsoft Word (2010 and later), Apple Pages, Adobe Creative Cloud applications, Chrome 33+, Safari 6+, Firefox 4+, and Internet Explorer 10+. (See: http://stateofwebtype.com/ for a fuller listing of browser compatibility.)
+Sparks uses OpenType's *contextual alternates* feature to perform simple replacement operations on numbers. It works on both the desktop and the web where it works without Javascript, though it does require a modern-ish web browser that can make use of OpenType features in text. At the moment it is compatible with Microsoft Word (2010 and later), Apple Pages, Adobe Creative Cloud applications, Chrome 33+, Safari 6+, Firefox 4+, and Internet Explorer 10+. (See: http://stateofwebtype.com/ for a fuller listing of browser compatibility.)
 
 There are currently three variations: **bars, dots, and dot-lines** (line charts with tiny dots at the joints between segments), each of which has five weight variants.
 
@@ -12,7 +14,11 @@ All three of the variants use a fixed scale of 0–100. If your data only goes t
 
 The contextual alternates feature (`calt`) is baked into OpenType and Sparks simply leverages this feature in an unconventional way. It takes strings like `123{30,60,90}456` and outputs a sparkline. The example of `123{30,60,90}456` would have with three datapoints of 30, 60, and 90 framed by 123 and 456. Spaces after the commas will prevent the numbers from being transformed. Numbers outside of the brackets are never transformed.
 
-See it working on our [website](http://aftertheflood.com/projects/sparks) or in an <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">interactive Observable notebook</a>
+See it working on our [website](http://aftertheflood.com/projects/sparks) or in one of our interactive notebook examples
+
+ * <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">A simple usage example</a>
+ * <a href="https://beta.observablehq.com/@tomgp/sparks-in-an-svg">Using Sparks within an SVG</a>
+ * <a href="https://beta.observablehq.com/@tomgp/sparks-with-live-data">Using javascript to create Sparks code from data</a>
 
 ## Using Sparks
 
@@ -47,8 +53,6 @@ Turn on contextual alternates from the OpenType panel menu (Window > Type > Open
 ### In Adobe InDesign
 
 Sometimes contextual alternates are activated by default and sometimes they are not. We have no idea why. Use the OpenType menu to make sure they are turned on, which can be found in the options menu of the character palette (Character > Options > OpenType > Contextual Alternates). Here's a [screenshot](https://github.com/aftertheflood/sparks/documentation/indesign-contextual-alternates.png).
-
-
 
 
 ## How it works: the OpenType code
