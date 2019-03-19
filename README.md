@@ -1,5 +1,7 @@
 A typeface for creating sparklines in text.
 
+Get the font files <a href="https://goo.gl/MJYka3">here</a>. (.zip file, 5.2MB)
+
 See it working on our [website](http://aftertheflood.com/projects/sparks) or in one of our interactive notebook examples
 
  * <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">A simple usage example</a>
