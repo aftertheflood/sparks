@@ -4,6 +4,12 @@ A typeface for creating sparklines in text.
 
 See it working on our [website](http://aftertheflood.com/projects/sparks) or in one of our interactive notebook examples
 
+To quickly include the fonts in your web page you may wish to use our stylesheet which defines all the font-faces and links to the relevant files hosted on github.
+
+```
+  <link href="https://tools.aftertheflood.com/sparks/styles/font-faces.css" rel="stylesheet" />
+```
+
  * <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">A simple usage example</a>
  * <a href="https://beta.observablehq.com/@tomgp/sparks-in-an-svg">Using Sparks within an SVG</a>
  * <a href="https://beta.observablehq.com/@tomgp/sparks-with-live-data">Using javascript to create Sparks code from data</a>
@@ -38,11 +44,6 @@ When using Sparks as a webfont you *may* wish to explicitly enable the `calt` fe
 ```
 
 For more on this see the example code in the [**tests**](https://github.com/aftertheflood/sparks/tree/master/tests) folder.
-
-To get started quickly you may want to use our stylesheet which defines all the font-faces and links to the relevant files hosted on github
-```
-  <link href="https://tools.aftertheflood.com/sparks/styles/font-faces.css" rel="stylesheet" />
-```
 
 ### In MS Word
 
