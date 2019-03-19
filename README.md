@@ -2,13 +2,13 @@ A typeface for creating sparklines in text.
 
 **Get the font files <a href="https://goo.gl/MJYka3">here</a>. (.zip file, 5.2MB)**
 
-See it working on our [website](http://aftertheflood.com/projects/sparks) or in one of our interactive notebook examples
-
 To quickly include the fonts in your web page you may wish to use our stylesheet which defines all the font-faces and links to the relevant files hosted on github.
 
 ```
   <link href="https://tools.aftertheflood.com/sparks/styles/font-faces.css" rel="stylesheet" />
 ```
+
+See it working on our [website](http://aftertheflood.com/projects/sparks) or in one of our interactive notebook examples
 
  * <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">A simple usage example</a>
  * <a href="https://beta.observablehq.com/@tomgp/sparks-in-an-svg">Using Sparks within an SVG</a>
