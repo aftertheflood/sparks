@@ -1,5 +1,11 @@
 A typeface for creating sparklines in text.
 
+See it working on our [website](http://aftertheflood.com/projects/sparks) or in one of our interactive notebook examples
+
+ * <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">A simple usage example</a>
+ * <a href="https://beta.observablehq.com/@tomgp/sparks-in-an-svg">Using Sparks within an SVG</a>
+ * <a href="https://beta.observablehq.com/@tomgp/sparks-with-live-data">Using javascript to create Sparks code from data</a>
+
 <div>
   <hr class="no-top-border">
   <img class="full-width" src="https://aftertheflood.com/wp-content/uploads/2018/01/spark-typing-v2.gif" alt="Sparks GIF" />
@@ -13,12 +19,6 @@ There are currently three variations: **bars, dots, and dot-lines** (line charts
 All three of the variants use a fixed scale of 0–100. If your data only goes to e.g., 10, you'll need to first translate your numbers to be out of 100, otherwise you'll end up rendering an especially tiny chart.
 
 The contextual alternates feature (`calt`) is baked into OpenType and Sparks simply leverages this feature in an unconventional way. It takes strings like `123{30,60,90}456` and outputs a sparkline. The example of `123{30,60,90}456` would have with three datapoints of 30, 60, and 90 framed by 123 and 456. Spaces after the commas will prevent the numbers from being transformed. Numbers outside of the brackets are never transformed.
-
-See it working on our [website](http://aftertheflood.com/projects/sparks) or in one of our interactive notebook examples
-
- * <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">A simple usage example</a>
- * <a href="https://beta.observablehq.com/@tomgp/sparks-in-an-svg">Using Sparks within an SVG</a>
- * <a href="https://beta.observablehq.com/@tomgp/sparks-with-live-data">Using javascript to create Sparks code from data</a>
 
 ## Using Sparks
 
