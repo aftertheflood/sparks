@@ -1,6 +1,6 @@
 A typeface for creating sparklines in text.
 
-<em>Get the font files <a href="https://goo.gl/MJYka3">here</em></a>. (.zip file, 5.2MB)
+**Get the font files <a href="https://goo.gl/MJYka3">here</a>. (.zip file, 5.2MB)**
 
 See it working on our [website](http://aftertheflood.com/projects/sparks) or in one of our interactive notebook examples
 
