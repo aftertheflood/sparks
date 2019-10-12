@@ -1,0 +1,24 @@
+{
+  "name": "spark",
+  "version": "1.0.0",
+  "description": "Spark - six fonts for creating sparklines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aftertheflood/spark.git"
+  },
+  "keywords": [
+    "spark",
+    "sparkline",
+    "font"
+  ],
+  "author": "Michael Gallagher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aftertheflood/spark/issues"
+  },
+  "homepage": "https://github.com/aftertheflood/spark#readme"
+}
