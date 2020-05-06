@@ -8,7 +8,7 @@ To quickly include the fonts in your web page you may wish to use our stylesheet
   <link href="https://tools.aftertheflood.com/sparks/styles/font-faces.css" rel="stylesheet" />
 ```
 
-See it working on our [website](http://aftertheflood.com/projects/sparks) or in one of our interactive notebook examples
+See it working on our [website](http://tools.aftertheflood.com/sparks/) or in one of our interactive notebook examples
 
  * <a href="https://beta.observablehq.com/@tomgp/after-the-flood-i-sparks-i-typeface">A simple usage example</a>
  * <a href="https://beta.observablehq.com/@tomgp/sparks-in-an-svg">Using Sparks within an SVG</a>
